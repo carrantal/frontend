@@ -1,31 +1,20 @@
 "use client";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/home/page";
+import Contact from "./pages/contact/page";
+import AboutUs from "./pages/aboutus/Page";
 
-import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
-import Aboutus from "./components/Aboutus/Aboutus";
-import OurServices from "./components/OurServices/OurServices";
-import HomeProducts from "./components/HomeProducts/HomeProducts";
-import OurBrands from "./components/OurBrands/OurBrands";
-import FAQ from "./components/FAQ/FAQ";
-import Contact from "./components/Contact/Contact";
-import Footer from "./components/Footer/Footer";
-import { useEffect } from "react";
-export default function Home() {
-  useEffect(() => {
-    require("bootstrap/dist/js/bootstrap.bundle.min.js");
-  }, []);
+const App = () => {
   return (
-    <>
-      <Header />
-      <Hero />
-      <Aboutus />
-      <OurServices />
-      <HomeProducts />
-      <OurBrands />
-      <FAQ />
-      <Contact />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about-us" element={<AboutUs />} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
+
+export default App;

@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -39,9 +39,9 @@ const Header = () => {
                     </li>
 
                     <li className="nav-item">
-                      <a className="nav-link" href="about.html">
+                      <Link className="nav-link" to="/about-us">
                         About Us
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
                       <a className="nav-link" href="service.html">
@@ -50,9 +50,9 @@ const Header = () => {
                     </li>
 
                     <li className="nav-item">
-                      <a className="nav-link" href="contact.html">
+                      <Link className="nav-link" to="/contact">
                         Contact Us
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
