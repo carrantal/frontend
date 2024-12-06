@@ -12,10 +12,12 @@
     "@fortawesome/fontawesome-free": "^6.7.1",
     "@fortawesome/fontawesome-svg-core": "^6.7.1",
     "@fortawesome/free-brands-svg-icons": "^6.7.1",
-    "bootstrap": "^5.3.3",
+    "bootstrap": "^5.0.0",
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106"
+    "react-dom": "19.0.0-rc-66855b96-20241106",
+    "slicknav": "^1.0.8",
+    "swiper": "^11.1.15"
   },
   "devDependencies": {
     "@types/node": "^20",

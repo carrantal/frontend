@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import "bootstrap/dist/css/bootstrap.min.css";
-// import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "bootstrap/dist/css/bootstrap.min.css"; // Import CSS
+
 import "./globals.css";
+import ClientBootstrap from "./ClientBootstrap"; // Client component for JS logic
 
 export const metadata: Metadata = {
   title: "Car Rental",
@@ -21,7 +22,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <ClientBootstrap /> {/* Ensures Bootstrap JS is loaded */}
+        {children}
+      </body>
     </html>
   );
 }

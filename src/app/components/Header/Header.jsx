@@ -1,7 +1,13 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
       <header className="main-header">
@@ -12,7 +18,18 @@ const Header = () => {
                 <img src="images/logo.svg" alt="Logo" />
               </a>
 
-              <div className=" navbar-collapse main-menu">
+              {/* Toggle button for mobile devices */}
+              <button
+                className="navbar-toggler"
+                type="button"
+                onClick={handleToggle}
+              >
+                <span className="navbar-toggler-icon"></span>
+              </button>
+
+              <div
+                className={`navbar-collapse main-menu ${isOpen ? "show" : ""}`}
+              >
                 <div className="nav-menu-wrapper">
                   <ul className="navbar-nav mr-auto" id="menu">
                     <li className="nav-item">
@@ -45,10 +62,8 @@ const Header = () => {
                   </a>
                 </div>
               </div>
-              <div className="navbar-toggle"></div>
             </div>
           </nav>
-          <div className="responsive-menu"></div>
         </div>
       </header>
     </>
