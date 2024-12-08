@@ -2,25 +2,31 @@
 import React from "react";
 import Header from "@/app/components/Header/Header";
 import Footer from "@/app/components/Footer/Footer";
+import Image from "next/image";
+import aboutmainpic from "../../../../public/images/aboutmainpic.avif";
 const Page = () => {
   return (
     <div>
       <Header />
-      <div class="page-header bg-section parallaxie">
+      <div className="page-header bg-section parallaxie">
+        <Image
+          src="/images/aboutmainpic.avif"
+          alt="About Us"
+          layout="fill"
+          objectFit="cover"
+        />
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
               <div class="page-header-box">
                 <h1 class="text-anime-style-3" data-cursor="-opaque">
-                  About Us
+                  About Nayl Rental Car
                 </h1>
                 <nav class="wow fadeInUp">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <a href="./">home</a>
-                    </li>
-                    <li class="breadcrumb-item active" aria-current="page">
-                      about us
+                      We are a rental cars in Dubai we rent only luxury cars and
+                      limited edition cars
                     </li>
                   </ol>
                 </nav>
@@ -33,54 +39,23 @@ const Page = () => {
       <div class="about-us page-about-us">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-lg-6">
-              <div class="about-image">
-                <div class="about-img-1">
-                  <figure class="reveal">
-                    <img src="images/about-img-1.jpg" alt="" />
-                  </figure>
-                </div>
-
-                <div class="about-img-2">
-                  <figure class="reveal">
-                    <img src="images/about-img-2.jpg" alt="" />
-                  </figure>
-                </div>
-              </div>
-            </div>
-
+            <h3 class="wow fadeInUp">about us</h3>
+            <h2 class="text-anime-style-3" data-cursor="-opaque">
+              Luxury and Limited Edition Cars
+            </h2>
             <div class="col-lg-6">
               <div class="about-content">
                 <div class="section-title">
-                  <h3 class="wow fadeInUp">about us</h3>
-                  <h2 class="text-anime-style-3" data-cursor="-opaque">
-                    Your trusted partner in reliable car rental
-                  </h2>
                   <p class="wow fadeInUp" data-wow-delay="0.25s">
-                    Aqestic Optio Amet A Ququam Saepe Aliquid Voluate Dicta Fuga
-                    Dolor Saerror Sed Earum A Magni Soluta Quam Minus Dolor
-                    Dolor
+                    At Nayl Rental Car, we specialize in offering only luxury
+                    cars and limited edition models. Our collection is
+                    meticulously curated to cater to the discerning tastes of
+                    automotive enthusiasts and individuals who seek exclusive
+                    driving experiences.
                   </p>
                 </div>
 
                 <div class="about-content-body">
-                  <div
-                    class="about-trusted-booking wow fadeInUp"
-                    data-wow-delay="0.5s"
-                  >
-                    <div class="icon-box">
-                      <img src="images/icon-about-trusted-1.svg" alt="" />
-                    </div>
-                    <div class="trusted-booking-content">
-                      <h3>easy booking process</h3>
-                      <p>
-                        We Have Optimized The Booking Process So That Our
-                        Clients Can Experience The Easiest And The Safest
-                        Service
-                      </p>
-                    </div>
-                  </div>
-
                   <div
                     class="about-trusted-booking wow fadeInUp"
                     data-wow-delay="0.75s"
@@ -89,80 +64,54 @@ const Page = () => {
                       <img src="images/icon-about-trusted-2.svg" alt="" />
                     </div>
                     <div class="trusted-booking-content">
-                      <h3>convenient pick-up & return process</h3>
+                      <h3>Competitive Pricing</h3>
                       <p>
-                        We Have Optimized The Booking Process So That Our
-                        Clients Can Experience The Easiest And The Safest
-                        Service
+                        While we offer the pinnacle of automotive luxury, our
+                        rental rates are competitively priced, making premium
+                        car experiences accessible to those with a passion for
+                        driving exceptional vehicles.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="about-trusted-booking wow fadeInUp"
+                    data-wow-delay="0.75s"
+                  >
+                    <div class="icon-box">
+                      <img src="images/icon-about-trusted-2.svg" alt="" />
+                    </div>
+                    <div class="trusted-booking-content">
+                      <h3>Competitive Pricing</h3>
+                      <p>
+                        While we offer the pinnacle of automotive luxury, our
+                        rental rates are competitively priced, making premium
+                        car experiences accessible to those with a passion for
+                        driving exceptional vehicles.
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="exclusive-partners bg-section">
-        <div class="container">
-          <div class="row section-row">
-            <div class="col-lg-12">
-              <div class="section-title">
-                <h3 class="wow fadeInUp">executive partners</h3>
-                <h2 class="text-anime-style-3" data-cursor="-opaque">
-                  Trusted by leading brands
-                </h2>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-lg-3 col-6">
-              <div class="partners-logo wow fadeInUp" data-wow-delay="0.2s">
-                <img src="images/icon-partners-1.svg" alt="" />
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-6">
-              <div class="partners-logo wow fadeInUp" data-wow-delay="0.4s">
-                <img src="images/icon-partners-2.svg" alt="" />
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-6">
-              <div class="partners-logo wow fadeInUp" data-wow-delay="0.6s">
-                <img src="images/icon-partners-3.svg" alt="" />
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-6">
-              <div class="partners-logo wow fadeInUp" data-wow-delay="0.8s">
-                <img src="images/icon-partners-4.svg" alt="" />
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-6">
-              <div class="partners-logo wow fadeInUp" data-wow-delay="1s">
-                <img src="images/icon-partners-3.svg" alt="" />
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-6">
-              <div class="partners-logo wow fadeInUp" data-wow-delay="1.2s">
-                <img src="images/icon-partners-4.svg" alt="" />
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-6">
-              <div class="partners-logo wow fadeInUp" data-wow-delay="1.4s">
-                <img src="images/icon-partners-1.svg" alt="" />
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-6">
-              <div class="partners-logo wow fadeInUp" data-wow-delay="1.6s">
-                <img src="images/icon-partners-2.svg" alt="" />
+            <div class="col-lg-6">
+              <div class="about-content-body">
+                <div
+                  class="about-trusted-booking wow fadeInUp"
+                  data-wow-delay="0.5s"
+                >
+                  <div class="icon-box">
+                    <img src="images/icon-about-trusted-1.svg" alt="" />
+                  </div>
+                  <div class="trusted-booking-content">
+                    <h3>Availability Nationwide</h3>
+                    <p>
+                      With a presence across the nation, Nayl Rental Car makes
+                      luxury and limited edition cars accessible to individuals
+                      in various cities, ensuring that remarkable driving
+                      experiences are within reach.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

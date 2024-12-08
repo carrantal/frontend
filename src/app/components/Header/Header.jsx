@@ -14,8 +14,8 @@ const Header = () => {
         <div className="header-sticky">
           <nav className="navbar navbar-expand-lg">
             <div className="container">
-              <a className="navbar-brand" href="./">
-                <img src="images/logo.svg" alt="Logo" />
+              <a className="navbar-brand w-[116px] h-[124px]" href="./">
+                <img src="images/mainlogo.avif" alt="Logo" />
               </a>
 
               {/* Toggle button for mobile devices */}

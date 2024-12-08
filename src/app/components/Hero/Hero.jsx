@@ -22,12 +22,10 @@ const Hero = () => {
                   <div class="section-title">
                     <h3 class="wow fadeInUp">welcome to car rent</h3>
                     <h1 class="text-anime-style-3" data-cursor="-opaque">
-                      Looking to save more on your rental car?
+                      Experience the Ultimate Luxury. Book Now
                     </h1>
                     <p class="wow fadeInUp" data-wow-delay="0.25s">
-                      Whether you're planning a weekend getaway, a business
-                      trip, or just need a reliable ride for the day, we offers
-                      a wide range of vehicles to suit your needs.
+                      Rent Luxury and Limited Edition Cars & Boats in Dubai
                     </p>
                   </div>
 

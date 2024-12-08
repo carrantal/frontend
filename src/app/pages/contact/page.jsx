@@ -20,7 +20,6 @@ const Page = () => {
                     <h2 class="text-anime-style-3" data-cursor="-opaque">
                       Contact information
                     </h2>
-                    <p>Say something to start a live chat!</p>
                   </div>
 
                   <div class="contact-info-list">
@@ -33,7 +32,7 @@ const Page = () => {
                       </div>
 
                       <div class="contact-info-content">
-                        <p>(+01) 789 854 856</p>
+                        <p>+971-528888746</p>
                       </div>
                     </div>
 
@@ -46,7 +45,7 @@ const Page = () => {
                       </div>
 
                       <div class="contact-info-content">
-                        <p>info@domain.com</p>
+                        <p>info@naylrentalcar.com</p>
                       </div>
                     </div>
 
@@ -60,7 +59,8 @@ const Page = () => {
 
                       <div class="contact-info-content">
                         <p>
-                          1234 Elm Street, Suite 567 Springfield, United States
+                          Azizi Riviera 4 , Retail 8 ,Meydan , Dubai, UAE Tel:
+                          +971-528888746
                         </p>
                       </div>
                     </div>
@@ -72,22 +72,27 @@ const Page = () => {
                   >
                     <ul>
                       <li>
-                        <a href="#">
+                        <a
+                          href="https://www.facebook.com/profile.php?id=61569025370790"
+                          target="blank"
+                        >
                           <i class="fa-brands fa-facebook-f"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
-                          <i class="fa-brands fa-twitter"></i>
+                        <a
+                          href="https://www.tiktok.com/@naylrentalsdxb?_t=8rLvJBDLAK9&_r=1"
+                          target="blank"
+                        >
+                          <i class="fa-brands fa-tiktok"></i>
                         </a>
                       </li>
+
                       <li>
-                        <a href="#">
-                          <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
+                        <a
+                          href="https://www.instagram.com/naylrentalcardxb"
+                          target="blank"
+                        >
                           <i class="fa-brands fa-instagram"></i>
                         </a>
                       </li>

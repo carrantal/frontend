@@ -6,7 +6,7 @@ const Footer = () => {
       <footer class="main-footer bg-section">
         <div class="container">
           <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-4">
               <div class="about-footer">
                 <div class="footer-logo">
                   <img src="images/footer-logo.svg" alt="" />
@@ -21,27 +21,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-4">
-              <div class="footer-links footer-quick-links">
-                <h3>legal policy</h3>
-                <ul>
-                  <li>
-                    <a href="#">term & condition</a>
-                  </li>
-                  <li>
-                    <a href="#">privacy policy</a>
-                  </li>
-                  <li>
-                    <a href="#">legal notice</a>
-                  </li>
-                  <li>
-                    <a href="#">accessibility</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-4 col-md-4">
               <div class="footer-links footer-menu">
                 <h3>quick links</h3>
                 <ul>
@@ -61,7 +41,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-4 col-md-4">
               <div class="footer-newsletter">
                 <h3>Subscribe to the Newsleeters</h3>
                 <div class="footer-newsletter-form">
@@ -89,7 +69,7 @@ const Footer = () => {
             <div class="row align-items-center">
               <div class="col-lg-6 col-md-7">
                 <div class="footer-copyright-text">
-                  <p>© 2024 Novaride. All rights reserved.</p>
+                  <p>© 2023 Nayl Rental Car. All Rights Reserved.</p>
                 </div>
               </div>
 
@@ -97,28 +77,28 @@ const Footer = () => {
                 <div class="footer-social-links">
                   <ul>
                     <li>
-                      <a href="#">
-                        <i class="fa-brands fa-youtube"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
+                      <a
+                        href="https://www.facebook.com/profile.php?id=61569025370790"
+                        target="blank"
+                      >
                         <i class="fa-brands fa-facebook-f"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i class="fa-brands fa-x-twitter"></i>
+                      <a
+                        href="https://www.tiktok.com/@naylrentalsdxb?_t=8rLvJBDLAK9&_r=1"
+                        target="blank"
+                      >
+                        <i class="fa-brands fa-tiktok"></i>
                       </a>
                     </li>
+
                     <li>
-                      <a href="#">
+                      <a
+                        href="https://www.instagram.com/naylrentalcardxb"
+                        target="blank"
+                      >
                         <i class="fa-brands fa-instagram"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="fa-brands fa-linkedin-in"></i>
                       </a>
                     </li>
                   </ul>
@@ -128,6 +108,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
+      <p>Designed and Developed by FTSTech.solution</p>
     </div>
   );
 };
