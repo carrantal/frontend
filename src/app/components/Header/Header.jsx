@@ -14,10 +14,9 @@ const Header = () => {
         <div className="header-sticky">
           <nav className="navbar navbar-expand-lg">
             <div className="container">
-              <a className="navbar-brand w-[116px] h-[124px]" href="./">
+              <Link className="navbar-brand w-[116px] h-[124px]" href="./">
                 <img src="images/mainlogo.avif" alt="Logo" />
-              </a>
-
+              </Link>
               {/* Toggle button for mobile devices */}
               <button
                 className="navbar-toggler"
@@ -28,14 +27,16 @@ const Header = () => {
               </button>
 
               <div
-                className={`navbar-collapse main-menu ${isOpen ? "show" : ""}`}
+                className={`navbar-collapse collapse main-menu ${
+                  isOpen ? "show" : ""
+                }`}
               >
                 <div className="nav-menu-wrapper">
                   <ul className="navbar-nav mr-auto" id="menu">
                     <li className="nav-item">
-                      <a className="nav-link" href="/">
+                      <Link className="nav-link" href="/">
                         Home
-                      </a>
+                      </Link>
                     </li>
 
                     <li className="nav-item">
@@ -44,9 +45,9 @@ const Header = () => {
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="service.html">
+                      <Link className="nav-link" href="service.html">
                         Book now
-                      </a>
+                      </Link>
                     </li>
 
                     <li className="nav-item">
@@ -57,9 +58,9 @@ const Header = () => {
                   </ul>
                 </div>
                 <div className="header-btn d-inline-flex">
-                  <a href="#" className="btn-default">
+                  <Link href="#" className="btn-default">
                     book a rental
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

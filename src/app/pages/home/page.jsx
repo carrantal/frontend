@@ -1,13 +1,52 @@
-import Header from "../../components/Header/Header";
-import Hero from "../../components/Hero/Hero";
-import Aboutus from "../../components/Aboutus/Aboutus";
-import OurServices from "../../components/OurServices/OurServices";
-import HomeProducts from "../../components/HomeProducts/HomeProducts";
-import OurBrands from "../../components/OurBrands/OurBrands";
-import FAQ from "../../components/FAQ/FAQ";
-import Contact from "../../components/Contact/Contact";
-import Footer from "../../components/Footer/Footer";
-const page = () => {
+"use client";
+import dynamic from "next/dynamic";
+
+const Header = dynamic(() => import("../../components/Header/Header"), {
+  ssr: false,
+});
+
+const Hero = dynamic(() => import("../../components/Hero/Hero"), {
+  ssr: false,
+});
+
+const Aboutus = dynamic(() => import("../../components/Aboutus/Aboutus"), {
+  ssr: false,
+});
+
+const OurServices = dynamic(
+  () => import("../../components/OurServices/OurServices"),
+  {
+    ssr: false,
+  }
+);
+
+const HomeProducts = dynamic(
+  () => import("../../components/HomeProducts/HomeProducts"),
+  {
+    ssr: false,
+  }
+);
+
+const OurBrands = dynamic(
+  () => import("../../components/OurBrands/OurBrands"),
+  {
+    ssr: false,
+  }
+);
+
+const FAQ = dynamic(() => import("../../components/FAQ/FAQ"), {
+  ssr: false,
+});
+
+const Contact = dynamic(() => import("../../components/Contact/Contact"), {
+  ssr: false,
+});
+
+const Footer = dynamic(() => import("../../components/Footer/Footer"), {
+  ssr: false,
+});
+
+const Page = () => {
   return (
     <div>
       <Header />
@@ -23,4 +62,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

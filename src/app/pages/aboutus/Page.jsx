@@ -3,7 +3,6 @@ import React from "react";
 import Header from "@/app/components/Header/Header";
 import Footer from "@/app/components/Footer/Footer";
 import Image from "next/image";
-import aboutmainpic from "../../../../public/images/aboutmainpic.avif";
 const Page = () => {
   return (
     <div>

@@ -159,4 +159,3 @@ const HomeProducts = () => {
 };
 
 export default HomeProducts;
-s;
