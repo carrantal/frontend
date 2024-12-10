@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
-import Header from "@/app/components/Header/Header";
-import Footer from "@/app/components/Footer/Footer";
+
 import Image from "next/image";
 const Page = () => {
   return (

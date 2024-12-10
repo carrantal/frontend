@@ -14,7 +14,7 @@ const Header = () => {
       <div className="header-sticky">
         <nav className="navbar navbar-expand-lg">
           <div className="container">
-            <Link className="navbar-brand w-[116px] h-[124px]" href="/">
+            <Link className="navbar-brand w-[106px] h-[76px]" href="/">
               <img src="images/mainlogo.avif" alt="Logo" />
             </Link>
             {/* Toggle button for mobile devices */}
