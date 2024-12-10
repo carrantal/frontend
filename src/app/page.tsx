@@ -1,19 +1,23 @@
 "use client";
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/home/page";
-import Contact from "./pages/contact/page";
-import AboutUs from "./pages/aboutus/Page";
+import AboutUs from "./components/Aboutus/Aboutus";
+import OurServices from "./components/OurServices/OurServices";
+import HomeProducts from "./components/HomeProducts/products";
+import OurBrands from "./components/OurBrands/OurBrands";
+import FAQ from "./components/FAQ/FAQ";
+import Contact from "./components/Contact/Contact";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/about-us" element={<AboutUs />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <AboutUs />
+      <OurServices />
+      <HomeProducts />
+      <OurServices />
+      <OurBrands />
+      <FAQ />
+      <Contact />
+    </>
   );
 };
 

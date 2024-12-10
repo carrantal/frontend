@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -40,7 +40,7 @@ const Header = () => {
                     </li>
 
                     <li className="nav-item">
-                      <Link className="nav-link" to="/about-us">
+                      <Link className="nav-link" href="/about-us">
                         About Us
                       </Link>
                     </li>
@@ -51,7 +51,7 @@ const Header = () => {
                     </li>
 
                     <li className="nav-item">
-                      <Link className="nav-link" to="/contact">
+                      <Link className="nav-link" href="/contact">
                         Contact Us
                       </Link>
                     </li>

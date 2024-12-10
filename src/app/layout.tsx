@@ -3,6 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css"; // Import CSS
 
 import "./globals.css";
 import ClientBootstrap from "./ClientBootstrap"; // Client component for JS logic
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Car Rental",
@@ -23,8 +25,10 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <Header />
         <ClientBootstrap /> {/* Ensures Bootstrap JS is loaded */}
         {children}
+        <Footer />
       </body>
     </html>
   );
