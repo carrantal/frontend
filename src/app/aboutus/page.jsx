@@ -6,7 +6,6 @@ import Image from "next/image";
 const Page = () => {
   return (
     <div>
-      <Header />
       <div className="page-header bg-section parallaxie">
         <Image
           src="/images/aboutmainpic.avif"
@@ -327,8 +326,6 @@ const Page = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };

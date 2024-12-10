@@ -6,8 +6,6 @@ import Contact from "@/app/components/Contact/Contact";
 const Page = () => {
   return (
     <>
-      <Header />
-
       <div class="page-contact-us">
         <div class="contact-info-form">
           <div class="container">
@@ -192,7 +190,6 @@ const Page = () => {
         </div>
       </div>
       <Contact />
-      <Footer />
     </>
   );
 };
