@@ -84,19 +84,6 @@ const OurServices = () => {
                 </div>
               </div>
             </div>
-
-            <div class="col-lg-12">
-              <div class="services-box-footer wow fadeInUp" data-wow-delay="1s">
-                <p>
-                  Discover our range of car rental services designed to meet all
-                  your travel needs. From a diverse fleet of vehicles to
-                  flexible rental plans.
-                </p>
-                <a href="#" class="btn-default">
-                  view all service
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </div>

@@ -29,7 +29,7 @@ const FAQ = () => {
   return (
     <div className="our-faqs bg-section">
       <div className="container">
-        <div className="row align-items-center">
+        <div className="row items-center">
           <div className="col-lg-6">
             <div className="our-faqs-image">
               <img src="/images/our-faqs-img-1.jpg" alt="FAQ Image 1" />
@@ -44,22 +44,24 @@ const FAQ = () => {
               <div className="our-faqs-accordion">
                 {questions.map((item, index) => (
                   <div className="accordion-item" key={index}>
-                    <h2 className="accordion-header">
+                    <div className="accordion-header">
                       <button
-                        className={`accordion-button ${
-                          activeIndex === index ? "" : "collapsed"
+                        className={`accordion-button w-full text-left p-4 bg-gray-100  rounded-lg ${
+                          activeIndex === "bg-blue-600 text-white"
                         }`}
                         onClick={() => toggleAccordion(index)}
                       >
                         {item.question}
                       </button>
-                    </h2>
+                    </div>
                     <div
-                      className={`accordion-collapse collapse ${
-                        activeIndex === index ? "show" : ""
+                      className={`accordion-collapse overflow-hidden transition-all ease-in-out duration-300 ${
+                        activeIndex === index ? "max-h-96 p-4" : "max-h-0 p-0"
                       }`}
                     >
-                      <div className="accordion-body">{item.answer}</div>
+                      <div className="accordion-body text-white-100">
+                        {item.answer}
+                      </div>
                     </div>
                   </div>
                 ))}

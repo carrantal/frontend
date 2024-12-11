@@ -108,7 +108,6 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <p>Designed and Developed by FTSTech.solution</p>
     </div>
   );
 };

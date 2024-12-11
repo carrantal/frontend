@@ -1704,10 +1704,9 @@ header.main-header .header-sticky.active {
 
 .intro-video {
   position: relative;
-  background: url("/images/intro-video-bg.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 100px 0;
+  padding: 50px 0;
   overflow: hidden;
 }
 
