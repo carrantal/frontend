@@ -117,9 +117,7 @@ const HomeProducts = () => {
                 }}
                 style={{
                   "--swiper-navigation-color": "red",
-                  "--swiper-navigation-size": "30px",
-                  "--swiper-navigation-font-weight": "bold",
-                  backgroundColor: "black",
+                  "--swiper-navigation-size": "25px",
                 }}
                 className="car-details-slider"
               >
@@ -131,7 +129,7 @@ const HomeProducts = () => {
                       </div>
                       <div className="perfect-fleet-content">
                         <div className="perfect-fleet-title">
-                          <h3>{product.title}</h3>
+                          {/* <h3>{product.title}</h3> */}
                           <h2>{product.model}</h2>
                         </div>
                         <div className="perfect-fleet-body">
