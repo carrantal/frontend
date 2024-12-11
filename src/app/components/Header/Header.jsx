@@ -53,7 +53,7 @@ const Header = () => {
               <li>
                 <Link
                   href="/"
-                  className="nav-link text-gray-50 hover:text-[#ff3600]"
+                  className="nav-link text-gray-50 hover:text-[#f18b20]"
                 >
                   Home
                 </Link>
@@ -61,7 +61,7 @@ const Header = () => {
               <li>
                 <Link
                   href="/aboutus"
-                  className="nav-link text-gray-50 hover:text-[#ff3600]"
+                  className="nav-link text-gray-50 hover:text-[#f18b20]"
                 >
                   About Us
                 </Link>
@@ -69,7 +69,7 @@ const Header = () => {
               <li>
                 <Link
                   href="/service"
-                  className="nav-link text-gray-50 hover:text-[#ff3600]"
+                  className="nav-link text-gray-50 hover:text-[#f18b20]"
                 >
                   Book Now
                 </Link>
@@ -77,7 +77,7 @@ const Header = () => {
               <li>
                 <Link
                   href="/contact"
-                  className="nav-link text-gray-50 hover:text-[#ff3600]"
+                  className="nav-link text-gray-50 hover:text-[#f18b20]"
                 >
                   Contact Us
                 </Link>
