@@ -116,7 +116,7 @@ const HomeProducts = () => {
                   320: { slidesPerView: 1 },
                 }}
                 style={{
-                  "--swiper-navigation-color": "red",
+                  "--swiper-navigation-color": "#f18b20",
                   "--swiper-navigation-size": "25px",
                 }}
                 className="car-details-slider"

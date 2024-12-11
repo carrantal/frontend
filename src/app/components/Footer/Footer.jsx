@@ -12,7 +12,11 @@ const Footer = () => {
             <div class="col-lg-4">
               <div class="about-footer">
                 <div class="footer-logo">
-                  <img src="images/footer-logo.svg" alt="" />
+                  <img
+                    src="images/mainlogo.avif"
+                    alt=""
+                    className="w-[166px] h-[124px]"
+                  />
                 </div>
 
                 <div class="about-footer-content">

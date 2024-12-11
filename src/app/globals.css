@@ -336,7 +336,6 @@ body {
 }
 
 .section-title h3::before {
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1302,7 +1301,7 @@ header.main-header .header-sticky.active {
 }
 
 .car-details-slider {
-  cursor: none;
+  cursor: pointer;
 }
 
 .perfect-fleet-item {
@@ -1481,7 +1480,7 @@ header.main-header .header-sticky.active {
 
 .luxury-collection-image a {
   position: relative;
-  cursor: none;
+  cursor: pointer;
 }
 
 .luxury-collection-image a::before {

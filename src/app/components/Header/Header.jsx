@@ -28,7 +28,7 @@ const Header = () => {
 
           {/* Toggle Button for Mobile */}
           <button
-            className="text-white bg-[#ff3600] text-2xl focus:outline-none lg:hidden rounded-lg"
+            className="text-white bg-[#f18b20] text-2xl focus:outline-none lg:hidden rounded-lg"
             onClick={handleMobileMenuToggle}
           >
             <svg
@@ -104,7 +104,7 @@ const Header = () => {
           <div className="flex flex-col items-start p-6 space-y-6">
             {/* Close Button */}
             <button
-              className="text-white text-2xl self-end focus:outline-none bg-[#ff3600] rounded-lg"
+              className="text-white text-2xl self-end focus:outline-none bg-[#f18b20] rounded-lg"
               onClick={closeMobileMenu}
             >
               <svg
