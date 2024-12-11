@@ -128,9 +128,9 @@ const HomeProducts = () => {
                         <img src={product.image} alt={product.title} />
                       </div>
                       <div className="perfect-fleet-content">
-                        <div className="perfect-fleet-title">
+                        <div className="perfect-fleet-title ">
                           {/* <h3>{product.title}</h3> */}
-                          <h2>{product.model}</h2>
+                          <h2 className=" ml-6">{product.model}</h2>
                         </div>
                         <div className="perfect-fleet-body">
                           <ul>
