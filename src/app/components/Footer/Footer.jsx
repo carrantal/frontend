@@ -1,4 +1,7 @@
 import React from "react";
+import { FaPhone } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import { IoHomeOutline } from "react-icons/io5";
 
 const Footer = () => {
   return (
@@ -43,24 +46,21 @@ const Footer = () => {
 
             <div class="col-lg-4 col-md-4">
               <div class="footer-newsletter">
-                <h3>Subscribe to the Newsleeters</h3>
-                <div class="footer-newsletter-form">
-                  <form id="newslettersForm" action="#" method="POST">
-                    <div class="form-group">
-                      <input
-                        type="email"
-                        name="email"
-                        class="form-control"
-                        id="mail"
-                        placeholder="Email ..."
-                        required
-                      />
-                      <button type="submit" class="section-icon-btn">
-                        <img src="images/arrow-white.svg" alt="" />
-                      </button>
-                    </div>
-                  </form>
-                </div>
+                <h3>Contact Links</h3>
+                <ul class="flex flex-col gap-4">
+                  <li class="flex items-center gap-2">
+                    <FaPhone />
+                    <a href="#">(+01) 789 854 856</a>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <MdEmail />
+                    <a href="#">info@fomain.us</a>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <IoHomeOutline />
+                    <a href="#">1234 street#110 komla ariport</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
