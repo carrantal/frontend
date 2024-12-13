@@ -1,4 +1,5 @@
 import React from "react";
+import { FaAngleRight } from "react-icons/fa6";
 
 export default function CarImsges() {
   return (
@@ -15,7 +16,9 @@ export default function CarImsges() {
             <span className="see-all-btn-text fs-13 font-weight-bold lh-20 letter-spacing-0_2 text-uppercase">
               All special offers
             </span>
-            <span className="icon-chevron-right fs-16"></span>
+            <span className=" fs-16">
+              <FaAngleRight />
+            </span>
           </a>
         </div>
         <div className="swiper swiper-container cars-slider mt-sm-4 mt-3 mobile_overflow_visible swiper-initialized swiper-horizontal swiper-free-mode swiper-backface-hidden">

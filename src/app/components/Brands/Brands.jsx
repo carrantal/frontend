@@ -1,5 +1,5 @@
 import React from "react";
-
+import { FaAngleRight } from "react-icons/fa6";
 const Brands = () => {
   return (
     <>
@@ -17,7 +17,10 @@ const Brands = () => {
                 <span className="fs-13 lh-20 letter-spacing-0_2 font-weight-bold text-uppercase color-brand-primary">
                   All brands
                 </span>
-                <span className="fs-20 icon-chevron-right color-brand-primary"></span>
+                <span className="  color-brand-primary">
+                  {" "}
+                  <FaAngleRight />
+                </span>
               </a>
             </div>
 
@@ -86,7 +89,7 @@ const Brands = () => {
               <span className="fs-13 lh-20 letter-spacing-0_2 font-weight-bold text-uppercase color-brand-primary text-truncate">
                 All brands
               </span>
-              <span className="icon-chevron-right fs-20 color-brand-primary"></span>
+              <FaAngleRight />
             </a>
           </div>
         </div>

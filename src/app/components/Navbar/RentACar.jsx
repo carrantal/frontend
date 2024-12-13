@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-
+import { IoGridOutline } from "react-icons/io5";
 const RentACar = () => {
   return (
     <>
@@ -9,7 +9,9 @@ const RentACar = () => {
           className="rounded-small px-3 py-2 border-0 bg-brand-primary d-flex align-items-center fs-16 header-rent-car-btn rent-a-car-new-menu"
           id="rent-car-dropdown-btn"
         >
-          <i className="fs-16 icon-grid color-shades-white icon-min-width-16"></i>
+          <i className=" color-shades-white icon-min-width-16">
+            <IoGridOutline />
+          </i>
           <span className="fs-16 font-weight-semibold color-shades-white ml-2 mr-1">
             Rent a car
           </span>
