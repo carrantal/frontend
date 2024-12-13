@@ -95,11 +95,36 @@ const WhyRentus = () => {
                 </div>
                 <div className="company-review-stars-block px-sm-1-custom pb-1-custom pb-xs-0-custom pb-sm-0-custom">
                   <div className="google-stars-block d-flex align-items-center">
-                    <span className="fs-20 fs-sm-24 google-star icon-star-filled filled-100"></span>
-                    <span className="fs-20 fs-sm-24 google-star icon-star-filled filled-100"></span>
-                    <span className="fs-20 fs-sm-24 google-star icon-star-filled filled-100"></span>
-                    <span className="fs-20 fs-sm-24 google-star icon-star-filled filled-100"></span>
-                    <span className="fs-20 fs-sm-24 google-star icon-star-filled filled-90"></span>
+                    <span
+                      className="fs-20 fs-sm-24 google-star"
+                      style={{ color: "gold" }}
+                    >
+                      ★
+                    </span>
+                    <span
+                      className="fs-20 fs-sm-24 google-star"
+                      style={{ color: "gold" }}
+                    >
+                      ★
+                    </span>
+                    <span
+                      className="fs-20 fs-sm-24 google-star"
+                      style={{ color: "gold" }}
+                    >
+                      ★
+                    </span>
+                    <span
+                      className="fs-20 fs-sm-24 google-star"
+                      style={{ color: "gold" }}
+                    >
+                      ★
+                    </span>
+                    <span
+                      className="fs-20 fs-sm-24 google-star"
+                      style={{ color: "gold" }}
+                    >
+                      ☆
+                    </span>
                   </div>
                 </div>
                 <div className="company-review-amount color-shades-500">

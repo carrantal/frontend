@@ -1,0 +1,113 @@
+import React from "react";
+
+const Footer = () => {
+  return (
+    <footer className="bg-white border-top border-shades-200 p-4  mt-4">
+      <div className="row ml-4">
+        {/* Inquiries & Support */}
+        <div className="col-lg-4 ">
+          <div className="ml-4">
+            <span className="font-weight-bold letter-spacing-1 text-uppercase color-shades-600 fs-11">
+              Inquiries &amp; Support
+            </span>
+            <div className="d-flex flex-column mt-3-custom mt-lg-2-custom line-height-25 gap-10">
+              <a
+                href="tel:+971504617277"
+                title=""
+                className="fs-12 fs-sm-14 color-shades-black d-flex align-items-center letter-spacing-0_2"
+              >
+                <div className="icon-16 icon-phone mr-2 d-flex align-items-center justify-content-center"></div>
+                <span className="direction-ltr">+971 50 461 7277</span>
+              </a>
+              <a
+                href="https://api.whatsapp.com/send/?phone=971558569266"
+                title="Contact Renty.ae car rental Whatsapp"
+                className="fs-12 fs-sm-14 color-shades-black d-flex align-items-center letter-spacing-0_2"
+              >
+                <img
+                  width="16"
+                  height="16"
+                  className="mr-2-custom"
+                  loading="lazy"
+                  src="https://renty.ae/assets-nd/icons/site/social-whatsapp-icon.svg"
+                  alt="Contact by Whatsapp"
+                  title="Contact by Whatsapp"
+                />
+                <span className="direction-ltr">WhatsApp</span>
+              </a>
+              <a
+                href="https://t.me/Renty_official"
+                title="Contact Renty.ae car rental Telegram"
+                className="fs-12 fs-sm-14 color-shades-black d-flex align-items-center letter-spacing-0_2"
+              >
+                <img
+                  width="16"
+                  height="16"
+                  className="mr-2-custom"
+                  loading="lazy"
+                  src="https://renty.ae/assets-nd/icons/site/telegram.svg"
+                  alt="Contact Renty.ae car rental Telegram"
+                  title="Contact Renty.ae car rental Telegram"
+                />
+                <span className="direction-ltr">Telegram</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* For Partnership */}
+        <div className="col-lg-4">
+          <span className="fs-11 font-weight-bold letter-spacing-1 text-uppercase color-shades-600">
+            For partnership
+          </span>
+          <div className="d-flex flex-column mt-3-custom mt-lg-2-custom line-height-25 gap-10">
+            <a
+              href="tel:+971504617277"
+              title=""
+              className="fs-12 fs-sm-14 color-shades-black d-flex align-items-center letter-spacing-0_2"
+            >
+              <div className="icon-16 icon-phone mr-2 d-flex align-items-center justify-content-center"></div>
+              <span className="direction-ltr">+971 50 461 7277</span>
+            </a>
+            <a
+              href="https://renty.ae/pages/support#partners_rc"
+              title=""
+              className="fs-12 fs-sm-14 color-shades-black d-flex align-items-center letter-spacing-0_2"
+            >
+              <div className="icon-16 icon-message-square mr-2 d-flex align-items-center justify-content-center"></div>
+              <span className="direction-ltr">Send Message</span>
+            </a>
+          </div>
+        </div>
+
+        {/* Address */}
+        <div className="col-lg-4 ">
+          <span className="fs-11 font-weight-bold letter-spacing-1 text-uppercase color-shades-600">
+            Address
+          </span>
+          <div className="d-flex flex-column mt-3-custom">
+            <span className="fs-14 color-shades-black mb-1 letter-spacing-0_2">
+              Warehouse 4, 5th Street, Al Quoz, Al Quoz 3, Dubai
+            </span>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile Address */}
+      <div className="footer-map-reviews-block pt-sm-3-custom pt-md-3-custom">
+        <div className="pt-lg-0 mt-xs-3-custom mb-2-custom d-block d-sm-none">
+          <span className="fs-11 font-weight-bold letter-spacing-1 text-uppercase color-shades-600">
+            Address
+          </span>
+          <div className="d-flex flex-column mt-3-custom">
+            <span className="fs-12 fs-sm-14 color-shades-black mb-1 letter-spacing-0_2">
+              Warehouse 4, 5th Street, Al Quoz, Al Quoz 3, Dubai
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

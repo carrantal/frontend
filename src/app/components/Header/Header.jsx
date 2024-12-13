@@ -8,6 +8,11 @@ import Brands from "../Brands/Brands";
 import CarImsges from "../CarImsges";
 import WhyRentus from "../WhyRentUs/WhyRentus";
 import OffSale from "../OffSale/OffSale";
+import Reviews from "../Reviews/Reviews";
+import Maps from "../Map/Maps";
+import LeadingCompany from "../LeadingCompany/LeadingCompany";
+import Faq from "../FAQ/Faq";
+import Footer from "../Footer/Footer";
 
 const Header = () => {
   return (
@@ -3877,6 +3882,11 @@ const Header = () => {
       <CarImsges />
       <OffSale />
       <CarImsges />
+      <Reviews />
+      <Maps />
+      <LeadingCompany />
+      <Faq />
+      <Footer />
     </>
   );
 };
