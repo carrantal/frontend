@@ -11,7 +11,7 @@ const Categories = () => {
             aria-live="polite"
           >
             <div
-              className="swiper-slide swiper-slide-active"
+              className=" "
               role="group"
               aria-label="1 / 8"
               //   style="width: 134.375px; margin-right: 5px"
@@ -31,7 +31,7 @@ const Categories = () => {
               </a>
             </div>
             <div
-              className="swiper-slide swiper-slide-next"
+              className=" "
               role="group"
               aria-label="2 / 8"
               //   style="width: 134.375px; margin-right: 5px"
@@ -51,7 +51,7 @@ const Categories = () => {
               </a>
             </div>
             <div
-              className="swiper-slide"
+              className=""
               role="group"
               aria-label="3 / 8"
               //   style="width: 134.375px; margin-right: 5px"
@@ -71,7 +71,7 @@ const Categories = () => {
               </a>
             </div>
             <div
-              className="swiper-slide"
+              className=""
               role="group"
               aria-label="4 / 8"
               //   style="width: 134.375px; margin-right: 5px"

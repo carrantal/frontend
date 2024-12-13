@@ -13,6 +13,7 @@ import Maps from "../Map/Maps";
 import LeadingCompany from "../LeadingCompany/LeadingCompany";
 import Faq from "../FAQ/Faq";
 import Footer from "../Footer/Footer";
+import Image from "next/image";
 
 const Header = () => {
   return (
@@ -25,13 +26,13 @@ const Header = () => {
                 <a
                   href="https://renty.ae/"
                   aria-label="Home page"
-                  className="header-home-link d-flex align-items-center"
+                  className=" d-flex align-items-center"
                 >
-                  <img
-                    loading="lazy"
-                    src="https://renty.ae/assets-nd/icons/site/logo-dark.svg"
-                    alt="Renty.ae"
-                    title="Renty.ae"
+                  <Image
+                    src="/images/desig.avif"
+                    width={60}
+                    height={70}
+                    alt="Picture of the author"
                   />
                 </a>
               </div>
@@ -2269,12 +2270,12 @@ const Header = () => {
             https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=2560,height=540,sharpen=0/https://renty.ae/assets-nd/images/home-page/home-page-section-lg.png
           "
             />
-            <source
+            {/* <source
               media="(min-width: 576px) and (max-width: 768px)"
               srcSet="
             https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=768,height=540,sharpen=0/https://renty.ae/assets-nd/images/home-page/home-page-section-md.png
           "
-            />
+            /> */}
             <img
               src="./Rent a Car in Dubai, Car Rental Service - Renty.ae_files/home-page-section-sm.jpg"
               alt="Responsive Image"
