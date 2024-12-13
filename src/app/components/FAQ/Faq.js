@@ -36,7 +36,7 @@ const Faq = () => {
                 </div>
                 <div
                   id="collapse_0_0_0"
-                  class="collapse"
+                  class="collapse "
                   role="tabpanel"
                   aria-labelledby="heading_0_0_0"
                   data-parent="#accordion_0_0"

@@ -17,7 +17,7 @@ const Profile = () => {
           onClick={toggleDropdown}
         >
           <div
-            className="color-shades-white d-flex align-items-center pl-2 py-3"
+            className="color-shades-white d-flex align-items-center pl-2 py-3 "
             id="profile-dropdown-menu"
             role="button"
             aria-expanded={isDropdownVisible}
@@ -30,7 +30,7 @@ const Profile = () => {
               title="Profile"
               loading="lazy"
             />
-            <i className="fs-18 icon-min-width-18">
+            <i className="fs-18 icon-min-width-18 ml-1 ">
               <FaSortDown />
             </i>
           </div>
