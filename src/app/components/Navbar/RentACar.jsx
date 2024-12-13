@@ -18,7 +18,7 @@ const RentACar = () => {
         </button>
 
         <div
-          className="p-0 drop-item "
+          className="p-0 drop-item rounded-lg mt-2 "
           aria-labelledby="rent-car-dropdown-btn"
           data-toggle="dropdown"
           role="menu"

@@ -1,5 +1,5 @@
 import React from "react";
-
+import { MdKeyboardArrowDown } from "react-icons/md";
 const Faq = () => {
   return (
     <div class="container home-page-container-p-t flex-column mt-4">
@@ -26,7 +26,9 @@ const Faq = () => {
                   aria-controls="collapse_0_0_0"
                 >
                   <div class="d-flex icon-chevron-down-faqs p-1">
-                    <i class="fs-12 icon-chevron-down color-brand-accent"></i>
+                    <i class=" color-brand-accent">
+                      <MdKeyboardArrowDown />
+                    </i>
                   </div>
                   <h3 class="fs-lg-16 fs-14 line-height-25 color-shades-900 collapsed font-weight-normal">
                     What about parking availability?
@@ -60,7 +62,9 @@ const Faq = () => {
                   aria-controls="collapse_0_1_0"
                 >
                   <div class="d-flex icon-chevron-down-faqs p-1">
-                    <i class="fs-12 icon-chevron-down color-brand-accent"></i>
+                    <i class=" color-brand-accent">
+                      <MdKeyboardArrowDown />
+                    </i>
                   </div>
                   <h3 class="fs-lg-16 fs-14 line-height-25 color-shades-900 collapsed font-weight-normal">
                     On what schedule do you charge for the rental?
@@ -94,7 +98,9 @@ const Faq = () => {
                   aria-controls="collapse_0_2_0"
                 >
                   <div class="d-flex icon-chevron-down-faqs p-1">
-                    <i class="fs-12 icon-chevron-down color-brand-accent"></i>
+                    <i class=" color-brand-accent">
+                      <MdKeyboardArrowDown />
+                    </i>
                   </div>
                   <h3 class="fs-lg-16 fs-14 line-height-25 color-shades-900 collapsed font-weight-normal">
                     What can I expect to pay for car rentals in Dubai?
@@ -128,7 +134,9 @@ const Faq = () => {
                   aria-controls="collapse_0_3_0"
                 >
                   <div class="d-flex icon-chevron-down-faqs p-1">
-                    <i class="fs-12 icon-chevron-down color-brand-accent"></i>
+                    <i class=" color-brand-accent">
+                      <MdKeyboardArrowDown />
+                    </i>
                   </div>
                   <h3 class="fs-lg-16 fs-14 line-height-25 color-shades-900 collapsed font-weight-normal">
                     Can I rent a car from Dubai International Airport 24/7?
@@ -162,7 +170,9 @@ const Faq = () => {
                   aria-controls="collapse_0_4_0"
                 >
                   <div class="d-flex icon-chevron-down-faqs p-1">
-                    <i class="fs-12 icon-chevron-down color-brand-accent"></i>
+                    <i class=" color-brand-accent">
+                      <MdKeyboardArrowDown />
+                    </i>
                   </div>
                   <h3 class="fs-lg-16 fs-14 line-height-25 color-shades-900 collapsed font-weight-normal">
                     What types of cars are available to rent on the Renty.ae
@@ -198,7 +208,9 @@ const Faq = () => {
                   aria-controls="collapse_0_5_0"
                 >
                   <div class="d-flex icon-chevron-down-faqs p-1">
-                    <i class="fs-12 icon-chevron-down color-brand-accent"></i>
+                    <i class=" color-brand-accent">
+                      <MdKeyboardArrowDown />
+                    </i>
                   </div>
                   <h3 class="fs-lg-16 fs-14 line-height-25 color-shades-900 collapsed font-weight-normal">
                     Can I hire a car with a driver in Dubai?
@@ -232,7 +244,9 @@ const Faq = () => {
                   aria-controls="collapse_0_6_0"
                 >
                   <div class="d-flex icon-chevron-down-faqs p-1">
-                    <i class="fs-12 icon-chevron-down color-brand-accent"></i>
+                    <i class=" color-brand-accent">
+                      <MdKeyboardArrowDown />
+                    </i>
                   </div>
                   <h3 class="fs-lg-16 fs-14 line-height-25 color-shades-900 collapsed font-weight-normal">
                     Is there a minimum age requirement for car rental deals in
@@ -268,7 +282,9 @@ const Faq = () => {
                   aria-controls="collapse_0_7_0"
                 >
                   <div class="d-flex icon-chevron-down-faqs p-1">
-                    <i class="fs-12 icon-chevron-down color-brand-accent"></i>
+                    <i class=" color-brand-accent">
+                      <MdKeyboardArrowDown />
+                    </i>
                   </div>
                   <h3 class="fs-lg-16 fs-14 line-height-25 color-shades-900 collapsed font-weight-normal">
                     Will my personal information be shared with other companies?
@@ -303,7 +319,9 @@ const Faq = () => {
                   aria-controls="collapse_0_8_0"
                 >
                   <div class="d-flex icon-chevron-down-faqs p-1">
-                    <i class="fs-12 icon-chevron-down color-brand-accent"></i>
+                    <i class=" color-brand-accent">
+                      <MdKeyboardArrowDown />
+                    </i>
                   </div>
                   <h3 class="fs-lg-16 fs-14 line-height-25 color-shades-900 collapsed font-weight-normal">
                     How much does fuel cost in Dubai?
@@ -346,7 +364,9 @@ const Faq = () => {
                   aria-controls="collapse_0_0_1"
                 >
                   <div class="d-flex icon-chevron-down-faqs p-1">
-                    <i class="fs-12 icon-chevron-down color-brand-accent"></i>
+                    <i class=" color-brand-accent">
+                      <MdKeyboardArrowDown />
+                    </i>
                   </div>
                   <h3 class="fs-lg-16 fs-14 line-height-25 color-shades-900 collapsed font-weight-normal">
                     What standard car insurance coverage will I receive?
@@ -383,7 +403,9 @@ const Faq = () => {
                   aria-controls="collapse_0_1_1"
                 >
                   <div class="d-flex icon-chevron-down-faqs p-1">
-                    <i class="fs-12 icon-chevron-down color-brand-accent"></i>
+                    <i class=" color-brand-accent">
+                      <MdKeyboardArrowDown />
+                    </i>
                   </div>
                   <h3 class="fs-lg-16 fs-14 line-height-25 color-shades-900 collapsed font-weight-normal">
                     Can I rent a car from you without a security deposit?
@@ -414,7 +436,9 @@ const Faq = () => {
                   aria-controls="collapse_0_2_1"
                 >
                   <div class="d-flex icon-chevron-down-faqs p-1">
-                    <i class="fs-12 icon-chevron-down color-brand-accent"></i>
+                    <i class=" color-brand-accent">
+                      <MdKeyboardArrowDown />
+                    </i>
                   </div>
                   <h3 class="fs-lg-16 fs-14 line-height-25 color-shades-900 collapsed font-weight-normal">
                     Does your service cover life and health insurance?
@@ -448,7 +472,9 @@ const Faq = () => {
                   aria-controls="collapse_0_3_1"
                 >
                   <div class="d-flex icon-chevron-down-faqs p-1">
-                    <i class="fs-12 icon-chevron-down color-brand-accent"></i>
+                    <i class=" color-brand-accent">
+                      <MdKeyboardArrowDown />
+                    </i>
                   </div>
                   <h3 class="fs-lg-16 fs-14 line-height-25 color-shades-900 collapsed font-weight-normal">
                     At what point will my deposit be refunded?
@@ -482,7 +508,9 @@ const Faq = () => {
                   aria-controls="collapse_0_4_1"
                 >
                   <div class="d-flex icon-chevron-down-faqs p-1">
-                    <i class="fs-12 icon-chevron-down color-brand-accent"></i>
+                    <i class=" color-brand-accent">
+                      <MdKeyboardArrowDown />
+                    </i>
                   </div>
                   <h3 class="fs-lg-16 fs-14 line-height-25 color-shades-900 collapsed font-weight-normal">
                     Can I rent a car in Dubai without a security deposit?
@@ -515,7 +543,9 @@ const Faq = () => {
                   aria-controls="collapse_0_5_1"
                 >
                   <div class="d-flex icon-chevron-down-faqs p-1">
-                    <i class="fs-12 icon-chevron-down color-brand-accent"></i>
+                    <i class=" color-brand-accent">
+                      <MdKeyboardArrowDown />
+                    </i>
                   </div>
                   <h3 class="fs-lg-16 fs-14 line-height-25 color-shades-900 collapsed font-weight-normal">
                     Can I rent a car Dubai for AED 500 per day without a
