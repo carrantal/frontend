@@ -7796,3 +7796,2136 @@ header.header-hidden .popover .arrow {
 .icon-brand-rolls-Cadillac {
   background-image: url(https://static.wixstatic.com/media/a1488d_a69a67a4561e4c41a0535301b205384c~mv2.png/v1/fill/w_870,h_250,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/png-clipart-cadillac-logo-car-logo-cadillac-icons-logos-emojis-car-logos_edited.png);
 }
+@font-face {
+  font-display: block;
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/icomoon/1.0.0/fonts/icomoon.ttf")
+      format("truetype"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/icomoon/1.0.0/fonts/icomoon.woff")
+      format("woff"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/icomoon/1.0.0/fonts/icomoon.svg#icomoon")
+      format("svg");
+}
+
+[class*=" icon-"],
+[class^="icon-"] {
+  speak: never;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+}
+
+.icon-0-100:before {
+  content: "\e900";
+}
+
+.icon-24-7:before {
+  content: "\ea5b";
+}
+
+.icon-7:before {
+  content: "\ea20";
+}
+
+.icon-about-us-clients:before {
+  content: "\ea6e";
+}
+
+.icon-about-us-globe:before {
+  content: "\ea70";
+}
+
+.icon-about-us-grid:before {
+  content: "\ea71";
+}
+
+.icon-about-us-partners:before {
+  content: "\ea6f";
+}
+
+.icon-about-us-question:before {
+  content: "\ea72";
+}
+
+.icon-about-us-startup:before {
+  content: "\ea6d";
+}
+
+.icon-about-us-team:before {
+  content: "\ea6b";
+}
+
+.icon-about-us-who:before {
+  content: "\ea6c";
+}
+
+.icon-abs:before {
+  content: "\ea21";
+}
+
+.icon-activity:before {
+  content: "\e901";
+}
+
+.icon-airplay:before {
+  content: "\e902";
+}
+
+.icon-alert-circle:before {
+  content: "\e903";
+}
+
+.icon-alert-octagon:before {
+  content: "\e904";
+}
+
+.icon-alert-triangle:before {
+  content: "\e905";
+}
+
+.icon-align-center:before {
+  content: "\e906";
+}
+
+.icon-align-justify:before {
+  content: "\e907";
+}
+
+.icon-align-left:before {
+  content: "\e908";
+}
+
+.icon-align-right:before {
+  content: "\e909";
+}
+
+.icon-anchor:before {
+  content: "\e90a";
+}
+
+.icon-announcement-speaker:before {
+  content: "\e90b";
+}
+
+.icon-aperture:before {
+  content: "\e90c";
+}
+
+.icon-apps:before {
+  content: "\ea84";
+}
+
+.icon-archive:before {
+  content: "\e90d";
+}
+
+.icon-arrow-down:before {
+  content: "\e90e";
+}
+
+.icon-arrow-down-circle:before {
+  content: "\e90f";
+}
+
+.icon-arrow-down-left:before {
+  content: "\e910";
+}
+
+.icon-arrow-down-right:before {
+  content: "\e911";
+}
+
+.icon-arrow-left:before {
+  content: "\e912";
+}
+
+.icon-arrow-left-circle:before {
+  content: "\e913";
+}
+
+.icon-arrow-right:before {
+  content: "\e914";
+}
+
+.icon-arrow-right-circle:before {
+  content: "\e915";
+}
+
+.icon-arrow-up:before {
+  content: "\e916";
+}
+
+.icon-arrow-up-circle:before {
+  content: "\e917";
+}
+
+.icon-arrow-up-left:before {
+  content: "\e918";
+}
+
+.icon-arrow-up-right:before {
+  content: "\e919";
+}
+
+.icon-at-sign:before {
+  content: "\e91a";
+}
+
+.icon-award:before {
+  content: "\e91b";
+}
+
+.icon-bar-chart:before {
+  content: "\e91c";
+}
+
+.icon-bar-chart-2:before {
+  content: "\e91d";
+}
+
+.icon-battery:before {
+  content: "\e91e";
+}
+
+.icon-battery-charging:before {
+  content: "\e91f";
+}
+
+.icon-bed:before {
+  content: "\ea7d";
+}
+
+.icon-bed-double:before {
+  content: "\ea22";
+}
+
+.icon-bluetooth:before {
+  content: "\e920";
+}
+
+.icon-bodytype:before {
+  content: "\e921";
+}
+
+.icon-bold:before {
+  content: "\e923";
+}
+
+.icon-book:before {
+  content: "\e924";
+}
+
+.icon-book-open:before {
+  content: "\e925";
+}
+
+.icon-bookmark:before {
+  content: "\e926";
+}
+
+.icon-box:before {
+  content: "\e927";
+}
+
+.icon-brand-new:before {
+  content: "\ea23";
+}
+
+.icon-briefcase:before {
+  content: "\e928";
+}
+
+.icon-building:before {
+  content: "\ea82";
+}
+
+.icon-calendar:before {
+  content: "\e929";
+}
+
+.icon-calendar-check:before {
+  content: "\ea85";
+}
+
+.icon-camera:before {
+  content: "\e92a";
+}
+
+.icon-camera-off:before {
+  content: "\e92b";
+}
+
+.icon-carret---down:before {
+  content: "\e92c";
+}
+
+.icon-carret---left:before {
+  content: "\e92d";
+}
+
+.icon-carret---right:before {
+  content: "\e92e";
+}
+
+.icon-carret---up:before {
+  content: "\e92f";
+}
+
+.icon-cast:before {
+  content: "\e930";
+}
+
+.icon-check:before {
+  content: "\e931";
+}
+
+.icon-check-circle:before {
+  content: "\e932";
+}
+
+.icon-check-square:before {
+  content: "\e933";
+}
+
+.icon-chevron-down:before {
+  content: "\e934";
+}
+
+.icon-chevron-left:before {
+  content: "\e935";
+}
+
+.icon-chevron-right:before {
+  content: "\e936";
+}
+
+.icon-chevron-up:before {
+  content: "\e939";
+}
+
+.icon-chevrons-down:before {
+  content: "\e937";
+}
+
+.icon-chevrons-left:before {
+  content: "\e938";
+}
+
+.icon-chevrons-right:before {
+  content: "\e93a";
+}
+
+.icon-chevrons-up:before {
+  content: "\e93b";
+}
+
+.icon-childseat:before {
+  content: "\ea24";
+}
+
+.icon-chrome:before {
+  content: "\e93c";
+}
+
+.icon-circle:before {
+  content: "\e943";
+}
+
+.icon-circle-question-mark:before {
+  content: "\e940";
+}
+
+.icon-climate-control:before {
+  content: "\ea25";
+}
+
+.icon-clipboard:before {
+  content: "\e944";
+}
+
+.icon-clock:before {
+  content: "\e945";
+}
+
+.icon-clock-seven:before {
+  content: "\ea81";
+}
+
+.icon-cloud-drizzle:before {
+  content: "\e946";
+}
+
+.icon-cloud-lightning:before {
+  content: "\e947";
+}
+
+.icon-cloud-off:before {
+  content: "\e948";
+}
+
+.icon-cloud-rain:before {
+  content: "\e949";
+}
+
+.icon-cloud-snow:before {
+  content: "\e94a";
+}
+
+.icon-code:before {
+  content: "\e94b";
+}
+
+.icon-codepen:before {
+  content: "\e94c";
+}
+
+.icon-color:before {
+  content: "\e922";
+}
+
+.icon-command:before {
+  content: "\e94d";
+}
+
+.icon-compare:before {
+  content: "\e94e";
+}
+
+.icon-compass:before {
+  content: "\e94f";
+}
+
+.icon-convertible:before {
+  content: "\ea44";
+}
+
+.icon-copy:before {
+  content: "\e950";
+}
+
+.icon-corner-down-left:before {
+  content: "\e951";
+}
+
+.icon-corner-down-right:before {
+  content: "\e952";
+}
+
+.icon-corner-left-down:before {
+  content: "\e953";
+}
+
+.icon-corner-left-up:before {
+  content: "\e954";
+}
+
+.icon-corner-right-down:before {
+  content: "\e955";
+}
+
+.icon-corner-right-up:before {
+  content: "\e956";
+}
+
+.icon-corner-up-left:before {
+  content: "\e957";
+}
+
+.icon-corner-up-right:before {
+  content: "\e958";
+}
+
+.icon-coupe:before {
+  content: "\ea45";
+}
+
+.icon-couple:before {
+  content: "\ea27";
+}
+
+.icon-cpu:before {
+  content: "\e959";
+}
+
+.icon-credit-card:before {
+  content: "\e95a";
+}
+
+.icon-crop:before {
+  content: "\e95b";
+}
+
+.icon-crosshair:before {
+  content: "\e95c";
+}
+
+.icon-cruise:before {
+  content: "\ea2d";
+}
+
+.icon-cruise-control:before {
+  content: "\ea28";
+}
+
+.icon-customer-service:before {
+  content: "\ea29";
+}
+
+.icon-database:before {
+  content: "\e95d";
+}
+
+.icon-delete:before {
+  content: "\e95e";
+}
+
+.icon-delivery:before {
+  content: "\ea2a";
+}
+
+.icon-disc:before {
+  content: "\e95f";
+}
+
+.icon-dollar-sign:before {
+  content: "\e960";
+}
+
+.icon-download:before {
+  content: "\e961";
+}
+
+.icon-download-cloud:before {
+  content: "\e962";
+}
+
+.icon-driver:before {
+  content: "\ea2b";
+}
+
+.icon-droplet:before {
+  content: "\e963";
+}
+
+.icon-easy-booking:before {
+  content: "\ea50";
+}
+
+.icon-edit:before {
+  content: "\e964";
+}
+
+.icon-edit-2:before {
+  content: "\e965";
+}
+
+.icon-edit-3:before {
+  content: "\e966";
+}
+
+.icon-engine:before {
+  content: "\e93e";
+}
+
+.icon-evacuator-benefits-01:before {
+  content: "\ea73";
+}
+
+.icon-evacuator-benefits-02:before {
+  content: "\ea74";
+}
+
+.icon-evacuator-benefits-03:before {
+  content: "\ea75";
+}
+
+.icon-evacuator-benefits-04:before {
+  content: "\ea76";
+}
+
+.icon-evacuator-benefits-05:before {
+  content: "\ea77";
+}
+
+.icon-evacuator-benefits-06:before {
+  content: "\ea78";
+}
+
+.icon-evacuator-benefits-07:before {
+  content: "\ea79";
+}
+
+.icon-evacuator-benefits-08:before {
+  content: "\ea7a";
+}
+
+.icon-evacuator-benefits-09:before {
+  content: "\ea7b";
+}
+
+.icon-external-link:before {
+  content: "\e967";
+}
+
+.icon-eye:before {
+  content: "\e968";
+}
+
+.icon-eye-off:before {
+  content: "\e969";
+}
+
+.icon-facebook:before {
+  content: "\e96a";
+}
+
+.icon-family1:before {
+  content: "\ea5e";
+}
+
+.icon-fast-forward:before {
+  content: "\e96b";
+}
+
+.icon-feather:before {
+  content: "\e96c";
+}
+
+.icon-file:before {
+  content: "\e96d";
+}
+
+.icon-file-minus:before {
+  content: "\e96e";
+}
+
+.icon-file-plus:before {
+  content: "\e96f";
+}
+
+.icon-file-text:before {
+  content: "\e970";
+}
+
+.icon-film:before {
+  content: "\e971";
+}
+
+.icon-filter:before {
+  content: "\e972";
+}
+
+.icon-fishing:before {
+  content: "\ea2e";
+}
+
+.icon-flag:before {
+  content: "\e973";
+}
+
+.icon-flexible-price:before {
+  content: "\ea51";
+}
+
+.icon-fm-radio:before {
+  content: "\ea3d";
+}
+
+.icon-folder:before {
+  content: "\e974";
+}
+
+.icon-folder-minus:before {
+  content: "\e975";
+}
+
+.icon-folder-plus:before {
+  content: "\e976";
+}
+
+.icon-free-delivery:before {
+  content: "\ea52";
+}
+
+.icon-fuel:before {
+  content: "\e93f";
+}
+
+.icon-gcc-specs:before {
+  content: "\ea2f";
+}
+
+.icon-gift:before {
+  content: "\e977";
+}
+
+.icon-git-branch:before {
+  content: "\e978";
+}
+
+.icon-git-commit:before {
+  content: "\e979";
+}
+
+.icon-git-merge:before {
+  content: "\e97c";
+}
+
+.icon-git-pull-request:before {
+  content: "\e97d";
+}
+
+.icon-github:before {
+  content: "\e97a";
+}
+
+.icon-gitlab:before {
+  content: "\e97b";
+}
+
+.icon-globe:before {
+  content: "\e97e";
+}
+
+.icon-gps:before {
+  content: "\ea30";
+}
+
+.icon-grid:before {
+  content: "\e97f";
+}
+
+.icon-hard-drive:before {
+  content: "\e980";
+}
+
+.icon-hash:before {
+  content: "\e981";
+}
+
+.icon-hatchback:before {
+  content: "\ea46";
+}
+
+.icon-headphones:before {
+  content: "\e982";
+}
+
+.icon-heart:before {
+  content: "\e983";
+}
+
+.icon-helmet:before {
+  content: "\ea86";
+}
+
+.icon-help-circle:before {
+  content: "\e984";
+}
+
+.icon-home:before {
+  content: "\e985";
+}
+
+.icon-hp:before {
+  content: "\e941";
+}
+
+.icon-icon-calendar-check:before {
+  content: "\ea87";
+}
+
+.icon-idea-light-bulb:before {
+  content: "\e986";
+}
+
+.icon-image:before {
+  content: "\e987";
+}
+
+.icon-inbox:before {
+  content: "\e988";
+}
+
+.icon-info:before {
+  content: "\e989";
+}
+
+.icon-instagram:before {
+  content: "\e98a";
+}
+
+.icon-insurance:before {
+  content: "\ea31";
+}
+
+.icon-intercom-icon:before {
+  content: "\e98b";
+}
+
+.icon-interior-color:before {
+  content: "\e93d";
+}
+
+.icon-interior-color1:before {
+  content: "\e942";
+}
+
+.icon-italic:before {
+  content: "\e98c";
+}
+
+.icon-layers:before {
+  content: "\e98d";
+}
+
+.icon-layout:before {
+  content: "\e98e";
+}
+
+.icon-lcd-screens:before {
+  content: "\ea32";
+}
+
+.icon-leather-seats:before {
+  content: "\ea33";
+}
+
+.icon-lg-bag:before {
+  content: "\e98f";
+}
+
+.icon-life-buoy-help:before {
+  content: "\e990";
+}
+
+.icon-link:before {
+  content: "\e991";
+}
+
+.icon-link-2:before {
+  content: "\e992";
+}
+
+.icon-linkedin:before {
+  content: "\e993";
+}
+
+.icon-list:before {
+  content: "\e994";
+}
+
+.icon-live-support-agent-headset:before {
+  content: "\e995";
+}
+
+.icon-loader:before {
+  content: "\e996";
+}
+
+.icon-lock:before {
+  content: "\e997";
+}
+
+.icon-log-in:before {
+  content: "\e998";
+}
+
+.icon-log-out:before {
+  content: "\e999";
+}
+
+.icon-luggage:before {
+  content: "\ea34";
+}
+
+.icon-luxury:before {
+  content: "\ea47";
+}
+
+.icon-mail:before {
+  content: "\e99a";
+}
+
+.icon-maintaince:before {
+  content: "\ea61";
+}
+
+.icon-maintenance:before {
+  content: "\ea35";
+}
+
+.icon-map:before {
+  content: "\e99b";
+}
+
+.icon-map-pin:before {
+  content: "\e99c";
+}
+
+.icon-maximize:before {
+  content: "\e99d";
+}
+
+.icon-maximize-2:before {
+  content: "\e99e";
+}
+
+.icon-menu:before {
+  content: "\e99f";
+}
+
+.icon-message-circle:before {
+  content: "\e9a0";
+}
+
+.icon-message-square:before {
+  content: "\e9a1";
+}
+
+.icon-mic:before {
+  content: "\e9a2";
+}
+
+.icon-mic-off:before {
+  content: "\e9a3";
+}
+
+.icon-minimize:before {
+  content: "\e9a4";
+}
+
+.icon-minimize-2:before {
+  content: "\e9a5";
+}
+
+.icon-minivan:before {
+  content: "\ea48";
+}
+
+.icon-minus:before {
+  content: "\e9a6";
+}
+
+.icon-minus-circle:before {
+  content: "\e9a7";
+}
+
+.icon-minus-square:before {
+  content: "\e9a8";
+}
+
+.icon-mobile-app:before {
+  content: "\ea53";
+}
+
+.icon-money-bill:before {
+  content: "\ea80";
+}
+
+.icon-monitor:before {
+  content: "\e9a9";
+}
+
+.icon-moon:before {
+  content: "\e9aa";
+}
+
+.icon-more-horizontal:before {
+  content: "\e9ab";
+}
+
+.icon-more-vertical:before {
+  content: "\e9ac";
+}
+
+.icon-move:before {
+  content: "\e9ad";
+}
+
+.icon-music:before {
+  content: "\e9ae";
+}
+
+.icon-navigation:before {
+  content: "\e9af";
+}
+
+.icon-navigation-2:before {
+  content: "\e9b0";
+}
+
+.icon-notification-bell:before {
+  content: "\e9b1";
+}
+
+.icon-notification-bell-off:before {
+  content: "\e9b2";
+}
+
+.icon-octagon:before {
+  content: "\e9b3";
+}
+
+.icon-package:before {
+  content: "\e9b4";
+}
+
+.icon-paddle-shift:before {
+  content: "\ea37";
+}
+
+.icon-paperclip:before {
+  content: "\e9b5";
+}
+
+.icon-parking-sensors:before {
+  content: "\ea38";
+}
+
+.icon-party:before {
+  content: "\ea4e";
+}
+
+.icon-passengers:before {
+  content: "\ea39";
+}
+
+.icon-pause:before {
+  content: "\e9b6";
+}
+
+.icon-pause-circle:before {
+  content: "\e9b7";
+}
+
+.icon-payment-methods:before {
+  content: "\ea54";
+}
+
+.icon-percent:before {
+  content: "\e9b8";
+}
+
+.icon-phone:before {
+  content: "\e9b9";
+}
+
+.icon-phone-call:before {
+  content: "\e9ba";
+}
+
+.icon-phone-chat-message-sms:before {
+  content: "\e9bb";
+}
+
+.icon-phone-forwarded:before {
+  content: "\e9bc";
+}
+
+.icon-phone-incoming-3:before {
+  content: "\e9bd";
+}
+
+.icon-phone-missed:before {
+  content: "\e9be";
+}
+
+.icon-phone-off:before {
+  content: "\e9bf";
+}
+
+.icon-phone-outgoing:before {
+  content: "\e9c0";
+}
+
+.icon-pie-chart:before {
+  content: "\e9c1";
+}
+
+.icon-play:before {
+  content: "\e9c2";
+}
+
+.icon-play-circle:before {
+  content: "\e9c3";
+}
+
+.icon-plug:before {
+  content: "\e9c4";
+}
+
+.icon-plus:before {
+  content: "\e9c5";
+}
+
+.icon-plus-circle:before {
+  content: "\e9c6";
+}
+
+.icon-plus-square:before {
+  content: "\e9c7";
+}
+
+.icon-pocket:before {
+  content: "\e9c8";
+}
+
+.icon-popular:before {
+  content: "\ea3a";
+}
+
+.icon-power:before {
+  content: "\e9c9";
+}
+
+.icon-power-door-locks:before {
+  content: "\ea3b";
+}
+
+.icon-power-mirrors:before {
+  content: "\ea3c";
+}
+
+.icon-printer:before {
+  content: "\e9ca";
+}
+
+.icon-radio:before {
+  content: "\e9cb";
+}
+
+.icon-reasonable-price:before {
+  content: "\ea3e";
+}
+
+.icon-refresh-ccw:before {
+  content: "\e9cc";
+}
+
+.icon-refresh-cw:before {
+  content: "\e9cd";
+}
+
+.icon-repeat:before {
+  content: "\e9ce";
+}
+
+.icon-reverse-camera:before {
+  content: "\ea3f";
+}
+
+.icon-rewind:before {
+  content: "\e9cf";
+}
+
+.icon-rotate-ccw:before {
+  content: "\e9d0";
+}
+
+.icon-rotate-cw:before {
+  content: "\e9d1";
+}
+
+.icon-rss:before {
+  content: "\e9d2";
+}
+
+.icon-ruler:before {
+  content: "\ea7e";
+}
+
+.icon-save:before {
+  content: "\e9d3";
+}
+
+.icon-scissors:before {
+  content: "\e9d4";
+}
+
+.icon-search:before {
+  content: "\e9d5";
+}
+
+.icon-seat:before {
+  content: "\e9d6";
+}
+
+.icon-seats:before {
+  content: "\e9d7";
+}
+
+.icon-security-deposit:before {
+  content: "\ea55";
+}
+
+.icon-sedan:before {
+  content: "\ea49";
+}
+
+.icon-send:before {
+  content: "\e9d8";
+}
+
+.icon-server:before {
+  content: "\e9d9";
+}
+
+.icon-settings:before {
+  content: "\e9da";
+}
+
+.icon-share:before {
+  content: "\e9db";
+}
+
+.icon-share-2:before {
+  content: "\e9dc";
+}
+
+.icon-shield:before {
+  content: "\e9dd";
+}
+
+.icon-shield-check:before {
+  content: "\ea83";
+}
+
+.icon-shield-off:before {
+  content: "\e9de";
+}
+
+.icon-ship:before {
+  content: "\ea7c";
+}
+
+.icon-shopping-bag:before {
+  content: "\e9df";
+}
+
+.icon-shopping-cart:before {
+  content: "\e9e0";
+}
+
+.icon-shuffle:before {
+  content: "\e9e1";
+}
+
+.icon-sidebar:before {
+  content: "\e9e2";
+}
+
+.icon-sightseeing:before {
+  content: "\ea4f";
+}
+
+.icon-skip-back:before {
+  content: "\e9e3";
+}
+
+.icon-skip-forward:before {
+  content: "\e9e4";
+}
+
+.icon-slack:before {
+  content: "\e9e5";
+}
+
+.icon-slash:before {
+  content: "\e9e6";
+}
+
+.icon-sliders:before {
+  content: "\e9e7";
+}
+
+.icon-sm-bag:before {
+  content: "\e9e8";
+}
+
+.icon-smartphone:before {
+  content: "\e9e9";
+}
+
+.icon-sort:before {
+  content: "\e9ea";
+}
+
+.icon-speaker:before {
+  content: "\e9eb";
+}
+
+.icon-speed:before {
+  content: "\e9ec";
+}
+
+.icon-sportcars:before {
+  content: "\ea4a";
+}
+
+.icon-square:before {
+  content: "\e9ed";
+}
+
+.icon-star:before {
+  content: "\e9ee";
+}
+
+.icon-star-filled:before {
+  content: "\ea64";
+}
+
+.icon-stereo-mp3:before {
+  content: "\ea36";
+}
+
+.icon-stop-circle:before {
+  content: "\e9ef";
+}
+
+.icon-stopwatch:before {
+  content: "\ea26";
+}
+
+.icon-sun:before {
+  content: "\e9f0";
+}
+
+.icon-sunrise:before {
+  content: "\e9f1";
+}
+
+.icon-sunset:before {
+  content: "\e9f2";
+}
+
+.icon-support-agents:before {
+  content: "\ea69";
+}
+
+.icon-support-companies:before {
+  content: "\ea6a";
+}
+
+.icon-suv:before {
+  content: "\ea4b";
+}
+
+.icon-tablet:before {
+  content: "\e9f3";
+}
+
+.icon-tag:before {
+  content: "\e9f4";
+}
+
+.icon-target:before {
+  content: "\e9f5";
+}
+
+.icon-terminal:before {
+  content: "\e9f6";
+}
+
+.icon-terms-icon-01:before {
+  content: "\ea65";
+}
+
+.icon-terms-icon-02:before {
+  content: "\ea66";
+}
+
+.icon-terms-icon-03:before {
+  content: "\ea67";
+}
+
+.icon-terms-icon-04:before {
+  content: "\ea68";
+}
+
+.icon-thermometer:before {
+  content: "\e9f7";
+}
+
+.icon-thumbs-down:before {
+  content: "\e9f8";
+}
+
+.icon-thumbs-up:before {
+  content: "\e9f9";
+}
+
+.icon-time:before {
+  content: "\ea40";
+}
+
+.icon-toggle-left:before {
+  content: "\e9fa";
+}
+
+.icon-toggle-right:before {
+  content: "\e9fb";
+}
+
+.icon-transmission:before {
+  content: "\e9fc";
+}
+
+.icon-transmission1:before {
+  content: "\ea57";
+}
+
+.icon-trash:before {
+  content: "\e9fd";
+}
+
+.icon-trash-2:before {
+  content: "\e9fe";
+}
+
+.icon-trending-down:before {
+  content: "\e9ff";
+}
+
+.icon-trending-up:before {
+  content: "\ea00";
+}
+
+.icon-triangle:before {
+  content: "\ea01";
+}
+
+.icon-truck:before {
+  content: "\ea02";
+}
+
+.icon-trunk:before {
+  content: "\ea41";
+}
+
+.icon-tv:before {
+  content: "\ea03";
+}
+
+.icon-twitter:before {
+  content: "\ea04";
+}
+
+.icon-type:before {
+  content: "\ea05";
+}
+
+.icon-umbrella:before {
+  content: "\ea06";
+}
+
+.icon-underline:before {
+  content: "\ea07";
+}
+
+.icon-uniE93B:before {
+  content: "\ea08";
+}
+
+.icon-uniE93C:before {
+  content: "\ea09";
+}
+
+.icon-uniE93D:before {
+  content: "\ea0a";
+}
+
+.icon-uniE93E:before {
+  content: "\ea0b";
+}
+
+.icon-uniE93F:before {
+  content: "\ea0c";
+}
+
+.icon-uniE941:before {
+  content: "\ea0d";
+}
+
+.icon-uniE942:before {
+  content: "\ea0e";
+}
+
+.icon-uniE9E8:before {
+  content: "\ea0f";
+}
+
+.icon-uniE9E9:before {
+  content: "\ea10";
+}
+
+.icon-unlock:before {
+  content: "\ea11";
+}
+
+.icon-upload:before {
+  content: "\ea12";
+}
+
+.icon-upload-cloud:before {
+  content: "\ea13";
+}
+
+.icon-usb:before {
+  content: "\ea42";
+}
+
+.icon-user:before {
+  content: "\ea14";
+}
+
+.icon-user-check:before {
+  content: "\ea15";
+}
+
+.icon-user-minus:before {
+  content: "\ea16";
+}
+
+.icon-user-plus:before {
+  content: "\ea17";
+}
+
+.icon-user-square:before {
+  content: "\ea7f";
+}
+
+.icon-user-x:before {
+  content: "\ea18";
+}
+
+.icon-users:before {
+  content: "\ea19";
+}
+
+.icon-van:before {
+  content: "\ea4c";
+}
+
+.icon-vehicle:before {
+  content: "\ea43";
+}
+
+.icon-vehicle-condition:before {
+  content: "\ea56";
+}
+
+.icon-video:before {
+  content: "\ea1a";
+}
+
+.icon-video-off:before {
+  content: "\ea1b";
+}
+
+.icon-vip:before {
+  content: "\ea4d";
+}
+
+.icon-voicemail:before {
+  content: "\ea1c";
+}
+
+.icon-volume:before {
+  content: "\ea1d";
+}
+
+.icon-volume-1:before {
+  content: "\ea1e";
+}
+
+.icon-volume-2:before {
+  content: "\ea1f";
+}
+
+.icon-volume-x:before {
+  content: "\ea58";
+}
+
+.icon-watch:before {
+  content: "\ea59";
+}
+
+.icon-whatsapp:before {
+  content: "\ea2c";
+}
+
+.icon-wheels:before {
+  content: "\ea88";
+}
+
+.icon-wifi:before {
+  content: "\ea8a";
+}
+
+.icon-wifi-off:before {
+  content: "\ea8b";
+}
+
+.icon-wind:before {
+  content: "\ea8c";
+}
+
+.icon-x:before {
+  content: "\ea8d";
+}
+
+.icon-x-circle:before {
+  content: "\ea8e";
+}
+
+.icon-x-square:before {
+  content: "\ea8f";
+}
+
+.icon-year:before {
+  content: "\ea90";
+}
+
+.icon-youtube:before {
+  content: "\ea92";
+}
+
+.icon-zap:before {
+  content: "\ea93";
+}
+
+.icon-zap-off:before {
+  content: "\ea94";
+}
+
+.icon-zoom-in:before {
+  content: "\ea95";
+}
+
+.icon-zoom-out:before {
+  content: "\ea96";
+}
+
+@font-face {
+  font-display: block;
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  /* src: url(fonts/icomoon.woff2?epuelr) format("woff2"),
+    url(fonts/icomoon.ttf?epuelr) format("truetype"),
+    url(fonts/icomoon.woff?epuelr) format("woff"); */
+}
+.company-review-section {
+  gap: 5px;
+  width: 100%;
+}
+
+.company-review-section.border-left-company-logo {
+  border-left: 1px solid #ebedf2;
+}
+
+.company-review-section.border-right-company-logo {
+  border-right: 1px solid #ebedf2;
+}
+
+@media (max-width: 768px) {
+  .company-review-section {
+    gap: 5px;
+    width: 50%;
+  }
+}
+
+.company-review-section .company-review-icons-block {
+  min-height: 35px;
+}
+
+@media (max-width: 768px) {
+  .company-review-section .company-review-icons-block {
+    min-height: 24px;
+  }
+}
+
+.company-review-section .company-review-icons-block .company-icon {
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+  border-radius: 30px;
+  height: 28px;
+  width: 28px;
+}
+
+@media (max-width: 768px) {
+  .company-review-section .company-review-icons-block .company-icon {
+    background-size: 19.2px 19.2px;
+    height: 19.2px;
+    width: 19.2px;
+  }
+}
+
+.company-review-section .company-review-icons-block .company-review-icon img {
+  height: 35px;
+  width: 189px;
+}
+
+@media (max-width: 768px) {
+  .company-review-section .company-review-icons-block .company-review-icon img {
+    height: 24px;
+    width: 129.6px;
+  }
+}
+
+.company-review-section .company-review-statistics-block {
+  gap: 11px;
+  height: 35px;
+}
+
+@media (max-width: 768px) {
+  .company-review-section .company-review-statistics-block {
+    gap: 5px;
+    height: 30px;
+  }
+}
+
+.company-review-section .company-review-statistics-block .company-review-score {
+  font-size: 24px;
+  line-height: 35px;
+}
+
+@media (max-width: 768px) {
+  .company-review-section
+    .company-review-statistics-block
+    .company-review-score {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.company-review-section
+  .company-review-statistics-block
+  .trustpilot-icons-block {
+  gap: 3px;
+}
+
+@media (max-width: 768px) {
+  .company-review-section
+    .company-review-statistics-block
+    .trustpilot-icons-block {
+    gap: 2px;
+  }
+}
+
+.company-review-section .company-review-statistics-block .icon-star-filled {
+  height: 24px;
+  width: 24px;
+}
+
+@media (max-width: 768px) {
+  .company-review-section .company-review-statistics-block .icon-star-filled {
+    font-size: 20px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .company-review-section
+    .company-review-statistics-block
+    .company-review-amount {
+    display: none;
+  }
+}
+
+.company-review-section.mobile {
+  gap: 5px;
+  padding: 10px !important;
+  width: 50%;
+}
+
+.company-review-section.mobile .company-review-icons-block {
+  min-height: 24px;
+}
+
+.company-review-section.mobile .company-review-icons-block .company-icon {
+  background-size: 19.2px 19.2px;
+  height: 19.2px;
+  margin-right: 5px !important;
+  width: 19.2px;
+}
+
+.company-review-section.mobile
+  .company-review-icons-block
+  .company-review-icon
+  img {
+  height: 24px;
+  width: 129.6px;
+}
+
+.company-review-section.mobile .company-review-statistics-block {
+  gap: 5px;
+  height: 30px;
+}
+
+.company-review-section.mobile
+  .company-review-statistics-block
+  .company-review-stars-block {
+  padding-bottom: 0 !important;
+}
+
+.company-review-section.mobile
+  .company-review-statistics-block
+  .company-review-score {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.company-review-section.mobile
+  .company-review-statistics-block
+  .trustpilot-icons-block {
+  gap: 2px;
+}
+
+.company-review-section.mobile
+  .company-review-statistics-block
+  .icon-star-filled {
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
+}
+
+.company-review-section.mobile
+  .company-review-statistics-block
+  .company-review-amount {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+@media (max-width: 768px) {
+  .company-review-section.mobile
+    .company-review-statistics-block
+    .company-review-amount {
+    display: block !important;
+  }
+}
+@media (max-width: 576px) {
+  .hourly-offers-section {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+.hourly-offers-section .hourly-offers-container {
+  background-image: url(/assets-nd/images/special-offers-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 460px;
+}
+
+@media (min-width: 768px) {
+  .hourly-offers-section .hourly-offers-container {
+    border-radius: 15px;
+    padding: 40px 45px 65px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hourly-offers-section .hourly-offers-container {
+    padding: 40px 40px 65px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hourly-offers-section .hourly-offers-container {
+    border-radius: 0;
+    height: 387px;
+    padding: 30px;
+  }
+}
+
+.hourly-offers-section .hourly-offers-container .hourly-offers-container-title {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+@media (max-width: 768px) {
+  .hourly-offers-section
+    .hourly-offers-container
+    .hourly-offers-container-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hourly-offers-section
+    .hourly-offers-container
+    .hourly-offers-container-title {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+
+@media (min-width: 576px) {
+  .hourly-offers-section
+    .hourly-offers-container
+    .hourly-offers-container-sub-title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hourly-offers-section
+    .hourly-offers-container
+    .hourly-offers-container-sub-title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+}
+
+.hourly-offers-section .hourly-offers-container .view-all-hourly {
+  gap: 8px;
+  height: 40px;
+  padding: 0 12px 0 20px;
+}
+
+.hourly-offers-section .hourly-offers-container .view-all-hourly:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .hourly-offers-section .hourly-offers-container .view-all-hourly {
+    height: unset;
+    padding: 5px 12px 5px 20px;
+  }
+}
+
+.hourly-offers-section .hourly-offers-container .mobile-view-all-hourly {
+  gap: 5px;
+  height: 40px;
+  padding: 10px 10px 10px 20px;
+}
+
+.hourly-offers-section .hourly-offers-container .mobile-view-all-hourly:hover {
+  color: #fff !important;
+}
+
+.hourly-offers-section
+  .hourly-offers-container
+  .mobile-view-all-hourly
+  .view-all-text {
+  width: 90%;
+}
+
+.hourly-offers-section
+  .hourly-offers-container
+  .mobile-view-all-hourly
+  .icon-chevron-right,
+.hourly-offers-section
+  .hourly-offers-container
+  .view-all-hourly
+  .icon-chevron-right {
+  height: 20px;
+  width: 20px;
+}
+
+@media (max-width: 576px) {
+  .hourly-offers-section
+    .hourly-offers-container
+    .mobile-view-all-hourly
+    .icon-chevron-right,
+  .hourly-offers-section
+    .hourly-offers-container
+    .view-all-hourly
+    .icon-chevron-right {
+    height: 16px;
+    width: 16px;
+  }
+}
+
+.hourly-offers-section
+  .hourly-offers-container
+  .mobile-view-all-hourly
+  .icon-chevron-right,
+.hourly-offers-section
+  .hourly-offers-container
+  .view-all-hourly
+  .icon-chevron-right {
+  left: unset;
+  right: 0;
+}
+
+.hourly-offers-slider {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+@media (min-width: 576px) {
+  .hourly-offers-slider .hourly-offer-card-first-visible:after {
+    animation: fadeIn 0.75s ease-in-out forwards;
+    background: linear-gradient(90deg, #f7f8fa 0, rgba(247, 248, 250, 0));
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  .hourly-offers-slider .hourly-offer-card-last-visible:after {
+    animation: fadeIn 0.75s ease-in-out forwards;
+    background: linear-gradient(270deg, #f7f8fa 0, rgba(247, 248, 250, 0));
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  .hourly-offers-slider .hourly-offer-arrow {
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.059);
+    height: 40px;
+    max-height: 40px;
+    max-width: 40px;
+    width: 40px;
+  }
+
+  .hourly-offers-slider .hourly-offer-arrow-left {
+    left: -25px;
+    top: 28.5%;
+    z-index: 10;
+  }
+
+  .hourly-offers-slider .hourly-offer-arrow-right {
+    right: 0;
+    top: 28.5%;
+    z-index: 10;
+  }
+}
+
+.hourly-offers-slider .swiper-wrapper .hourly-offer-card {
+  padding: 5px;
+}
+
+@media (min-width: 576px) {
+  .hourly-offers-slider .swiper-wrapper .hourly-offer-card {
+    gap: 10px;
+    position: relative;
+  }
+}
+
+@media (max-width: 576px) {
+  .hourly-offers-slider .swiper-wrapper .hourly-offer-card {
+    gap: 5px;
+  }
+}
+
+.hourly-offers-slider .swiper-wrapper .hourly-offer-card .hourly-offer-pin {
+  background-color: #009fe2;
+  bottom: 82px;
+  left: 10px;
+}
+
+@media (max-width: 576px) {
+  .hourly-offers-slider .swiper-wrapper .hourly-offer-card .hourly-offer-pin {
+    bottom: 59px;
+  }
+}
+
+.hourly-offers-slider
+  .swiper-wrapper
+  .hourly-offer-card
+  .hourly-offer-slider-image {
+  height: 180px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  transition: transform 0.2s ease;
+}
+
+@media (max-width: 576px) {
+  .hourly-offers-slider
+    .swiper-wrapper
+    .hourly-offer-card
+    .hourly-offer-slider-image {
+    height: 140px;
+  }
+}
+
+@media (min-width: 576px) {
+  .hourly-offers-slider
+    .swiper-wrapper
+    .hourly-offer-card:hover
+    .hourly-offer-slider-image {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+
+  .hourly-offers-slider
+    .swiper-wrapper
+    .hourly-offer-card
+    .hourly-offer-slider-footer {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hourly-offers-slider
+    .swiper-wrapper
+    .hourly-offer-card
+    .hourly-offer-slider-footer {
+    gap: 5px;
+  }
+}
+
+.hourly-offers-slider
+  .swiper-wrapper
+  .hourly-offer-card
+  .hourly-offer-slider-footer
+  .price-per-hour-block {
+  gap: 5px;
+}
+
+.hourly-offers-slider
+  .swiper-wrapper
+  .hourly-offer-card
+  .hourly-offer-slider-footer
+  .price-per-hour-block
+  .hourly-card-main-price {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+@media (max-width: 576px) {
+  .hourly-offers-slider
+    .swiper-wrapper
+    .hourly-offer-card
+    .hourly-offer-slider-footer
+    .price-per-hour-block
+    .hourly-card-main-price {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

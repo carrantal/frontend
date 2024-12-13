@@ -6,6 +6,8 @@ import Search from "../Search/Search";
 import Categories from "../Catergories/Categories";
 import Brands from "../Brands/Brands";
 import CarImsges from "../CarImsges";
+import WhyRentus from "../WhyRentUs/WhyRentus";
+import OffSale from "../OffSale/OffSale";
 
 const Header = () => {
   return (
@@ -1862,6 +1864,7 @@ const Header = () => {
                   Special offers
                 </span>
               </div>
+
               <div className="modal-body p-3 bg-white flex-grow-1">
                 <a
                   className="nav-link"
@@ -3869,8 +3872,10 @@ const Header = () => {
       </div>
 
       <CarImsges />
+      <WhyRentus />
       <CarImsges />
       <CarImsges />
+      <OffSale />
       <CarImsges />
     </>
   );

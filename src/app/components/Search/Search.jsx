@@ -10,7 +10,7 @@ const Search = () => {
           id="mainSearch"
         >
           <div className="d-flex bg-shades-white flex-grow-1 align-items-center mr-lg-2 rounded-small pl-3 position-relative">
-            <span className="fs-18 icon-search-input icon-search color-shades-500 mr-2">
+            <span className="fs-18 icon-search-input color-shades-500 mr-2">
               <CiSearch />
             </span>
 
@@ -30,81 +30,6 @@ const Search = () => {
                 id="eac-container-car_search_input"
               >
                 <ul></ul>
-              </div>
-            </div>
-
-            <button
-              className="btn btn-medium btn-cleared btn-clear-main-search"
-              // style="display: none"
-              type="button"
-            >
-              <span className="fs-16 icon-x"></span>
-            </button>
-            <div className="align-items-center default-dropdown-container d-none d-lg-flex">
-              <div
-                aria-labelledby="cities-dropdown-btn"
-                className="dropdown-menu default-dropdown default-city-dropdown dropdown-menu-left dropdown-city-location-switcher-header home-search-dropdown home-location-dropdown dropdown-menu-without-arrow"
-              >
-                <span
-                  className="dropdown-item fs-12 text-truncate disabled"
-                  data-city-slug="dubai"
-                >
-                  <img
-                    src="./Rent a Car in Dubai, Car Rental Service - Renty.ae_files/ae(1).svg"
-                    alt="location-icon"
-                    height="12"
-                    width="12"
-                    title="Dubai"
-                    className="mr-1 city-menu-icon"
-                    loading="lazy"
-                  />
-                  Dubai
-                </span>
-                <span
-                  className="dropdown-item fs-12 text-truncate"
-                  data-city-slug="abu-dhabi"
-                >
-                  <img
-                    src="./Rent a Car in Dubai, Car Rental Service - Renty.ae_files/ae(1).svg"
-                    alt="location-icon"
-                    height="12"
-                    title="Dubai"
-                    width="12"
-                    className="mr-1 city-menu-icon"
-                    loading="lazy"
-                  />
-                  Abu Dhabi
-                </span>
-                <span
-                  className="dropdown-item fs-12 text-truncate"
-                  data-city-slug="sharjah"
-                >
-                  <img
-                    src="./Rent a Car in Dubai, Car Rental Service - Renty.ae_files/ae(1).svg"
-                    alt="location-icon"
-                    height="12"
-                    title="Dubai"
-                    width="12"
-                    className="mr-1 city-menu-icon"
-                    loading="lazy"
-                  />
-                  Sharjah
-                </span>
-                <span
-                  className="dropdown-item fs-12 text-truncate"
-                  data-city-slug="ras-al-khaimah"
-                >
-                  <img
-                    src="./Rent a Car in Dubai, Car Rental Service - Renty.ae_files/ae(1).svg"
-                    alt="location-icon"
-                    height="12"
-                    title="Dubai"
-                    width="12"
-                    className="mr-1 city-menu-icon"
-                    loading="lazy"
-                  />
-                  Ras Al Khaimah
-                </span>
               </div>
             </div>
           </div>
