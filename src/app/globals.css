@@ -13321,3 +13321,9 @@ header.header-hidden .popover .arrow {
     transform: translateY(0);
   }
 }
+@media (max-width: 768px) {
+  .home-page-container-p-t {
+    padding-top: 30px;
+    overflow: auto;
+  }
+}

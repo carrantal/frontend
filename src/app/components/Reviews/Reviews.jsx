@@ -41,7 +41,7 @@ const Reviews = () => {
           <h2 className="fs-lg-30 lh-lg-40 fs-24 lh-35 font-weight-semibold color-shades-900">
             Rent a car reviews
           </h2>
-          <div className="d-flex flex-row">
+          <div className="d-flex flex-row ">
             <div
               className="d-flex new-review-prev color-brand-primary swiper-button-disabled disabled"
               tabIndex="-1"

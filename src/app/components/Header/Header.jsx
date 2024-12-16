@@ -82,7 +82,6 @@ const Header = () => {
                 <CiSearch />
               </span>
             </button>
-
             {/* Logo */}
             <div className="d-flex mx-auto">
               <a
@@ -453,6 +452,7 @@ const Header = () => {
 
           <Categories />
         </div>
+        <div className="mt-4"></div>
         <Brands />
       </div>
 
