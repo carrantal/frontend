@@ -11,7 +11,7 @@ export default function CarImsges() {
           </span>
           <a
             className="color-brand-primary d-sm-flex d-none align-items-center desc-section-see-all-btn rounded-small pl-3 pr-2 py-2"
-            href="https://renty.ae/all-special-offers"
+            href="/"
           >
             <span className="see-all-btn-text fs-13 font-weight-bold lh-20 letter-spacing-0_2 text-uppercase">
               All special offers
@@ -51,10 +51,7 @@ export default function CarImsges() {
                   🌟 NEW ARRIVALS
                 </span>
               </div>
-              <a
-                href="https://renty.ae/cars/mini-cooper/5568/detail"
-                title="Hiring Mini Cooper (Blue), 2024 in Dubai"
-              >
+              <a href="/" title="Hiring Mini Cooper (Blue), 2024 in Dubai">
                 <div className="cars-slider-header position-relative">
                   <div className="d-flex overflow-hidden rounded-medium position-relative img-block-to-hover">
                     <img
@@ -103,10 +100,7 @@ export default function CarImsges() {
                   🌟 NEW ARRIVALS
                 </span>
               </div>
-              <a
-                href="https://renty.ae/cars/mini-cooper/5568/detail"
-                title="Hiring Mini Cooper (Blue), 2024 in Dubai"
-              >
+              <a href="/" title="Hiring Mini Cooper (Blue), 2024 in Dubai">
                 <div className="cars-slider-header position-relative">
                   <div className="d-flex overflow-hidden rounded-medium position-relative img-block-to-hover">
                     <img
@@ -155,10 +149,7 @@ export default function CarImsges() {
                   🌟 NEW ARRIVALS
                 </span>
               </div>
-              <a
-                href="https://renty.ae/cars/mini-cooper/5568/detail"
-                title="Hiring Mini Cooper (Blue), 2024 in Dubai"
-              >
+              <a href="/" title="Hiring Mini Cooper (Blue), 2024 in Dubai">
                 <div className="cars-slider-header position-relative">
                   <div className="d-flex overflow-hidden rounded-medium position-relative img-block-to-hover">
                     <img
@@ -207,10 +198,7 @@ export default function CarImsges() {
                   🌟 NEW ARRIVALS
                 </span>
               </div>
-              <a
-                href="https://renty.ae/cars/mini-cooper/5568/detail"
-                title="Hiring Mini Cooper (Blue), 2024 in Dubai"
-              >
+              <a href="/" title="Hiring Mini Cooper (Blue), 2024 in Dubai">
                 <div className="cars-slider-header position-relative">
                   <div className="d-flex overflow-hidden rounded-medium position-relative img-block-to-hover">
                     <img
@@ -240,7 +228,7 @@ export default function CarImsges() {
         <div className="d-sm-none d-flex mt-3">
           <a
             className="d-flex align-items-center w-100 mobile-section-see-all-btn rounded-small bg-shades-white py-3 position-relative"
-            href="https://renty.ae/all-special-offers"
+            href="/"
           >
             <span className="fs-12 font-weight-bold lh-20 letter-spacing-0_2 text-uppercase text-center w-100 position-absolute">
               All special offers

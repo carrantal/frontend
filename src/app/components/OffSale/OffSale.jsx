@@ -21,7 +21,7 @@ const OffSale = () => {
       imageSrcSet:
         "https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/white_rolls-royce-cullinan_2019_3835_main_8d32bc33a3e35240595cb9db317296ab.jpg 2x",
       altText: "Rolls Royce Cullinan (White), 2019 for rent in Dubai",
-      href: "https://renty.ae/cars/rolls-royce-cullinan/3835/special",
+      href: "/",
     },
     {
       id: 2,
@@ -34,7 +34,7 @@ const OffSale = () => {
       imageSrcSet:
         "https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/white_rolls-royce-cullinan_2019_3835_main_8d32bc33a3e35240595cb9db317296ab.jpg 2x",
       altText: "Rolls Royce Cullinan (White), 2019 for rent in Dubai",
-      href: "https://renty.ae/cars/rolls-royce-cullinan/3835/special",
+      href: "/",
     },
     {
       id: 2,
@@ -47,7 +47,7 @@ const OffSale = () => {
       imageSrcSet:
         "https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/white_rolls-royce-cullinan_2019_3835_main_8d32bc33a3e35240595cb9db317296ab.jpg 2x",
       altText: "Rolls Royce Cullinan (White), 2019 for rent in Dubai",
-      href: "https://renty.ae/cars/rolls-royce-cullinan/3835/special",
+      href: "/",
     },
     {
       id: 2,
@@ -60,7 +60,7 @@ const OffSale = () => {
       imageSrcSet:
         "https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/white_rolls-royce-cullinan_2019_3835_main_8d32bc33a3e35240595cb9db317296ab.jpg 2x",
       altText: "Rolls Royce Cullinan (White), 2019 for rent in Dubai",
-      href: "https://renty.ae/cars/rolls-royce-cullinan/3835/special",
+      href: "/",
     },
     {
       id: 2,
@@ -73,7 +73,7 @@ const OffSale = () => {
       imageSrcSet:
         "https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/white_rolls-royce-cullinan_2019_3835_main_8d32bc33a3e35240595cb9db317296ab.jpg 2x",
       altText: "Rolls Royce Cullinan (White), 2019 for rent in Dubai",
-      href: "https://renty.ae/cars/rolls-royce-cullinan/3835/special",
+      href: "/",
     },
   ];
 
@@ -98,7 +98,7 @@ const OffSale = () => {
             </div>
             <a
               className="color-shades-white bg-brand-primary d-sm-flex d-none align-items-center rounded-small view-all-hourly"
-              href="https://renty.ae/hourly-car-rental"
+              href="/"
               title="Hourly rental"
             >
               <span className="fs-14 font-weight-bold lh-20 letter-spacing-0_2 text-uppercase">

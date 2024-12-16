@@ -18,7 +18,7 @@ const Categories = () => {
             >
               <a
                 className="bg-brand-primary d-flex flex-column align-items-center rounded-small home-page-slide-car-type"
-                href="https://renty.ae/types/luxury"
+                href="/"
               >
                 <img
                   src="https://renty.ae/assets-nd/icons/desc-car-types/luxury.svg"
@@ -38,7 +38,7 @@ const Categories = () => {
             >
               <a
                 className="bg-brand-primary d-flex flex-column align-items-center rounded-small home-page-slide-car-type"
-                href="https://renty.ae/types/economy-cars"
+                href="/"
               >
                 <img
                   src="https://renty.ae/assets-nd/icons/desc-car-types/economy-cars.svg"
@@ -58,7 +58,7 @@ const Categories = () => {
             >
               <a
                 className="bg-brand-primary d-flex flex-column align-items-center rounded-small home-page-slide-car-type"
-                href="https://renty.ae/types/sport"
+                href="/"
               >
                 <img
                   src="https://renty.ae/assets-nd/icons/desc-car-types/economy-cars.svg"
@@ -78,7 +78,7 @@ const Categories = () => {
             >
               <a
                 className="bg-brand-primary d-flex flex-column align-items-center rounded-small home-page-slide-car-type"
-                href="https://renty.ae/body-types/suv"
+                href="/"
               >
                 <img
                   src="https://renty.ae/assets-nd/icons/desc-car-types/economy-cars.svg"

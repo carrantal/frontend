@@ -35,63 +35,63 @@ const RentACar = () => {
               <div className="d-flex flex-column mt-2">
                 <a
                   className="dropdown-item rounded-small fs-14 color-shades-black px-2"
-                  href="https://renty.ae/popular-car-rental"
+                  href="/"
                   title="Popular car rental"
                 >
                   Popular car rental
                 </a>
                 <a
                   className="dropdown-item rounded-small fs-14 color-shades-black px-2"
-                  href="https://renty.ae/types/electric-ev-cars"
+                  href="/"
                   title="Electric (EV)"
                 >
                   Electric (EV)
                 </a>
                 <a
                   className="dropdown-item rounded-small fs-14 color-shades-black px-2"
-                  href="https://renty.ae/types/luxury"
+                  href="/"
                   title="Luxury"
                 >
                   Luxury
                 </a>
                 <a
                   className="dropdown-item rounded-small fs-14 color-shades-black px-2"
-                  href="https://renty.ae/types/classic-cars-rental"
+                  href="/"
                   title="Classic"
                 >
                   Classic
                 </a>
                 <a
                   className="dropdown-item rounded-small fs-14 color-shades-black px-2"
-                  href="https://renty.ae/types/business"
+                  href="/"
                   title="Business"
                 >
                   Business
                 </a>
                 <a
                   className="dropdown-item rounded-small fs-14 color-shades-black px-2"
-                  href="https://renty.ae/types/prestige"
+                  href="/"
                   title="Prestige"
                 >
                   Prestige
                 </a>
                 <a
                   className="dropdown-item rounded-small fs-14 color-shades-black px-2"
-                  href="https://renty.ae/types/sport"
+                  href="/"
                   title="Sports"
                 >
                   Sports
                 </a>
                 <a
                   className="dropdown-item rounded-small fs-14 color-shades-black px-2"
-                  href="https://renty.ae/types/vip"
+                  href="/"
                   title="VIP"
                 >
                   VIP
                 </a>
                 <a
                   className="dropdown-item rounded-small fs-14 color-shades-black px-2"
-                  href="https://renty.ae/types/economy-cars"
+                  href="/"
                   title="Economy"
                 >
                   Economy
@@ -106,28 +106,28 @@ const RentACar = () => {
               <div className="d-flex flex-column mt-2">
                 <a
                   className="dropdown-item rounded-small fs-14 color-shades-black px-2"
-                  href="https://renty.ae/hourly-car-rental"
+                  href="/"
                   title="Hourly rental"
                 >
                   Hourly rental
                 </a>
                 <a
                   className="dropdown-item rounded-small fs-14 color-shades-black px-2"
-                  href="https://renty.ae/weekly/dubai"
+                  href="/"
                   title="Weekly rental"
                 >
                   Weekly rental
                 </a>
                 <a
                   className="dropdown-item rounded-small fs-14 color-shades-black px-2"
-                  href="https://renty.ae/monthly/dubai"
+                  href="/"
                   title="Monthly rental"
                 >
                   Monthly rental
                 </a>
                 <a
                   className="dropdown-item rounded-small fs-14 color-shades-black px-2"
-                  href="https://renty.ae/car-leasing/dubai"
+                  href="/"
                   title="Car leasing"
                 >
                   Car leasing
@@ -139,7 +139,7 @@ const RentACar = () => {
               <div className="d-flex flex-column mt-2">
                 <a
                   className="dropdown-item rounded-small fs-14 color-shades-black px-2"
-                  href="https://renty.ae/all-special-offers"
+                  href="/"
                   title="All special offers"
                 >
                   All special offers

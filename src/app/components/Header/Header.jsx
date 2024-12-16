@@ -85,7 +85,7 @@ const Header = () => {
             {/* Logo */}
             <div className="d-flex mx-auto">
               <a
-                href="https://renty.ae/"
+                href="/"
                 aria-label="Home page"
                 className=" mx-auto bg-transparent"
               >
@@ -180,52 +180,31 @@ const Header = () => {
                   {/* Categories Submenu */}
                   {currentMenu === "categories" && (
                     <div className="submenu  py-3 rounded">
-                      <a
-                        className="dropdown-item fs-14 mb-3"
-                        href="https://renty.ae/popular-car-rental"
-                      >
+                      <a className="dropdown-item fs-14 mb-3" href="/">
                         <FaSearch className="d-inline " />
                         <span className="ms-4">Popular car rental</span>
                       </a>
-                      <a
-                        className="dropdown-item fs-14 mb-3"
-                        href="https://renty.ae/types/electric-ev-cars"
-                      >
+                      <a className="dropdown-item fs-14 mb-3" href="/">
                         <FaSearch className="d-inline" />{" "}
                         <span className="ms-4">Electric (EV)</span>
                       </a>
-                      <a
-                        className="dropdown-item fs-14 mb-3"
-                        href="https://renty.ae/types/electric-ev-cars"
-                      >
+                      <a className="dropdown-item fs-14 mb-3" href="/">
                         <FaSearch className="d-inline" />{" "}
                         <span className="ms-4">Luxury</span>
                       </a>
-                      <a
-                        className="dropdown-item fs-14 mb-3"
-                        href="https://renty.ae/types/electric-ev-cars"
-                      >
+                      <a className="dropdown-item fs-14 mb-3" href="/">
                         <FaSearch className="d-inline" />{" "}
                         <span className="ms-4">Classic</span>
                       </a>
-                      <a
-                        className="dropdown-item fs-14 mb-3"
-                        href="https://renty.ae/types/electric-ev-cars"
-                      >
+                      <a className="dropdown-item fs-14 mb-3" href="/">
                         <FaSearch className="d-inline" />{" "}
                         <span className="ms-4">Business</span>
                       </a>
-                      <a
-                        className="dropdown-item fs-14 mb-3"
-                        href="https://renty.ae/types/electric-ev-cars"
-                      >
+                      <a className="dropdown-item fs-14 mb-3" href="/">
                         <FaSearch className="d-inline" />{" "}
                         <span className="ms-4">Sports</span>
                       </a>
-                      <a
-                        className="dropdown-item fs-14 mb-3"
-                        href="https://renty.ae/types/electric-ev-cars"
-                      >
+                      <a className="dropdown-item fs-14 mb-3" href="/">
                         <FaSearch className="d-inline" />{" "}
                         <span className="ms-4">Economy</span>
                       </a>
@@ -235,17 +214,11 @@ const Header = () => {
                   {/* Rental by Period Submenu */}
                   {currentMenu === "rentalPeriods" && (
                     <div className="submenu py-3 rounded">
-                      <a
-                        className="dropdown-item fs-14 mb-3"
-                        href="https://renty.ae/hourly-car-rental"
-                      >
+                      <a className="dropdown-item fs-14 mb-3" href="/">
                         <FaSearch className="d-inline " />
                         <span className="ms-4"> Hourly rental</span>
                       </a>
-                      <a
-                        className="dropdown-item fs-14"
-                        href="https://renty.ae/weekly/dubai"
-                      >
+                      <a className="dropdown-item fs-14" href="/">
                         <FaSearch className="d-inline " />
                         <span className="ms-4"> Weekly rental</span>
                       </a>
@@ -256,10 +229,7 @@ const Header = () => {
                   {/* Services Submenu */}
                   {currentMenu === "services" && (
                     <div className="submenu  py-3 rounded">
-                      <a
-                        className="dropdown-item fs-14"
-                        href="https://renty.ae/airport-transfer/dubai"
-                      >
+                      <a className="dropdown-item fs-14" href="/">
                         <FaSearch className="d-inline " />
                         <span className="ms-4"> Airport Transfer</span>
                       </a>
@@ -342,7 +312,7 @@ const Header = () => {
                 >
                   <span className="fs-24 icon-x"></span>
                 </button>
-                <a className="mx-auto bg-transparent" href="https://renty.ae/">
+                <a className="mx-auto bg-transparent" href="/">
                   <img
                     loading="lazy"
                     src="./Rent a Car in Dubai, Car Rental Service - Renty.ae_files/logo-dark.svg"

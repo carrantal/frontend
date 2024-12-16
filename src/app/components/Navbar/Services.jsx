@@ -19,10 +19,7 @@ const Services = () => {
           className=" p-0 drop-item rounded-lg"
           aria-expanded="true"
         >
-          <a
-            className="dropdown-item cursor-pointer fs-12"
-            href="https://renty.ae/airport-transfer/dubai"
-          >
+          <a className="dropdown-item cursor-pointer fs-12" href="/">
             Airport Transfer
           </a>
         </div>

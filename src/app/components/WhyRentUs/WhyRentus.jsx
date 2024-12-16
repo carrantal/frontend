@@ -16,7 +16,7 @@ const WhyRentus = () => {
           <div className="d-flex align-items-center bg-shades-white home-page-companies-section cursor-pointer">
             <a
               className="company-review-section p-4-custom px-xs-2-custom px-sm-2-custom d-flex flex-column h-100 justify-content-center align-items-center border-right-company-logo p-4"
-              href="https://www.trustpilot.com/review/renty.ae?languages=all"
+              href="/"
               target="_blank"
               rel="noopener noreferrer"
               title="Check us out in Trustpilot"
@@ -74,7 +74,7 @@ const WhyRentus = () => {
             </a>
             <a
               className="company-review-section p-4-custom px-xs-2-custom px-sm-2-custom d-flex flex-column h-100 justify-content-center align-items-center p-4"
-              href="https://www.google.com/maps/place/Renty+-+Rent+Luxury+Car+in+Dubai/@25.1608085,55.2372231,17z"
+              href="/"
               target="_blank"
               rel="noopener noreferrer"
               title="Find us on Google Maps in Al Quoz, Dubai."

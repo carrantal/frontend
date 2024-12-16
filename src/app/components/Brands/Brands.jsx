@@ -28,7 +28,7 @@ const Brands = () => {
               <a
                 className="d-flex flex-md-column flex-row gap-col-lg-0 gap-col-10 py-md-2-custom py-lg-2-custom px-md-1-custom px-lg-1-custom bg-shades-white p-2-custom align-items-center rounded-medium most-popular-brand-item"
                 title="Ferrari"
-                href="https://renty.ae/brands/ferrari"
+                href="/"
               >
                 <i className="icon-48 icon-brand-ferrari"></i>
                 <span className="fs-14 lh-25 color-shades-black">Ferrari</span>
@@ -36,7 +36,7 @@ const Brands = () => {
               <a
                 className="d-flex flex-md-column flex-row gap-col-lg-0 gap-col-10 py-md-2-custom py-lg-2-custom px-md-1-custom px-lg-1-custom bg-shades-white p-2-custom align-items-center rounded-medium most-popular-brand-item"
                 title="Lamborghini"
-                href="https://renty.ae/brands/lamborghini"
+                href="/"
               >
                 <i className="icon-48 icon-brand-lamborghini"></i>
                 <span className="fs-14 lh-25 color-shades-black">
@@ -46,7 +46,7 @@ const Brands = () => {
               <a
                 className="d-flex flex-md-column flex-row gap-col-lg-0 gap-col-10 py-md-2-custom py-lg-2-custom px-md-1-custom px-lg-1-custom bg-shades-white p-2-custom align-items-center rounded-medium most-popular-brand-item"
                 title="Mercedes"
-                href="https://renty.ae/brands/mercedes"
+                href="/"
               >
                 <i className="icon-48 icon-brand-mercedes"></i>
                 <span className="fs-14 lh-25 color-shades-black">Mercedes</span>
@@ -54,7 +54,7 @@ const Brands = () => {
               <a
                 className="d-flex flex-md-column flex-row gap-col-lg-0 gap-col-10 py-md-2-custom py-lg-2-custom px-md-1-custom px-lg-1-custom bg-shades-white p-2-custom align-items-center rounded-medium most-popular-brand-item"
                 title="Range Rover"
-                href="https://renty.ae/brands/range-rover"
+                href="/"
               >
                 <i className="icon-48 icon-brand-range-rover"></i>
                 <span className="fs-14 lh-25 color-shades-black">
@@ -65,7 +65,7 @@ const Brands = () => {
               <a
                 className="d-flex flex-md-column flex-row gap-col-lg-0 gap-col-10 py-md-2-custom py-lg-2-custom px-md-1-custom px-lg-1-custom bg-shades-white p-2-custom align-items-center rounded-medium most-popular-brand-item"
                 title="Rolls Royce"
-                href="https://renty.ae/brands/rolls-royce"
+                href="/"
               >
                 <i className="icon-48 icon-brand-rolls-royce"></i>
                 <span className="fs-14 lh-25 color-shades-black">
@@ -75,7 +75,7 @@ const Brands = () => {
               <a
                 className="d-flex flex-md-column flex-row gap-col-lg-0 gap-col-10 py-md-2-custom py-lg-2-custom px-md-1-custom px-lg-1-custom bg-shades-white p-2-custom align-items-center rounded-medium most-popular-brand-item"
                 title="Rolls Royce"
-                href="https://renty.ae/brands/rolls-royce"
+                href="/"
               >
                 <i className="icon-48 icon-brand-rolls-Cadillac"></i>
                 <span className="fs-14 lh-25 color-shades-black">Cadillac</span>
@@ -84,7 +84,7 @@ const Brands = () => {
 
             <a
               className="d-lg-none d-flex all-product-page-link rounded-small py-2-custom align-items-center justify-content-center w-100"
-              href="https://renty.ae/all-brands"
+              href="/"
             >
               <span className="fs-13 lh-20 letter-spacing-0_2 font-weight-bold text-uppercase color-brand-primary text-truncate">
                 All brands
