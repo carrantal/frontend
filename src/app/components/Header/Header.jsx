@@ -19,7 +19,7 @@ import { IoIosMenu } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import { LiaServicestack } from "react-icons/lia";
-import { FaCar } from "react-icons/fa";
+import { FaListUl, FaCalendarAlt } from "react-icons/fa";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [currentMenu, setCurrentMenu] = useState("main"); // "main", "services", or "rentacar"
@@ -123,19 +123,22 @@ const Header = () => {
                     </button>
                   ) : null}
                   <span className="fs-18 text-white">
-                    {currentMenu === "main"
-                      ? "Menu"
-                      : currentMenu === "services"
-                      ? "Services"
-                      : "Rent a Car"}
+                    {currentMenu === "main" ? (
+                      <button
+                        className="btn text-white fs-24 "
+                        onClick={toggleMenu}
+                        aria-label="Close menu"
+                      >
+                        ✕
+                      </button>
+                    ) : currentMenu === "categories" ? (
+                      "Categories"
+                    ) : currentMenu === "rentalPeriods" ? (
+                      "Rental by Period"
+                    ) : (
+                      "Services"
+                    )}
                   </span>
-                  <button
-                    className="btn text-reset ms-auto fs-24"
-                    onClick={toggleMenu}
-                    aria-label="Close menu"
-                  >
-                    ✕
-                  </button>
                 </div>
 
                 {/* Menu Content */}
@@ -146,84 +149,122 @@ const Header = () => {
                   {currentMenu === "main" && (
                     <>
                       <button
-                        className=" text-dark d-flex justify-content-between align-items-center w-100  py-2 fs-16 font-weight-semibold color-shades-white"
-                        onClick={() => setCurrentMenu("rentacar")}
+                        className="text-dark d-flex justify-content-between align-items-center w-100 py-2 fs-16 font-weight-semibold"
+                        onClick={() => setCurrentMenu("categories")}
                       >
                         <span className="d-flex align-items-center gap-2">
-                          {" "}
-                          <FaCar /> Rent a Car
+                          <FaListUl /> Categories
                         </span>
                         <MdKeyboardArrowRight />
                       </button>
                       <button
-                        className=" text-dark d-flex justify-content-between align-items-center w-100  py-2 fs-16 font-weight-semibold color-shades-white"
+                        className="text-dark d-flex justify-content-between align-items-center w-100 py-2 fs-16 font-weight-semibold"
+                        onClick={() => setCurrentMenu("rentalPeriods")}
+                      >
+                        <span className="d-flex align-items-center gap-2">
+                          <FaCalendarAlt /> Rental by Period
+                        </span>
+                        <MdKeyboardArrowRight />
+                      </button>
+                      <button
+                        className="text-dark d-flex justify-content-between align-items-center w-100 py-2 fs-16 font-weight-semibold"
                         onClick={() => setCurrentMenu("services")}
                       >
                         <span className="d-flex align-items-center gap-2">
-                          <LiaServicestack />
-                          Services
+                          <LiaServicestack /> Services
                         </span>
                         <MdKeyboardArrowRight />
                       </button>
                     </>
                   )}
 
+                  {/* Categories Submenu */}
+                  {currentMenu === "categories" && (
+                    <div className="submenu  py-3 rounded">
+                      <a
+                        className="dropdown-item fs-14 mb-3"
+                        href="https://renty.ae/popular-car-rental"
+                      >
+                        <FaSearch className="d-inline " />
+                        <span className="ms-4">Popular car rental</span>
+                      </a>
+                      <a
+                        className="dropdown-item fs-14 mb-3"
+                        href="https://renty.ae/types/electric-ev-cars"
+                      >
+                        <FaSearch className="d-inline" />{" "}
+                        <span className="ms-4">Electric (EV)</span>
+                      </a>
+                      <a
+                        className="dropdown-item fs-14 mb-3"
+                        href="https://renty.ae/types/electric-ev-cars"
+                      >
+                        <FaSearch className="d-inline" />{" "}
+                        <span className="ms-4">Luxury</span>
+                      </a>
+                      <a
+                        className="dropdown-item fs-14 mb-3"
+                        href="https://renty.ae/types/electric-ev-cars"
+                      >
+                        <FaSearch className="d-inline" />{" "}
+                        <span className="ms-4">Classic</span>
+                      </a>
+                      <a
+                        className="dropdown-item fs-14 mb-3"
+                        href="https://renty.ae/types/electric-ev-cars"
+                      >
+                        <FaSearch className="d-inline" />{" "}
+                        <span className="ms-4">Business</span>
+                      </a>
+                      <a
+                        className="dropdown-item fs-14 mb-3"
+                        href="https://renty.ae/types/electric-ev-cars"
+                      >
+                        <FaSearch className="d-inline" />{" "}
+                        <span className="ms-4">Sports</span>
+                      </a>
+                      <a
+                        className="dropdown-item fs-14 mb-3"
+                        href="https://renty.ae/types/electric-ev-cars"
+                      >
+                        <FaSearch className="d-inline" />{" "}
+                        <span className="ms-4">Economy</span>
+                      </a>
+                    </div>
+                  )}
+
+                  {/* Rental by Period Submenu */}
+                  {currentMenu === "rentalPeriods" && (
+                    <div className="submenu py-3 rounded">
+                      <a
+                        className="dropdown-item fs-14 mb-3"
+                        href="https://renty.ae/hourly-car-rental"
+                      >
+                        <FaSearch className="d-inline " />
+                        <span className="ms-4"> Hourly rental</span>
+                      </a>
+                      <a
+                        className="dropdown-item fs-14"
+                        href="https://renty.ae/weekly/dubai"
+                      >
+                        <FaSearch className="d-inline " />
+                        <span className="ms-4"> Weekly rental</span>
+                      </a>
+                      {/* Add more rental options here */}
+                    </div>
+                  )}
+
+                  {/* Services Submenu */}
                   {currentMenu === "services" && (
-                    <div className="submenu bg-light p-3 rounded">
+                    <div className="submenu  py-3 rounded">
                       <a
                         className="dropdown-item fs-14"
                         href="https://renty.ae/airport-transfer/dubai"
                       >
-                        Airport Transfer
+                        <FaSearch className="d-inline " />
+                        <span className="ms-4"> Airport Transfer</span>
                       </a>
                       {/* Add more service links here */}
-                    </div>
-                  )}
-
-                  {currentMenu === "rentacar" && (
-                    <div className="submenu bg-light p-3 rounded">
-                      <div
-                        className="d-grid"
-                        style={{ gridTemplateColumns: "1fr 1fr" }}
-                      >
-                        {/* Categories Column */}
-                        <div>
-                          <span className="d-block fs-10 text-uppercase">
-                            Categories
-                          </span>
-                          <a
-                            className="dropdown-item fs-14"
-                            href="https://renty.ae/popular-car-rental"
-                          >
-                            Popular car rental
-                          </a>
-                          <a
-                            className="dropdown-item fs-14"
-                            href="https://renty.ae/types/electric-ev-cars"
-                          >
-                            Electric (EV)
-                          </a>
-                        </div>
-
-                        {/* Rental by Period Column */}
-                        <div>
-                          <span className="d-block fs-10 text-uppercase">
-                            Rental by Period
-                          </span>
-                          <a
-                            className="dropdown-item fs-14"
-                            href="https://renty.ae/hourly-car-rental"
-                          >
-                            Hourly rental
-                          </a>
-                          <a
-                            className="dropdown-item fs-14"
-                            href="https://renty.ae/weekly/dubai"
-                          >
-                            Weekly rental
-                          </a>
-                        </div>
-                      </div>
                     </div>
                   )}
                 </div>
@@ -232,7 +273,7 @@ const Header = () => {
 
             {/* Add CSS Animation */}
             <style jsx>{`
-              @keyframesslidedown {
+              @keyframes slideIn {
                 from {
                   transform: translateY(-100%);
                   opacity: 0;
@@ -243,19 +284,8 @@ const Header = () => {
                 }
               }
 
-              @keyframes slideOut {
-                from {
-                  transform: translateX(0);
-                  opacity: 1;
-                }
-                to {
-                  transform: translateX(-100%);
-                  opacity: 0;
-                }
-              }
-
               .menu-container {
-                animation: slideIn 0.3s ease-in-out;
+                animation: slideIn 0.5s ease-in-out;
               }
             `}</style>
           </div>
