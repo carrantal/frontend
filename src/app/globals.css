@@ -13295,3 +13295,12 @@ header.header-hidden .popover .arrow {
     font-size: 22px;
   }
 }
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

@@ -144,20 +144,6 @@ const RentACar = () => {
                 >
                   All special offers
                 </a>
-                <a
-                  className="dropdown-item rounded-small fs-14 color-shades-black px-2"
-                  href="https://renty.ae/all-special-offers/new-arrivals"
-                  title="🌟 NEW ARRIVALS"
-                >
-                  🌟 NEW ARRIVALS
-                </a>
-                <a
-                  className="dropdown-item rounded-small fs-14 color-shades-black px-2"
-                  href="https://renty.ae/all-special-offers/exclusive"
-                  title="👑 Exclusive"
-                >
-                  👑 Exclusive
-                </a>
               </div>
             </div>
           </div>
