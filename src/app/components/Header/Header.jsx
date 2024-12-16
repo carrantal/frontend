@@ -37,7 +37,7 @@ const Header = () => {
             <div className="container d-flex position-relative">
               <div className="d-flex mx-auto">
                 <a
-                  href="https://renty.ae/"
+                  href="/"
                   aria-label="Home page"
                   className=" d-flex align-items-center"
                 >
@@ -289,7 +289,7 @@ const Header = () => {
               }
             `}</style>
           </div>
-          {/* {searchModalOpen && (
+          {searchModalOpen && (
             <div className="modal-content border-0 rounded-0 h-100 position-fixed top-0 left-0 w-100 bg-white">
               <div className="modal-header align-items-center rounded-0 color-shades-white py-0 pr-5">
                 <button
@@ -298,14 +298,16 @@ const Header = () => {
                   type="button"
                   onClick={toggleSearchModal} // Close the modal
                 >
-                  <span className="fs-18 icon-x">✕</span>
+                  <span className="fs-18 ">✕</span>
                 </button>
                 <div className="d-flex align-items-center w-100 mobile-search-input-container">
                   <button
                     type="button"
                     className="btn btn-cleared btn-modal-close btn-back-mobile-search btn-medium text-left justify-content-start"
                   >
-                    <i className="fs-18 icon-chevron-left color-brand-black"></i>
+                    <i className="fs-18  color-brand-black">
+                      <CiSearch className="d-inline " />
+                    </i>
                   </button>
 
                   <form className="m-0 p-0 w-100">
@@ -321,7 +323,7 @@ const Header = () => {
                 </div>
               </div>
             </div>
-          )} */}
+          )}
         </header>
         <div
           className="modal fade default-modal"
