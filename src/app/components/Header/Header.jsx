@@ -14,6 +14,9 @@ import LeadingCompany from "../LeadingCompany/LeadingCompany";
 import Faq from "../FAQ/Faq";
 import Footer from "../Footer/Footer";
 import Image from "next/image";
+import { IoIosMenu } from "react-icons/io";
+import { FaSearch } from "react-icons/fa";
+import { FaSortDown } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -52,7 +55,9 @@ const Header = () => {
               data-toggle="modal"
               type="button"
             >
-              <span className="fs-24 icon-menu color-shades-white"></span>
+              <span className="fs-24  color-shades-white">
+                <IoIosMenu />
+              </span>
             </button>
             <button
               className="btn btn-medium bg-transparent mobile-search-btn text-reset position-absolute"
@@ -60,7 +65,9 @@ const Header = () => {
               id="mobileModalSearchButton"
               type="button"
             >
-              <span className="fs-24 icon-search color-shades-white"></span>
+              <span className="fs-24 color-shades-white">
+                <FaSearch />
+              </span>
             </button>
             <div className="d-flex mx-auto">
               <a
@@ -68,11 +75,11 @@ const Header = () => {
                 aria-label="Home page"
                 className="header-home-link mx-auto bg-transparent"
               >
-                <img
-                  loading="lazy"
-                  src="./Rent a Car in Dubai, Car Rental Service - Renty.ae_files/logo-dark.svg"
-                  alt="Renty.ae"
-                  title="Renty.ae"
+                <Image
+                  src="/images/desig.avif"
+                  width={98}
+                  height={22}
+                  alt="Picture of the author"
                 />
               </a>
             </div>
@@ -84,7 +91,7 @@ const Header = () => {
               type="button"
             >
               <img
-                src="./Rent a Car in Dubai, Car Rental Service - Renty.ae_files/not-logged-in.png"
+                src="https://renty.ae/assets-nd/images/placeholder/not-logged-in.png"
                 alt="not-logged-in-profile-icon"
                 title="Profile"
                 height="24"
@@ -96,8 +103,8 @@ const Header = () => {
         <div
           className="modal fade default-modal"
           id="modalMenu"
-          // tabindex="-1"
-          //   style="display: none"
+          tabindex="-1"
+          style={{ display: "none" }}
           aria-hidden="true"
         >
           <div className="modal-dialog modal-lg modal-full">
@@ -126,53 +133,6 @@ const Header = () => {
                 className="modal-body p-0 bg-white flex-grow-1"
                 id="modalMenuBody"
               >
-                <div className="d-flex border-bottom border-shades-300 py-1 px-3 bg-brand-primary">
-                  <div className="border-right-small border-brand-primary-lighter flex-grow-1">
-                    <div
-                      className="bg-transparent rounded-small color-shades-white border-0 pr-1 py-2 d-flex align-items-center"
-                      data-current-city="dubai"
-                      data-toggle="modal"
-                      id="modalCities_btn"
-                      role="button"
-                      data-target="#modalCities"
-                    >
-                      <img
-                        src="./Rent a Car in Dubai, Car Rental Service - Renty.ae_files/ae.svg"
-                        alt="location-icon"
-                        title="Dubai"
-                        height="12"
-                        width="12"
-                        className="mr-1 city-menu-icon"
-                      />
-                      <span className="fs-12 flex-grow-1">Dubai</span>
-                      <i className="fs-18 icon-carret---down"></i>
-                    </div>
-                  </div>
-                  <div className="border-right-small border-brand-primary-lighter">
-                    <div
-                      className="color-shades-white h-100 d-flex align-items-center pl-2 pr-2 py-2"
-                      data-toggle="modal"
-                      data-target="#modalLanguages"
-                      role="button"
-                    >
-                      <span className="fs-12 icon-globe color-brand-accent mr-2"></span>
-                      <span className="fs-12 mr-2">English</span>
-                      <i className="fs-18 icon-carret---down"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div
-                      className="color-shades-white h-100 d-flex align-items-center pl-2 py-2"
-                      data-toggle="modal"
-                      data-target="#modalCurrencies"
-                      id="currency-dropdown-btn-mobile"
-                      role="button"
-                    >
-                      <span className="fs-12 mr-2"> USD</span>
-                      <i className="fs-18 icon-carret---down"></i>
-                    </div>
-                  </div>
-                </div>
                 <ul className="nav flex-column border-bottom border-shades-300 p-2">
                   <li className="nav-item">
                     <div
@@ -386,109 +346,6 @@ const Header = () => {
                 <span className="fs-16 font-weight-semibold mx-auto">
                   Language
                 </span>
-              </div>
-              <div className="modal-body p-3 bg-white flex-grow-1">
-                <div className="nav flex-column">
-                  <a
-                    className="nav-link link-disabled"
-                    rel="alternate"
-                    hrefLang="en"
-                    href="https://renty.ae/"
-                  >
-                    <i className="icon-globe fs-18 color-shades-500 mr-3"></i>
-                    <span className="color-shades-black fs-14 line-height-25 fs-12 line-height-20">
-                      English
-                    </span>
-                  </a>
-                  <a
-                    className="nav-link"
-                    rel="alternate"
-                    hrefLang="ae"
-                    href="https://renty.ae/ae"
-                  >
-                    <i className="icon-globe fs-18 color-shades-500 mr-3"></i>
-                    <span className="color-shades-black fs-14 line-height-25 fs-12 line-height-20">
-                      &rlm;العربية&rlm;
-                    </span>
-                  </a>
-                  <a
-                    className="nav-link"
-                    rel="alternate"
-                    hrefLang="ru"
-                    href="https://renty.ae/ru"
-                  >
-                    <i className="icon-globe fs-18 color-shades-500 mr-3"></i>
-                    <span className="color-shades-black fs-14 line-height-25 fs-12 line-height-20">
-                      русский
-                    </span>
-                  </a>
-                  <a
-                    className="nav-link"
-                    rel="alternate"
-                    hrefLang="fr"
-                    href="https://renty.ae/fr"
-                  >
-                    <i className="icon-globe fs-18 color-shades-500 mr-3"></i>
-                    <span className="color-shades-black fs-14 line-height-25 fs-12 line-height-20">
-                      Français
-                    </span>
-                  </a>
-                  <a
-                    className="nav-link"
-                    rel="alternate"
-                    hrefLang="de"
-                    href="https://renty.ae/de"
-                  >
-                    <i className="icon-globe fs-18 color-shades-500 mr-3"></i>
-                    <span className="color-shades-black fs-14 line-height-25 fs-12 line-height-20">
-                      Deutsch
-                    </span>
-                  </a>
-                  <a
-                    className="nav-link"
-                    rel="alternate"
-                    hrefLang="it"
-                    href="https://renty.ae/it"
-                  >
-                    <i className="icon-globe fs-18 color-shades-500 mr-3"></i>
-                    <span className="color-shades-black fs-14 line-height-25 fs-12 line-height-20">
-                      Italiano
-                    </span>
-                  </a>
-                  <a
-                    className="nav-link"
-                    rel="alternate"
-                    hrefLang="nl"
-                    href="https://renty.ae/nl"
-                  >
-                    <i className="icon-globe fs-18 color-shades-500 mr-3"></i>
-                    <span className="color-shades-black fs-14 line-height-25 fs-12 line-height-20">
-                      Nederlands
-                    </span>
-                  </a>
-                  <a
-                    className="nav-link"
-                    rel="alternate"
-                    hrefLang="es"
-                    href="https://renty.ae/es"
-                  >
-                    <i className="icon-globe fs-18 color-shades-500 mr-3"></i>
-                    <span className="color-shades-black fs-14 line-height-25 fs-12 line-height-20">
-                      Español
-                    </span>
-                  </a>
-                  <a
-                    className="nav-link"
-                    rel="alternate"
-                    hrefLang="zh"
-                    href="https://renty.ae/cn"
-                  >
-                    <i className="icon-globe fs-18 color-shades-500 mr-3"></i>
-                    <span className="color-shades-black fs-14 line-height-25 fs-12 line-height-20">
-                      中文
-                    </span>
-                  </a>
-                </div>
               </div>
             </div>
           </div>
