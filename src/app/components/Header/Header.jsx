@@ -20,19 +20,18 @@ import { FaSearch } from "react-icons/fa";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import { LiaServicestack } from "react-icons/lia";
 import { FaListUl, FaCalendarAlt } from "react-icons/fa";
+import { CiSearch } from "react-icons/ci";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [currentMenu, setCurrentMenu] = useState("main"); // "main", "services", or "rentacar"
-
+  const [searchModalOpen, setSearchModalOpen] = useState(false);
   const toggleMenu = () => setMenuOpen(!menuOpen);
-
-  const openSubmenu = (menu) => {
-    setSubmenu(submenu === menu ? "" : menu); // Toggle submenu
+  const toggleSearchModal = () => {
+    setSearchModalOpen(!searchModalOpen);
   };
-
   return (
     <>
-      <div className="homepage ">
+      <div className="homepage  ">
         <header className="sticky-header">
           <div className="d-none d-lg-block bg-brand-primary-darker position-relative header-main-menu-container desc-header-panel">
             <div className="container d-flex position-relative">
@@ -77,9 +76,10 @@ const Header = () => {
               aria-label="Search"
               id="mobileModalSearchButton"
               type="button"
+              onClick={toggleSearchModal}
             >
               <span className="fs-24 color-shades-white">
-                <FaSearch />
+                <CiSearch />
               </span>
             </button>
 
@@ -88,11 +88,11 @@ const Header = () => {
               <a
                 href="https://renty.ae/"
                 aria-label="Home page"
-                className="header-home-link mx-auto bg-transparent"
+                className=" mx-auto bg-transparent"
               >
                 <img
                   src="/images/desig.avif"
-                  width={98}
+                  width={50}
                   height={22}
                   alt="Renty Logo"
                 />
@@ -289,6 +289,39 @@ const Header = () => {
               }
             `}</style>
           </div>
+          {/* {searchModalOpen && (
+            <div className="modal-content border-0 rounded-0 h-100 position-fixed top-0 left-0 w-100 bg-white">
+              <div className="modal-header align-items-center rounded-0 color-shades-white py-0 pr-5">
+                <button
+                  aria-label="Close"
+                  className="btn btn-medium btn-modal-close position-absolute right"
+                  type="button"
+                  onClick={toggleSearchModal} // Close the modal
+                >
+                  <span className="fs-18 icon-x">✕</span>
+                </button>
+                <div className="d-flex align-items-center w-100 mobile-search-input-container">
+                  <button
+                    type="button"
+                    className="btn btn-cleared btn-modal-close btn-back-mobile-search btn-medium text-left justify-content-start"
+                  >
+                    <i className="fs-18 icon-chevron-left color-brand-black"></i>
+                  </button>
+
+                  <form className="m-0 p-0 w-100">
+                    <div className="easy-autocomplete eac-square">
+                      <input
+                        type="text"
+                        className="border-0 search-input fs-14 color-shades-black w-100"
+                        placeholder="Search"
+                        autoComplete="off"
+                      />
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          )} */}
         </header>
         <div
           className="modal fade default-modal"
@@ -377,7 +410,7 @@ const Header = () => {
         />
         <div className="home-page-section-main position-relative d-flex flex-column">
           <picture
-            style={{ display: "block", opacity: 1, transition: "opacity 0.3s" }}
+          // style={{ display: "block", opacity: 1, transition: "opacity 0.3s" }}
           >
             <source
               media="(min-width: 769px)"
@@ -388,11 +421,11 @@ const Header = () => {
             <source
               media="(min-width: 576px) and (max-width: 768px)"
               srcSet="
-            https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=768,height=540,sharpen=0/https://renty.ae/assets-nd/images/home-page/home-page-section-md.png
+            https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=360,height=515,sharpen=0/https://renty.ae/assets-nd/images/home-page/home-page-section-sm.jpg
           "
             />
             <img
-              src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=768,height=540,sharpen=0/https://renty.ae/assets-nd/images/home-page/home-page-section-md.png"
+              src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=768,height=540,sharpen=0/https://renty.ae/assets-nd/images/home-page/home-page-section-lg.png"
               alt="Responsive Image"
               className="home-page-banner position-absolute w-100 h-100"
               fetchPriority="high"

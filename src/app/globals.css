@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+.dropdown-backdrop {
+  background-color: #13428d;
+  background-size: cover;
+  background-position: center;
+  max-height: 540px;
+  height: 540px;
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /* Start from slightly above */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at the default position */
+  }
+}
 header {
   position: absolute;
   width: 100%;

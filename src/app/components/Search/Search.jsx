@@ -4,7 +4,7 @@ import { CiSearch } from "react-icons/ci";
 const Search = () => {
   return (
     <>
-      <div className="d-flex justify-content-center home-page-search-section mb-2">
+      <div className="d-flex justify-content-center home-page-search-section mb-[120px]">
         <div
           className="form-group mb-0 d-flex align-items-center"
           id="mainSearch"
