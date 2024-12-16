@@ -290,7 +290,7 @@ const Header = () => {
             `}</style>
           </div>
           {searchModalOpen && (
-            <div className="modal-content border-0 rounded-0 h-100 position-fixed top-0 left-0 w-100 bg-white">
+            <div className="modal-content border-0 rounded-0 h-100 position-fixed top-0 left-0 w-full bg-white">
               <div className="modal-header align-items-center rounded-0 color-shades-white py-0 pr-5">
                 <button
                   aria-label="Close"
