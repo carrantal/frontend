@@ -236,8 +236,8 @@ header {
 
 @media (max-width: 768px) {
   .home-page-sub-main-section-container {
-    background-color: #fff;
-    background-color: #fff !important;
+    background-color: black;
+    background-color: black !important;
   }
 }
 
@@ -251,7 +251,7 @@ header {
 
 .home-about-company-section-title {
   -webkit-text-fill-color: transparent;
-  background: linear-gradient(81.6deg, #0b4699 12.86%, #0da0f2 87.14%),
+  background: linear-gradient(81.6deg, #e7aa2d 12.86%, #e7aa2d 87.14%),
     linear-gradient(0deg, #21262d, #21262d);
   -webkit-background-clip: text;
 }
@@ -831,11 +831,11 @@ h5 {
 }
 
 .color-shades-white {
-  color: #fff;
+  color: #ffffff;
 }
 
 .color-shades-black {
-  color: #000;
+  color: white;
 }
 
 .color-shades-100 {
@@ -871,7 +871,7 @@ h5 {
 }
 
 .color-shades-900 {
-  color: #21262d;
+  color: #e7aa2d;
 }
 
 .color-icons-star-active {
@@ -887,19 +887,19 @@ h5 {
 }
 
 .bg-brand-primary {
-  background-color: #1359ba;
+  background-color: #e7aa2d;
 }
 
 .bg-brand-primary-darker {
-  background-color: #13428d;
+  background-color: #e7aa3d;
 }
 
 .bg-brand-primary-navbar {
-  background-color: #093780;
+  background-color: #e7aa4d;
 }
 
 .bg-brand-primary-lighter {
-  background-color: #3b7dd9;
+  background-color: #e7aa1d;
 }
 
 .bg-brand-accent {
@@ -957,15 +957,15 @@ h5 {
 }
 
 .bg-shades-white {
-  background-color: #fff;
+  background-color: #201e1e;
 }
 
 .bg-shades-100 {
-  background-color: #f7f8fa;
+  background-color: #0d0d0d;
 }
 
 .bg-shades-200 {
-  background-color: #ebedf2;
+  background-color: #0d0d0d;
 }
 
 .bg-shades-900 {
@@ -1340,12 +1340,12 @@ body {
 }
 
 a {
-  color: #1359ba;
+  color: #e7aa2d;
   transition: 0.3s;
 }
 
 a:hover {
-  color: #009fe2;
+  color: #e7aa5d;
   text-decoration: none !important;
 }
 
@@ -4024,7 +4024,7 @@ body:is(.rtl) .yacht-header-menu-dropdown {
 
 @media (min-width: 992px) {
   .event-book-now-btn {
-    background-color: #fff;
+    background-color: black;
     border: 1px solid #ccd4de;
     min-width: 50px;
     padding: 15px 25px;

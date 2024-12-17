@@ -4,7 +4,7 @@ import { FaFacebookF } from "react-icons/fa6";
 import { FaTiktok } from "react-icons/fa";
 const Footer = () => {
   return (
-    <footer className="bg-white border-top border-shades-200 p-4 mt-4">
+    <footer className=" border-top border-shades-200 p-4 mt-4">
       <div className="row ">
         {/* Inquiries & Support */}
         <div className="col-lg-6 col-12 d-flex flex-column lg:pl-[190px] mb-4">

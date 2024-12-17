@@ -15,64 +15,6 @@ const WhyRentus = () => {
           </div>
           <div className="d-flex align-items-center bg-shades-white home-page-companies-section cursor-pointer">
             <a
-              className="company-review-section p-4-custom px-xs-2-custom px-sm-2-custom d-flex flex-column h-100 justify-content-center align-items-center border-right-company-logo p-4"
-              href="/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Check us out in Trustpilot"
-            >
-              <div className="d-flex align-items-center company-review-icons-block">
-                <div className="company-review-icon">
-                  <img
-                    loading="lazy"
-                    src="https://renty.ae/assets-nd/icons/company-reviews/trustpilot-reviews.svg"
-                    title="Company reviews"
-                    alt="Company reviews"
-                  />
-                </div>
-              </div>
-              <div className="company-review-statistics-block px-xs-1-custom d-flex align-items-center direction-ltr">
-                <div className="font-weight-normal company-review-score color-shades-black">
-                  4.7
-                </div>
-                <div className="company-review-stars-block px-sm-1-custom pb-1-custom pb-xs-0-custom pb-sm-0-custom">
-                  <div className="d-flex trustpilot-icons-block">
-                    <img
-                      className="icon-star-filled fs-20 fs-sm-22"
-                      alt="Trustpilot star"
-                      loading="lazy"
-                      src="https://renty.ae/assets-nd/icons/company-reviews/trustpilot-star-5.svg"
-                    />
-                    <img
-                      className="icon-star-filled fs-20 fs-sm-22"
-                      alt="Trustpilot star"
-                      loading="lazy"
-                      src="https://renty.ae/assets-nd/icons/company-reviews/trustpilot-star-5.svg"
-                    />
-                    <img
-                      className="icon-star-filled fs-20 fs-sm-22"
-                      alt="Trustpilot star"
-                      loading="lazy"
-                      src="https://renty.ae/assets-nd/icons/company-reviews/trustpilot-star-5.svg"
-                    />
-                    <img
-                      className="icon-star-filled fs-20 fs-sm-22"
-                      alt="Trustpilot star"
-                      loading="lazy"
-                      src="https://renty.ae/assets-nd/icons/company-reviews/trustpilot-star-5.svg"
-                    />
-                    <img
-                      className="icon-star-filled fs-20 fs-sm-22"
-                      alt="Trustpilot star"
-                      loading="lazy"
-                      src="https://renty.ae/assets-nd/icons/company-reviews/trustpilot-star-4.5.svg"
-                    />
-                  </div>
-                </div>
-                <div className="company-review-amount color-shades-500">84</div>
-              </div>
-            </a>
-            <a
               className="company-review-section p-4-custom px-xs-2-custom px-sm-2-custom d-flex flex-column h-100 justify-content-center align-items-center p-4"
               href="/"
               target="_blank"

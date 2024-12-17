@@ -22,6 +22,8 @@ import { LiaServicestack } from "react-icons/lia";
 import { FaListUl, FaCalendarAlt } from "react-icons/fa";
 import { CiSearch } from "react-icons/ci";
 import Gallery from "../Navbar/Gallery";
+import Luxury from "../Luxury/Luxury";
+import Economy from "../Economy/Economy";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [currentMenu, setCurrentMenu] = useState("main"); // "main", "services", or "rentacar"
@@ -44,8 +46,8 @@ const Header = () => {
                 >
                   <Image
                     src="/images/desig.avif"
-                    width={60}
-                    height={70}
+                    width={80}
+                    height={90}
                     alt="Picture of the author"
                   />
                 </a>
@@ -388,17 +390,15 @@ const Header = () => {
             <source
               media="(min-width: 769px)"
               srcSet="
-            https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=2560,height=540,sharpen=0/https://renty.ae/assets-nd/images/home-page/home-page-section-lg.png
-          "
+/images/heropic.avif          "
             />
             <source
               media="(min-width: 576px) and (max-width: 768px)"
-              srcSet="
-            https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=360,height=515,sharpen=0/https://renty.ae/assets-nd/images/home-page/home-page-section-sm.jpg
+              srcSet="/images/heropic.avif
           "
             />
             <img
-              src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=768,height=540,sharpen=0/https://renty.ae/assets-nd/images/home-page/home-page-section-lg.png"
+              src="/images/heropic.avif"
               alt="Responsive Image"
               className="home-page-banner position-absolute w-100 h-100"
               fetchPriority="high"
@@ -427,12 +427,12 @@ const Header = () => {
         <div className="mt-4"></div>
         <Brands />
 
-        <CarImsges />
+        <Luxury />
         <WhyRentus />
-        <CarImsges />
-        <CarImsges />
+        {/* <CarImsges /> */}
+        {/* <CarImsges /> */}
         <OffSale />
-        <CarImsges />
+        <Economy />
         <Reviews />
         <Maps />
         <LeadingCompany />

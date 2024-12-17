@@ -82,10 +82,10 @@ const OffSale = () => {
       <div className="container home-page-container-p-t hourly-offers-section mt-5">
         <div
           className="hourly-offers-container bg-shades-100 overflow-hidden"
-          style={{
-            backgroundImage:
-              "url(https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=351,height=486,sharpen=0,quality=85/https://renty.ae/assets-nd/images/special-offers-bg.png)",
-          }}
+          // style={{
+          //   backgroundImage:
+          //     "url(https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=351,height=486,sharpen=0,quality=85/https://renty.ae/assets-nd/images/special-offers-bg.png)",
+          // }}
         >
           <div className="d-flex justify-content-between align-items-center">
             <div className="d-flex flex-column">

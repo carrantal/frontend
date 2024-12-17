@@ -18,14 +18,14 @@ const RentACar = () => {
         </button>
 
         <div
-          className="p-0 drop-item rounded-lg mt-2 "
+          className="p-0 drop-item rounded-lg mt-2  "
           aria-labelledby="rent-car-dropdown-btn"
           data-toggle="dropdown"
           role="menu"
           aria-expanded="true"
         >
           <div
-            className="d-grid"
+            className="d-grid bg-black"
             style={{ gridTemplateColumns: "1fr 1fr 1fr" }}
           >
             <div className="p-3 flex-grow-1 border-shades-200 border-right">
