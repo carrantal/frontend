@@ -250,10 +250,10 @@ header {
 }
 
 .home-about-company-section-title {
-  -webkit-text-fill-color: transparent;
-  background: linear-gradient(81.6deg, #e7aa2d 12.86%, #e7aa2d 87.14%),
-    linear-gradient(0deg, #21262d, #21262d);
-  -webkit-background-clip: text;
+  /* -webkit-text-fill-color: transparent; */
+  /* background: linear-gradient(81.6deg, #e7aa2d 12.86%, #e7aa2d 87.14%),
+    linear-gradient(0deg, #21262d, #21262d); */
+  /* -webkit-background-clip: text; */
 }
 
 @media (min-width: 576px) and (max-width: 991px) {
@@ -4236,6 +4236,11 @@ body.rtl .collapse_with_faq_item .icon-chevron-right {
     height: 30px;
     width: 30px;
   }
+
+  .most-popular-brand-item img {
+    height: 30px;
+    width: 30px;
+  }
 }
 
 .most-popular-brand-item:hover {
@@ -4243,7 +4248,7 @@ body.rtl .collapse_with_faq_item .icon-chevron-right {
 }
 
 .most-popular-brand-item:hover span {
-  color: #009fe2 !important;
+  color: #e7aa5d !important;
   transition: color 0.3s ease;
 }
 
@@ -13326,4 +13331,211 @@ header.header-hidden .popover .arrow {
     padding-top: 30px;
     overflow: auto;
   }
+}
+
+.p-0-custom {
+  padding: 0 !important;
+}
+
+.p-1-custom {
+  padding: 5px !important;
+}
+
+.p-2-custom {
+  padding: 10px !important;
+}
+
+.p-3-custom {
+  padding: 15px !important;
+}
+
+.p-4-custom {
+  padding: 30px !important;
+}
+
+.p-5-custom {
+  padding: 60px !important;
+}
+
+.px-0-custom {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.px-1-custom {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+.px-2-custom {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.px-3-custom {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.px-4-custom {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+
+.px-5-custom {
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+}
+
+.py-0-custom {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.py-1-custom {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+.py-2-custom {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.py-3-custom {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+
+.py-4-custom {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+.py-5-custom {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+
+.pt-0-custom {
+  padding-top: 0 !important;
+}
+
+.pt-1-custom {
+  padding-top: 5px !important;
+}
+
+.pt-2-custom {
+  padding-top: 10px !important;
+}
+
+.pt-3-custom {
+  padding-top: 15px !important;
+}
+
+.pt-4-custom {
+  padding-top: 30px !important;
+}
+
+.pt-5-custom {
+  padding-top: 60px !important;
+}
+
+.pb-0-custom {
+  padding-bottom: 0 !important;
+}
+
+.pb-1-custom {
+  padding-bottom: 5px !important;
+}
+
+.pb-2-custom {
+  padding-bottom: 10px !important;
+}
+
+.pb-3-custom {
+  padding-bottom: 15px !important;
+}
+
+.pb-4-custom {
+  padding-bottom: 30px !important;
+}
+
+.pb-5-custom {
+  padding-bottom: 60px !important;
+}
+
+.pl-0-custom {
+  padding-left: 0 !important;
+}
+
+.pl-1-custom {
+  padding-left: 5px !important;
+}
+
+.pl-2-custom {
+  padding-left: 10px !important;
+}
+
+.pl-3-custom {
+  padding-left: 15px !important;
+}
+
+.pl-4-custom {
+  padding-left: 30px !important;
+}
+
+.pl-5-custom {
+  padding-left: 60px !important;
+}
+
+.pr-0-custom {
+  padding-right: 0 !important;
+}
+
+.pr-1-custom {
+  padding-right: 5px !important;
+}
+
+.pr-2-custom {
+  padding-right: 10px !important;
+}
+
+.pr-3-custom {
+  padding-right: 15px !important;
+}
+
+.pr-4-custom {
+  padding-right: 30px !important;
+}
+
+.pr-5-custom {
+  padding-right: 60px !important;
+}
+
+@media (max-width: 576px) {
+  .slider-card-title {
+    font-size: 13px !important;
+    line-height: 20px !important;
+  }
+
+  .slider-card-main-price {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  .home-page-sub-title-def {
+    font-size: 18px !important;
+    line-height: 30px !important;
+  }
+}
+
+.cars-slider-card:hover {
+  border: 2px solid #e7aa2d !important;
+  border-radius: 20px;
+  padding: 6px;
+}
+
+.slider-card-main-price {
+  color: #e7aa2d;
 }

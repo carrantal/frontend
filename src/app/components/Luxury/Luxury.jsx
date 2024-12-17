@@ -13,7 +13,8 @@ const Luxury = () => {
     <div className="bg-shades-white home-page-section-body overflow-hidden pt-4 pb-4">
       <div className="container slider-container home-page-container-p-t">
         <div className="d-flex justify-content-between align-items-center">
-          <span className="fs-30 font-weight-semibold line-height-40 color-shades-900 home-page-sub-title-def">
+          <span className="fs-24 fs-lg-30 lh-lg-40 lh-35 font-weight-semibold color-shades-black">
+            {" "}
             Luxury Cars
           </span>
         </div>
@@ -23,7 +24,7 @@ const Luxury = () => {
           spaceBetween={20}
           loop={true}
           breakpoints={{
-            0: { slidesPerView: 1 }, // Mobile view
+            0: { slidesPerView: 2 }, // Mobile view
             768: { slidesPerView: 2 }, // Tablets
             1024: { slidesPerView: 4 }, // Desktop view
           }}

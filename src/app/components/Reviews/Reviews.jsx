@@ -17,20 +17,20 @@ const ReviewSlider = [
       "https://lh5.googleusercontent.com/p/AF1QipPlnDAF8DLs_hGNAxFF06MtiYvVtzud-4hL6U9H",
     ],
   },
-  {
-    id: 2,
-    name: "John Doe",
-    time: "1 day ago",
-    profileImage:
-      "https://lh3.googleusercontent.com/a/ACg8ocI1hGryGR6vjoOzEKtHLRbBtW_fHvQTXLS_xeVNm572GCRBXQ=s120-c-rp-mo-br100",
-    rating: 4,
-    reviewText:
-      "Great service, but the car was slightly delayed. Will use it again!",
-    reviewImages: [
-      "https://lh5.googleusercontent.com/p/AF1QipOs0zoF8a57qU3g0DmDuNnYKreSn5Wbl1umOq6r",
-      "https://lh5.googleusercontent.com/p/AF1QipPlnDAF8DLs_hGNAxFF06MtiYvVtzud-4hL6U9H",
-    ],
-  },
+  // {
+  //   id: 2,
+  //   name: "John Doe",
+  //   time: "1 day ago",
+  //   profileImage:
+  //     "https://lh3.googleusercontent.com/a/ACg8ocI1hGryGR6vjoOzEKtHLRbBtW_fHvQTXLS_xeVNm572GCRBXQ=s120-c-rp-mo-br100",
+  //   rating: 4,
+  //   reviewText:
+  //     "Great service, but the car was slightly delayed. Will use it again!",
+  //   reviewImages: [
+  //     "https://lh5.googleusercontent.com/p/AF1QipOs0zoF8a57qU3g0DmDuNnYKreSn5Wbl1umOq6r",
+  //     "https://lh5.googleusercontent.com/p/AF1QipPlnDAF8DLs_hGNAxFF06MtiYvVtzud-4hL6U9H",
+  //   ],
+  // },
 ];
 
 const Reviews = () => {
@@ -38,10 +38,10 @@ const Reviews = () => {
     <div className="container home-page-container-p-t mt-4">
       <div className="d-flex slider-container flex-column gap-row-lg-30 gap-row-25">
         <div className="d-flex justify-content-between align-items-center">
-          <h2 className="fs-lg-30 lh-lg-40 fs-24 lh-35 font-weight-semibold color-shades-900">
+          <h2 className="fs-24 fs-lg-30 lh-lg-40 lh-35 font-weight-semibold color-shades-black">
             Rent a car reviews
           </h2>
-          <div className="d-flex flex-row ">
+          {/* <div className="d-flex flex-row ">
             <div
               className="d-flex new-review-prev color-brand-primary swiper-button-disabled disabled"
               tabIndex="-1"
@@ -62,7 +62,7 @@ const Reviews = () => {
                 <FaAngleRight />
               </i>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="swiper-container new-reviews-slider position-relative swiper-initialized swiper-horizontal swiper-backface-hidden">
           <div className="swiper-wrapper d-flex">

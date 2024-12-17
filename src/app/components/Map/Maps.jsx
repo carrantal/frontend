@@ -2,10 +2,14 @@ import React from "react";
 
 const Maps = () => {
   return (
-    <div class="map-info  home-page-container-p-t mt-4 ">
+    <div class="bg-shades-white home-page-section-body overflow-hidden pt-4 pb-4">
       <div class="container h-[500px]">
         <div class="d-flex align-items-center mb-sm-4 mb-3">
-          <h2 class="fs-30 font-weight-semibold line-height-40 color-shades-900 home-page-sub-title-def">
+          <h2
+            class="
+          fs-24 fs-lg-30 lh-lg-40 lh-35 font-weight-semibold color-shades-black"
+          >
+            {" "}
             Rent a car near me
           </h2>
         </div>

@@ -10,7 +10,7 @@ const Brands = () => {
               <span className="fs-24 fs-lg-30 lh-lg-40 lh-35 font-weight-semibold color-shades-black">
                 Most wanted car rental brands in Dubai
               </span>
-              <a
+              {/* <a
                 className="d-lg-flex d-none all-product-page-link py-2-custom rounded-small align-items-center"
                 href="https://renty.ae/all-brands"
               >
@@ -18,10 +18,9 @@ const Brands = () => {
                   All brands
                 </span>
                 <span className="  color-brand-primary">
-                  {" "}
                   <FaAngleRight />
                 </span>
-              </a>
+              </a> */}
             </div>
 
             <div className="d-grid gap-[1rem] grid-col-lg-6 grid-col-md-4 grid-col-2  ">
@@ -67,7 +66,11 @@ const Brands = () => {
                 title="Rolls Royce"
                 href="/"
               >
-                <i className="icon-48 icon-brand-rolls-royce"></i>
+                {/* <i className="icon-48 icon-brand-rolls-royce"></i> */}
+                <img
+                  src="https://static.wixstatic.com/media/a1488d_73c9570431c541e9a1f47223d2d366cd~mv2.png/v1/fill/w_214,h_232,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/RR.png"
+                  class="icon-48"
+                ></img>
                 <span className="fs-14 lh-25 color-shades-black">
                   Rolls Royce
                 </span>
