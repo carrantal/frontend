@@ -21,6 +21,7 @@ import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import { LiaServicestack } from "react-icons/lia";
 import { FaListUl, FaCalendarAlt } from "react-icons/fa";
 import { CiSearch } from "react-icons/ci";
+import Gallery from "../Navbar/Gallery";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [currentMenu, setCurrentMenu] = useState("main"); // "main", "services", or "rentacar"
@@ -52,6 +53,7 @@ const Header = () => {
               <nav className="d-flex gap-col-5 flex-grow-1 justify-content-center">
                 <RentACar />
                 <Services />
+                <Gallery />
               </nav>
               <Profile />
             </div>

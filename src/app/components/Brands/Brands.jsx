@@ -3,7 +3,7 @@ import { FaAngleRight } from "react-icons/fa6";
 const Brands = () => {
   return (
     <>
-      <div className="home-page-sub-main-section-container bg-shades-100 pb-5 pt-10">
+      <div className="home-page-sub-main-section-container bg-shades-100 pb-5 pt-10 mt-10">
         <div className="d-flex pt-lg-2-custom pt-3-custom pb-lg-4-custom">
           <div className="container d-flex flex-column gap-row-lg-30 gap-row-15">
             <div className="d-flex justify-content-between gap-col-lg-30">
@@ -24,9 +24,9 @@ const Brands = () => {
               </a>
             </div>
 
-            <div className="d-grid gap-10 grid-col-lg-6 grid-col-md-4 grid-col-2">
+            <div className="d-grid gap-[1rem] grid-col-lg-6 grid-col-md-4 grid-col-2  ">
               <a
-                className="d-flex flex-md-column flex-row gap-col-lg-0 gap-col-10 py-md-2-custom py-lg-2-custom px-md-1-custom px-lg-1-custom bg-shades-white p-2-custom align-items-center rounded-medium most-popular-brand-item"
+                className="d-flex flex-md-column flex-row gap-col-lg-0 gap-col-10 py-md-2-custom py-lg-2-custom px-md-1-custom px-lg-1-custom bg-shades-white p-2-custom align-items-center rounded-medium most-popular-brand-item "
                 title="Ferrari"
                 href="/"
               >
