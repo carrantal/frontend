@@ -82,7 +82,7 @@ const Brands = () => {
               </a>
             </div>
 
-            <a
+            {/* <a
               className="d-lg-none d-flex all-product-page-link rounded-small py-2-custom align-items-center justify-content-center w-100"
               href="/"
             >
@@ -90,7 +90,7 @@ const Brands = () => {
                 All brands
               </span>
               <FaAngleRight />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

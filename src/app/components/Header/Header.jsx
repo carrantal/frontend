@@ -60,7 +60,7 @@ const Header = () => {
               <Profile />
             </div>
           </div>
-          <div className="d-lg-none w-100 navbar-mobile bg-brand-primary-darker py-1 px-5">
+          <div className="d-lg-none w-100 navbar-mobile bg-black py-1 px-5">
             {/* Main Menu Button */}
             <button
               className="btn btn-medium btn-modal-close left text-reset position-absolute"

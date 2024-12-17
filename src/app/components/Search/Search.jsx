@@ -9,7 +9,7 @@ const Search = () => {
           className="form-group mb-0 d-flex align-items-center"
           id="mainSearch"
         >
-          <div className="d-flex bg-shades-white flex-grow-1 align-items-center mr-lg-2 rounded-small pl-3 position-relative">
+          <div className="d-flex flex-grow-1 align-items-center mr-lg-2 rounded-small pl-3 position-relative bg-white">
             <span className="fs-18 icon-search-input color-shades-500 mr-2">
               <CiSearch />
             </span>
@@ -33,8 +33,8 @@ const Search = () => {
               </div>
             </div>
           </div>
-          <button className="btn btn-large btn-brand-accent rounded-small btn-main-search d-none d-lg-flex home-btn-search">
-            <span className="text-uppercase color-shades-white mx-auto fs-14 lh-20 letter-spacing-0_5 font-weight-600">
+          <button className="btn btn-large  rounded-small btn-main-search d-none d-lg-flex home-btn-search bg-[#651e10]">
+            <span className="text-uppercase  mx-auto fs-14 lh-20 letter-spacing-0_5 font-weight-600 text-white">
               Search
             </span>
           </button>

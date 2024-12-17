@@ -15,7 +15,7 @@ const Economy = () => {
   );
 
   return (
-    <div className="bg-shades-white home-page-section-body overflow-hidden pt-[60px] pb-3">
+    <div className="bg-shades-white home-page-section-body overflow-hidden pt-4 pb-4">
       <div className="container slider-container home-page-container-p-t">
         <div className="d-flex justify-content-between align-items-center">
           <span className="fs-30 font-weight-semibold line-height-40 color-shades-900 home-page-sub-title-def">

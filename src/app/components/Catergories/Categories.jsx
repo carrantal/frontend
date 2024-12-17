@@ -3,7 +3,7 @@ import React from "react";
 const Categories = () => {
   return (
     <>
-      <div className="position-absolute container home-page-popular-car-type-container slider-container overflow-hidden ">
+      <div className="position-absolute container home-page-popular-car-type-container slider-container ">
         <div className="swiper-container pop_rent_cat_slider mobile_overflow_visible swiper-initialized swiper-horizontal swiper-free-mode swiper-backface-hidden">
           <div
             className="swiper-wrapper d-flex justify-content-center gap-5"
@@ -17,7 +17,7 @@ const Categories = () => {
               // style={{ width: "134.375px", marginRight: "5px" }}
             >
               <a
-                className="bg-brand-primary d-flex flex-column align-items-center rounded-small home-page-slide-car-type"
+                className="bg-brand-primary d-flex flex-column align-items-center rounded-small lg:w-[120px] w-[70px]"
                 href="/"
               >
                 <img
@@ -37,7 +37,7 @@ const Categories = () => {
               //   style="width: 134.375px; margin-right: 5px"
             >
               <a
-                className="bg-brand-primary d-flex flex-column align-items-center rounded-small home-page-slide-car-type"
+                className="bg-brand-primary d-flex flex-column align-items-center rounded-small lg:w-[120px] w-[70px]"
                 href="/"
               >
                 <img
@@ -57,7 +57,7 @@ const Categories = () => {
               //   style="width: 134.375px; margin-right: 5px"
             >
               <a
-                className="bg-brand-primary d-flex flex-column align-items-center rounded-small home-page-slide-car-type"
+                className="bg-brand-primary d-flex flex-column align-items-center rounded-small lg:w-[120px] w-[70px]"
                 href="/"
               >
                 <img
@@ -77,7 +77,7 @@ const Categories = () => {
               //   style="width: 134.375px; margin-right: 5px"
             >
               <a
-                className="bg-brand-primary d-flex flex-column align-items-center rounded-small home-page-slide-car-type"
+                className="bg-brand-primary d-flex flex-column align-items-center rounded-small lg:w-[120px] w-[70px]"
                 href="/"
               >
                 <img

@@ -13,7 +13,7 @@ const WhyRentus = () => {
               #1 car rental company in Dubai on Google
             </span>
           </div>
-          <div className="d-flex align-items-center bg-shades-white home-page-companies-section cursor-pointer">
+          <div className="d-flex align-items-center bg-[#a41616] home-page-companies-section cursor-pointer">
             <a
               className="company-review-section p-4-custom px-xs-2-custom px-sm-2-custom d-flex flex-column h-100 justify-content-center align-items-center p-4"
               href="/"

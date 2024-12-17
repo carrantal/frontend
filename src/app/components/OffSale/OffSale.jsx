@@ -89,10 +89,10 @@ const OffSale = () => {
         >
           <div className="d-flex justify-content-between align-items-center">
             <div className="d-flex flex-column">
-              <span className="color-brand-primary hourly-offers-container-title">
+              <span className="text-[#e7aa2d] hourly-offers-container-title">
                 Get up to 40% off
               </span>
-              <span className="color-brand-primary hourly-offers-container-sub-title">
+              <span className="text-[#e7aa2d] hourly-offers-container-sub-title">
                 Rent hourly and save with limited time offers
               </span>
             </div>
@@ -133,31 +133,7 @@ const OffSale = () => {
                     style={{ width: "268.846px", marginRight: "10px" }}
                   >
                     <div className="position-absolute offer-pin rounded-small d-flex align-items-center hourly-offer-pin">
-                      <div className="d-flex availability-feature-label-mobile align-items-center">
-                        <i className="mr-1 line-height-normal d-flex align-items-center">
-                          <svg
-                            width="12"
-                            height="12"
-                            viewBox="0 0 12 12"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              className="fill-primary"
-                              d="M3.5 1C3.5 0.723858 3.72386 0.5 4 0.5C4.27614 0.5 4.5 0.723858 4.5 1V1.5H7.5V1C7.5 0.723858 7.72386 0.5 8 0.5C8.27614 0.5 8.5 0.723858 8.5 1V1.5H9.5C10.3284 1.5 11 2.17157 11 3V10C11 10.8284 10.3284 11.5 9.5 11.5H2.5C1.67157 11.5 1 10.8284 1 10V3C1 2.17157 1.67157 1.5 2.5 1.5H3.5V1Z"
-                            ></path>
-                            <path
-                              fillRule="evenodd"
-                              clipRule="evenodd"
-                              d="M8.5 4.64624C8.69536 4.8414 8.69552 5.15799 8.50035 5.35335L5.85373 8.15094C5.75998 8.24479 5.63278 8.29753 5.50013 8.29756C5.36747 8.2976 5.24025 8.24492 5.14645 8.15112L3.64645 6.65112C3.45118 6.45586 3.45118 6.13927 3.64645 5.94401C3.84171 5.74875 4.15829 5.74875 4.35355 5.94401L5.49982 7.09028L7.79289 4.64659C7.98806 4.45123 8.30464 4.45108 8.5 4.64624Z"
-                              fill="white"
-                            ></path>
-                          </svg>
-                        </i>
-                        <span className="fs-12 lh-20 font-weight-normal text-nowrap color-shades-white">
-                          {car.availability}
-                        </span>
-                      </div>
+                      <div className="d-flex availability-feature-label-mobile align-items-center"></div>
                     </div>
                     <a href={car.href} title={`Hiring ${car.title} in Dubai`}>
                       <div className="cars-slider-header position-relative">

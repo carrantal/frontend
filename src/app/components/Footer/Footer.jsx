@@ -2,6 +2,7 @@ import React from "react";
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaTiktok } from "react-icons/fa";
+
 const Footer = () => {
   return (
     <footer className=" border-top border-shades-200 p-4 mt-4">
@@ -64,6 +65,10 @@ const Footer = () => {
 
         {/* Address */}
         <div className="col-lg-6 col-12 d-flex flex-column  mb-4">
+          <div className="d-none d-md-block"></div>
+          <div className="d-block d-md-none mb-3">
+            <hr className="border-top border-shades-200" />
+          </div>
           <span className="fs-11 font-weight-bold letter-spacing-1 text-uppercase color-shades-600">
             Address
           </span>
