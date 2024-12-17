@@ -424,19 +424,19 @@ const Header = () => {
         </div>
         <div className="mt-4"></div>
         <Brands />
-      </div>
 
-      <CarImsges />
-      <WhyRentus />
-      <CarImsges />
-      <CarImsges />
-      <OffSale />
-      <CarImsges />
-      <Reviews />
-      <Maps />
-      <LeadingCompany />
-      <Faq />
-      <Footer />
+        <CarImsges />
+        <WhyRentus />
+        <CarImsges />
+        <CarImsges />
+        <OffSale />
+        <CarImsges />
+        <Reviews />
+        <Maps />
+        <LeadingCompany />
+        <Faq />
+        <Footer />
+      </div>
     </>
   );
 };

@@ -1,13 +1,13 @@
 import React from "react";
 import { MdOutlineLocalPhone } from "react-icons/md";
-import { FaRegMessage } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa6";
+import { FaTiktok } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="bg-white border-top border-shades-200 p-4 mt-4">
-      <div className="row text-center">
+      <div className="row ">
         {/* Inquiries & Support */}
-        <div className="col-lg-4 col-6 d-flex flex-column align-items-center mb-4">
+        <div className="col-lg-6 col-12 d-flex flex-column lg:pl-[190px] mb-4">
           <div>
             <span className="font-weight-bold letter-spacing-1 text-uppercase color-shades-600 fs-11">
               Inquiries &amp; Support
@@ -48,39 +48,22 @@ const Footer = () => {
 
                 <span className="direction-ltr ml-1">Facebook</span>
               </a>
+              <a
+                href="https://www.tiktok.com/@naylrentalsdxb?_t=8rLvJBDLAK9&_r=1"
+                title="Contact Renty.ae car rental Telegram"
+                className="fs-12 fs-sm-14 color-shades-black d-flex align-items-center letter-spacing-0_2"
+                target="blank"
+              >
+                <FaTiktok className="text-[#1359ba]" />
+
+                <span className="direction-ltr ml-1">TikTok</span>
+              </a>
             </div>
           </div>
         </div>
 
-        {/* For Partnership */}
-        <div className="col-lg-4 col-6 d-flex flex-column align-items-center mb-4">
-          <span className="fs-11 font-weight-bold letter-spacing-1 text-uppercase color-shades-600">
-            For Partnership
-          </span>
-          <div className="d-flex flex-column mt-3-custom line-height-25 gap-10">
-            <a
-              href="tel:+971504617277"
-              className="fs-12 fs-sm-14 color-shades-black d-flex align-items-center letter-spacing-0_2"
-            >
-              <div className="mr-2 d-flex align-items-center justify-content-center">
-                <MdOutlineLocalPhone />
-              </div>
-              <span className="direction-ltr">+971-528888746</span>
-            </a>
-            <a
-              href="/"
-              className="fs-12 fs-sm-14 color-shades-black d-flex align-items-center letter-spacing-0_2"
-            >
-              <div className="mr-2 d-flex align-items-center justify-content-center">
-                <FaRegMessage />
-              </div>
-              <span className="direction-ltr">Send Message</span>
-            </a>
-          </div>
-        </div>
-
         {/* Address */}
-        <div className="col-lg-4 col-12 d-flex flex-column align-items-center mb-4">
+        <div className="col-lg-6 col-12 d-flex flex-column  mb-4">
           <span className="fs-11 font-weight-bold letter-spacing-1 text-uppercase color-shades-600">
             Address
           </span>
