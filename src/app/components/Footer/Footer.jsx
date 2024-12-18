@@ -3,6 +3,7 @@ import { MdOutlineLocalPhone } from "react-icons/md";
 import { FaTiktok } from "react-icons/fa";
 import { FaWhatsapp, FaPhoneFlip } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa";
 
 import { FaPhoneAlt } from "react-icons/fa";
 
@@ -12,6 +13,7 @@ const Footer = () => {
     whatsapp: "https://wa.me/971528888746",
     instagram: "https://www.instagram.com/naylrentalsdxb?igsh=bnAxOXp5Z3JraGN4",
     tiktok: "https://www.tiktok.com/@naylrentalsdxb?_t=8rLvJBDLAK9&_r=1",
+    facebook: "https://www.facebook.com/share/15aY27odAJ/?mibextid=LQQJ4d",
     address: "Azizi Riviera 4 , Retail 8 ,Meydan , Dubai, UAE",
     policies: [
       {
@@ -103,6 +105,13 @@ const Footer = () => {
                 >
                   <FaInstagram className="icon-16 icon-phone mr-2 d-flex align-items-center color-shades-900 justify-content-center" />
                   <span className="direction-ltr">Instagram</span>
+                </a>
+                <a
+                  href={`${data.facebook}`}
+                  className="fs-12 fs-sm-14 color-shades-black d-flex align-items-center letter-spacing-0_2"
+                >
+                  <FaFacebook className="icon-16 icon-phone mr-2 d-flex align-items-center color-shades-900 justify-content-center" />
+                  <span className="direction-ltr">Facebook</span>
                 </a>
               </div>
             </div>

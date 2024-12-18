@@ -9,8 +9,6 @@ const LeadingCompany = () => {
         </h2>
         <img
           src="https://renty.ae/assets/images/company-car.svg"
-          alt="Renty.ae"
-          title="Renty.ae"
           class="d-none d-lg-flex"
           loading="lazy"
         />
@@ -52,9 +50,9 @@ const LeadingCompany = () => {
             </span>
           </div>
           <span class="home-about-company-section-card-text font-weight-normal color-shades-black">
-            Renty is a leading online car rental service specializing in luxury
-            cars, but also, economy motors, business vehicles, and vans. We
-            serve both casual tourists and business professionals looking to
+            Nayl Rentals is a leading online car rental service specializing in
+            luxury cars, but also, economy motors, business vehicles, and vans.
+            We serve both casual tourists and business professionals looking to
             hire fully-tested, luxurious rent car Dubai and the UAE. Our
             platform provides a comprehensive round-up of top-rated vehicles
             from all the major car rental providers in Dubai, Abu Dhabi, Sharjah
@@ -115,16 +113,16 @@ const LeadingCompany = () => {
             </span>
           </div>
           <span class="home-about-company-section-card-text font-weight-normal color-shades-black">
-            Renty’s one-stop-shop gives customers fantastic choice and
-            best-in-industry value. All the cars listed on Renty are
+            Nayl Rental's one-stop-shop gives customers fantastic choice and
+            best-in-industry value. All the cars listed on Nayl Rentals are
             fully-vetted and high-quality. We have strict quality control
             practices in place. And we only work with dealerships that guarantee
             excellent service and great value. Customers can be assured of the
-            highest quality when they rent a car at Renty. Our platform provides
-            you with a simple and clear car rental process. Look no further car
-            rental companies if you want to rent a luxury car. Get cheap rent
-            and order a top-notch ride from our huge car rental fleet which is
-            updated daily.
+            highest quality when they rent a car at Nayl Rentals. Our platform
+            provides you with a simple and clear car rental process. Look no
+            further car rental companies if you want to rent a luxury car. Get
+            cheap rent and order a top-notch ride from our huge car rental fleet
+            which is updated daily.
           </span>
         </div>
         <div class="col-lg col-12 home-about-company-section-card flex-column">

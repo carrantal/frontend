@@ -10,17 +10,6 @@ const Brands = () => {
               <span className="fs-24 fs-lg-30 lh-lg-40 lh-35 font-weight-semibold color-shades-black">
                 Most wanted car rental brands in Dubai
               </span>
-              {/* <a
-                className="d-lg-flex d-none all-product-page-link py-2-custom rounded-small align-items-center"
-                href="https://renty.ae/all-brands"
-              >
-                <span className="fs-13 lh-20 letter-spacing-0_2 font-weight-bold text-uppercase color-brand-primary">
-                  All brands
-                </span>
-                <span className="  color-brand-primary">
-                  <FaAngleRight />
-                </span>
-              </a> */}
             </div>
 
             <div className="d-grid gap-[1rem] grid-col-lg-6 grid-col-md-4 grid-col-2  ">
