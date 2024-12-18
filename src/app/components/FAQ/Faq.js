@@ -11,7 +11,7 @@ const Faq = () => {
   };
 
   return (
-    <div className=" bg-shades-white home-page-container-p-t flex-column pt-4 mt-4">
+    <div className=" bg-shades-white home-page-container-p-t flex-column pt-4 pb-4 mt-4">
       <div className="container">
         <div className="d-flex justify-content-between align-items-center">
           <h2 className=" fs-24 fs-lg-30 lh-lg-40 lh-35 font-weight-semibold color-shades-black">
