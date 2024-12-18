@@ -29,6 +29,8 @@ const Footer = () => {
         link: "#",
       },
     ],
+    googlemap:
+      "https://www.google.com/maps/place/Nayl+Luxury+Rentals/@25.1732612,55.299778,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5f69943cf09df9:0x9241bd366c73e188!8m2!3d25.1732612!4d55.299778!16s%2Fg%2F11wq3gv6gw?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D",
   };
 
   return (
@@ -141,21 +143,18 @@ const Footer = () => {
             <a
               target="_blank"
               className="fs-14 color-shades-black footer-map-link"
-              href="https://goo.gl/maps/i43UXGFzwrRvjK5G7"
+              href={data?.googlemap}
             >
               <div className="">
-                <img
-                  src="https://renty.ae/assets/images/maps/footer_map.png"
-                  loading="lazy"
-                />
+                <img src="./images/map.png" loading="lazy" />
               </div>
             </a>
             <div className="footer-company-reviews-block w-100 d-flex justify-content-center  bg-shades-white my-3-custom">
               <a
                 className="company-review-section p-4-custom px-xs-2-custom px-sm-2-custom d-flex flex-column h-100 justify-content-center align-items-center mobile"
-                // href="https://www.google.com/maps/place/Renty+-+Rent+Luxury+Car+in+Dubai/@25.1608085,55.2372231,17z/data=!4m8!3m7!1s0x3e5f6985ae4b1d7d:0x1fea6bf21aa114ba!8m2!3d25.1608085!4d55.2372231!9m1!1b1!16s%2Fg%2F11h4cqq5n4?hl=en"
+                href={data?.googlemap}
                 target="_blank"
-                title="Find us on Google Maps in Al Quoz, Dubai."
+                title="Find us on Google Maps in Dubai."
               >
                 <div className="d-flex align-items-center company-review-icons-block">
                   <div className="company-review-icon">
