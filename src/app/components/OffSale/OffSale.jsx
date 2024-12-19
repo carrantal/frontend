@@ -89,10 +89,10 @@ const OffSale = () => {
         >
           <div className="d-flex justify-content-between align-items-center">
             <div className="d-flex flex-column">
-              <span className="text-[#e7aa2d] hourly-offers-container-title">
+              <span className="text-[#ec7421] hourly-offers-container-title">
                 Get up to 40% off
               </span>
-              <span className="text-[#e7aa2d] hourly-offers-container-sub-title">
+              <span className="text-[#ec7421] hourly-offers-container-sub-title">
                 Rent hourly and save with limited time offers
               </span>
             </div>

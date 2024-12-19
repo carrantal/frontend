@@ -37,7 +37,7 @@ const Header = () => {
       <div className="homepage  ">
         <header className="sticky-header">
           <div className="d-none d-lg-block bg-brand-primary-darker position-relative header-main-menu-container desc-header-panel">
-            <div className="container d-flex position-relative">
+            <div className="container d-flex position-relative align-items-center">
               <div className="d-flex mx-auto">
                 <a
                   href="/"
@@ -46,8 +46,8 @@ const Header = () => {
                 >
                   <Image
                     src="/images/desig.avif"
-                    width={80}
-                    height={90}
+                    width={100}
+                    height={100}
                     alt="Picture of the author"
                   />
                 </a>
@@ -416,15 +416,15 @@ const Header = () => {
 
             <Search />
           </div>
-          <div className="justify-content-center d-none d-md-flex home-page-popular-car-type-title">
+          {/* <div className="justify-content-center d-none d-md-flex home-page-popular-car-type-title">
             <span className="fs-11 lh-15 font-weight-bold color-shades-white letter-spacing-1 text-uppercase">
               Popular car rental categories in Dubai
             </span>
-          </div>
-
-          <Categories />
+          </div> */}
+          {/* <Categories /> */}
         </div>
-        <div className="mt-4"></div>
+        {/* <div className="mt-4"></div> */}
+        <Categories />
         <Brands />
 
         <Luxury />

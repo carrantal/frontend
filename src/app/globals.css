@@ -94,6 +94,10 @@ header {
     margin-bottom: 20px;
     margin-top: 15px;
   }
+
+  .home-page-title-section {
+    text-align: left !important;
+  }
 }
 
 .home-page-search-section > #mainSearch {
@@ -251,7 +255,7 @@ header {
 
 .home-about-company-section-title {
   /* -webkit-text-fill-color: transparent; */
-  /* background: linear-gradient(81.6deg, #e7aa2d 12.86%, #e7aa2d 87.14%),
+  /* background: linear-gradient(81.6deg, #ec7421 12.86%, #ec7421 87.14%),
     linear-gradient(0deg, #21262d, #21262d); */
   /* -webkit-background-clip: text; */
 }
@@ -871,7 +875,7 @@ h5 {
 }
 
 .color-shades-900 {
-  color: #e7aa2d;
+  color: #ec7421;
 }
 
 .color-icons-star-active {
@@ -887,7 +891,7 @@ h5 {
 }
 
 .bg-brand-primary {
-  background-color: #e7aa2d;
+  background-color: #ec7421;
 }
 
 .bg-brand-primary-darker {
@@ -1340,7 +1344,7 @@ body {
 }
 
 a {
-  color: #e7aa2d;
+  color: #ec7421;
   transition: 0.3s;
 }
 
@@ -13531,13 +13535,19 @@ header.header-hidden .popover .arrow {
 }
 
 .cars-slider-card:hover {
-  border: 2px solid #e7aa2d !important;
+  border: 2px solid #ec7421 !important;
+  border-radius: 20px;
+  padding: 6px;
+}
+
+.cars-slider-card-category {
+  border: 2px solid #ec7421 !important;
   border-radius: 20px;
   padding: 6px;
 }
 
 .slider-card-main-price {
-  color: #e7aa2d;
+  color: #ec7421;
 }
 
 .m-1-custom {

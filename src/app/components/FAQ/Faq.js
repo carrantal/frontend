@@ -68,7 +68,7 @@ const Faq = () => {
                     >
                       <div className="d-flex icon-chevron-down-faqs p-1">
                         <i className="color-brand-accent">
-                          <MdKeyboardArrowDown />
+                          <MdKeyboardArrowDown fill="#ec7421" />
                         </i>
                       </div>
                       <h3 className="fs-lg-16 fs-14 line-height-25 color-shades-900 font-weight-normal">

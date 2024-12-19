@@ -33,7 +33,7 @@ const Search = () => {
               </div>
             </div>
           </div>
-          <button className="btn btn-large  rounded-small btn-main-search d-none d-lg-flex home-btn-search bg-[#651e10]">
+          <button className="btn btn-large  rounded-small btn-main-search d-none d-lg-flex home-btn-search bg-brand-primary">
             <span className="text-uppercase  mx-auto fs-14 lh-20 letter-spacing-0_5 font-weight-600 text-white">
               Search
             </span>

@@ -3,7 +3,7 @@ import { FaAngleRight } from "react-icons/fa6";
 const Brands = () => {
   return (
     <>
-      <div className="home-page-sub-main-section-container bg-shades-100 pb-5 pt-10 mt-10">
+      <div className="home-page-sub-main-section-container bg-shades-100 pb-4 pt-4">
         <div className="d-flex pt-lg-2-custom pt-3-custom pb-lg-4-custom">
           <div className="container d-flex flex-column gap-row-lg-30 gap-row-15">
             <div className="d-flex justify-content-between gap-col-lg-30">
