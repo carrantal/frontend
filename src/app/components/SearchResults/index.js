@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import { useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
+import Breadcrumb from "../Breadcrumb";
 
 export default function SearchResults() {
   const searchParams = useSearchParams();
@@ -8,25 +10,7 @@ export default function SearchResults() {
 
   return (
     <>
-      <div className="d-block bg-shades-white">
-        <div className="container">
-          <nav aria-label="breadcrumb">
-            <div className="d-flex py-2-custom">
-              <ol className="breadcrumb py-1-custom pl-0 bg-transparent">
-                <li className="breadcrumb-item" aria-current="page">
-                  <a className="text-white" href="https://renty.ae/">
-                    Rent a car
-                  </a>
-                </li>
-                {/* <i className="d-flex align-items-center px-1-custom color-shades-500 fs-12 not-rtl icon-chevron-right"></i> */}
-                <li className="breadcrumb-item active color-brand-primary">
-                  <span>{breadcrumbTitle}</span>
-                </li>
-              </ol>
-            </div>
-          </nav>
-        </div>
-      </div>
+      <Breadcrumb breadcrumbTitle={breadcrumbTitle} />
       <div class="bg-shades-white  pt-3 pt-lg-4 ">
         <div class="container">
           <div class=" ">
@@ -73,6 +57,7 @@ export default function SearchResults() {
 }
 
 function Car() {
+  const router = useRouter();
   return (
     <>
       <div class="col-12 col-md-6 col-lg-12 car-list-item bg-shades-white mb-2">
@@ -160,7 +145,7 @@ function Car() {
                     <span class="fs-11 font-weight-bold text-uppercase color-shades-700 letter-spacing-1 lh-15">
                       Price per day
                     </span>{" "}
-                    <span class="fs-24 line-height-35 color-shades-black font-weight-normal">
+                    <span class="fs-24 line-height-35 text-white font-weight-normal">
                       $ 146
                     </span>
                     <div class="d-flex position-relative align-items-center">
@@ -169,7 +154,7 @@ function Car() {
                           <span class="fs-14 line-height-25 font-weight-normal color-shades-700 mr-1-custom">
                             3-6 days:
                           </span>
-                          <span class="fs-14 line-height-25 font-weight-normal color-brand-primary-lighter">
+                          <span class="fs-14 line-height-25 font-weight-normal color-brand-primary">
                             $ 146
                           </span>
                         </div>
@@ -252,7 +237,7 @@ function Car() {
                         <span class="fs-14 line-height-25 font-weight-normal color-shades-700 mr-1-custom">
                           3-6 days:
                         </span>
-                        <span class="fs-14 line-height-25 font-weight-normal color-brand-primary-lighter">
+                        <span class="fs-14 line-height-25 font-weight-normal color-brand-primary">
                           $ 146
                         </span>
                       </div>
@@ -261,12 +246,14 @@ function Car() {
                 </div>{" "}
                 <div class="d-flex justify-content-end gap-col-5">
                   <button
-                    type="button"
+                    onClick={() => {
+                      router.push("/car-details/slug-car-title");
+                    }}
                     class=" btn-medium btn btn-details font-weight-bolder position-relative 
                           align-items-center d-none d-lg-flex primary-button-color"
                   >
                     <span class="text-nowrap text-uppercase lh-20 letter-spacing-0_2 fs-14 ">
-                      Rental details
+                      Rental details dd
                     </span>
                   </button>
                 </div>
