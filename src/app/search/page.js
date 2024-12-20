@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Header from "../components/Header/Header";
 import TopHeader from "../components/TopHeader";
 import SearchResults from "../components/SearchResults";
@@ -10,7 +10,9 @@ export default function CarListPage() {
       <div class="bg-black">
         <div class="homepage  ">
           <TopHeader />
-          <SearchResults />
+          <Suspense>
+            <SearchResults />
+          </Suspense>
           <Footer />
         </div>
       </div>

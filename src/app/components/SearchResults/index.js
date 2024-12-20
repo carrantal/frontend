@@ -1,12 +1,6 @@
 "use client";
-import {
-  useParams,
-  usePathname,
-  useRouter,
-  useSearchParams,
-} from "next/navigation";
-
 import React from "react";
+import { useSearchParams } from "next/navigation";
 
 export default function SearchResults() {
   const searchParams = useSearchParams();
