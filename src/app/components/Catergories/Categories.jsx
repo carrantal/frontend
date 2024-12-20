@@ -128,7 +128,7 @@ const Categories = () => {
             >
               <a
                 className="bg-shades-white category-card d-flex flex-column align-items-center rounded-small lg:w-[120px] w-[70px]"
-                href="/search"
+                href="/search?category=Luxury"
               >
                 <svg
                   className="home-page-pop-rent-cat-img mt-3"
@@ -159,7 +159,7 @@ const Categories = () => {
             >
               <a
                 className="bg-shades-white category-card d-flex flex-column align-items-center rounded-small lg:w-[120px] w-[70px]"
-                href="/search"
+                href="/search?category=Economy"
               >
                 <svg
                   className="home-page-pop-rent-cat-img mt-3"
@@ -190,7 +190,7 @@ const Categories = () => {
             >
               <a
                 className="bg-shades-white category-card d-flex flex-column align-items-center rounded-small lg:w-[120px] w-[70px]"
-                href="/search"
+                href="/search?category=Sports"
               >
                 <svg
                   className="home-page-pop-rent-cat-img mt-3"
@@ -221,7 +221,7 @@ const Categories = () => {
             >
               <a
                 className="bg-shades-white category-card d-flex flex-column align-items-center rounded-small lg:w-[120px] w-[70px]"
-                href="/search"
+                href="/search?category=SUV"
               >
                 <svg
                   className="home-page-pop-rent-cat-img mt-3"

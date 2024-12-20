@@ -784,7 +784,7 @@ h5 {
 }
 
 .color-brand-primary {
-  color: #1359ba;
+  color: #ec7421 !important;
 }
 
 .color-brand-primary-darker {
@@ -5603,30 +5603,10 @@ body:not(.rtl) .company-bar-company-logo {
   height: 30px;
 }
 
-.pagination .page-item .page-link {
-  align-items: center;
-  background-color: transparent;
-  border: 2px solid transparent;
-  color: #1359ba;
-  display: flex;
-  font-size: 13px;
-  font-weight: bold;
-  height: 36px;
-  justify-content: center;
-  margin: 2px;
-  padding: 0;
-  width: 36px;
-}
-
-.pagination .page-item:first-child .page-link,
-.pagination .page-item:last-child .page-link {
-  color: #009fe2;
-}
-
 .pagination .page-item.active .page-link,
 .pagination .page-item:hover:not(.disabled) .page-link {
   background-color: rgba(0, 159, 226, 0.1);
-  color: #009fe2;
+  color: #ec7421;
 }
 
 .pagination .page-item.disabled .page-link {
@@ -7107,12 +7087,12 @@ footer .nav-link {
 }
 
 .car-list-item > div {
-  padding: 15px 0;
+  padding: 15px 15px;
 }
 
 @media (max-width: 992px) {
-  .car-list-item > div {
-    padding: 0;
+  .car-list-item {
+    padding: 15px;
   }
 }
 
@@ -11127,7 +11107,7 @@ header.header-hidden .popover .arrow {
   align-items: center;
   background-color: transparent;
   border: 2px solid transparent;
-  color: #1359ba;
+  color: white;
   display: flex;
   font-size: 13px;
   font-weight: bold;
@@ -11138,15 +11118,10 @@ header.header-hidden .popover .arrow {
   width: 36px;
 }
 
-.pagination .page-item:first-child .page-link,
-.pagination .page-item:last-child .page-link {
-  color: #009fe2;
-}
-
 .pagination .page-item.active .page-link,
 .pagination .page-item:hover:not(.disabled) .page-link {
   background-color: rgba(0, 159, 226, 0.1);
-  color: #009fe2;
+  color: #ec7421;
 }
 
 .pagination .page-item.disabled .page-link {
@@ -13729,4 +13704,15 @@ header.header-hidden .popover .arrow {
 
 .category-card {
   border: 2px solid #ec7421;
+}
+
+.primary-button-color {
+  color: white;
+  background: #ec7421;
+}
+
+.primary-button-color:hover {
+  background: black;
+  border: 2px solid #ec7421;
+  color: white;
 }
