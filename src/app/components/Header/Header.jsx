@@ -421,10 +421,10 @@ const Header = () => {
               Popular car rental categories in Dubai
             </span>
           </div> */}
-          {/* <Categories /> */}
+          <Categories />
         </div>
-        {/* <div className="mt-4"></div> */}
-        <Categories />
+        <div className="mt-4"></div>
+        {/* <Categories /> */}
         <Brands />
 
         <Luxury />

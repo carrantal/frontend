@@ -473,6 +473,7 @@ body.rtl .border-left {
 }
 
 .home-page-slide-category-name {
+  color: #ec7421;
   line-height: 1;
   max-height: 28px;
   min-height: 28px;
@@ -1338,7 +1339,7 @@ nav[aria-label="breadcrumb"] .breadcrumb .breadcrumb-item.active {
 }
 
 body {
-  background-color: #fff;
+  background-color: #0d0d0d;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
 }
@@ -1349,7 +1350,7 @@ a {
 }
 
 a:hover {
-  color: #e7aa5d;
+  color: #ec7421;
   text-decoration: none !important;
 }
 
@@ -13724,4 +13725,8 @@ header.header-hidden .popover .arrow {
 
 .mr-5-custom {
   margin-right: 60px !important;
+}
+
+.category-card {
+  border: 2px solid #ec7421;
 }
