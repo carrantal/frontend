@@ -120,18 +120,17 @@ const Categories = () => {
             id="swiper-wrapper-d547c164d1f68c60"
             aria-live="polite"
           >
-            <div
-              className=" "
-              role="group"
-              aria-label="1 / 8"
-              // style={{ width: "134.375px", marginRight: "5px" }}
-            >
+            <div>
               <a
                 className="bg-shades-white category-card d-flex flex-column align-items-center rounded-small lg:w-[120px] w-[70px]"
                 href="/search?category=Luxury"
+                style={{
+                  backgroundImage: "url('images/luxury.jpeg')",
+                  backgroundSize: "cover",
+                }}
               >
                 <svg
-                  className="home-page-pop-rent-cat-img mt-3"
+                  className="home-page-pop-rent-cat-img mt-3 invisible"
                   xmlns="http://www.w3.org/2000/svg"
                   width="61"
                   height="30"
@@ -146,23 +145,22 @@ const Categories = () => {
                   />
                   <script xmlns="" />
                 </svg>
-                <span className="home-page-slide-category-name d-flex align-items-center font-weight-semibold fs-13 fs-sm-14 text-center px-2 overflow-hidden">
+                <span className="text-white home-page-slide-category-name d-flex align-items-center font-weight-semibold fs-13 fs-sm-14 text-center px-2 overflow-hidden">
                   Luxury
                 </span>
               </a>
             </div>
-            <div
-              className=" "
-              role="group"
-              aria-label="2 / 8"
-              //   style="width: 134.375px; margin-right: 5px"
-            >
+            <div>
               <a
                 className="bg-shades-white category-card d-flex flex-column align-items-center rounded-small lg:w-[120px] w-[70px]"
                 href="/search?category=Economy"
+                style={{
+                  backgroundImage: "url('images/economy.jpeg')",
+                  backgroundSize: "cover",
+                }}
               >
                 <svg
-                  className="home-page-pop-rent-cat-img mt-3"
+                  className="home-page-pop-rent-cat-img mt-3 invisible"
                   xmlns="http://www.w3.org/2000/svg"
                   width="60"
                   height="30"
@@ -177,23 +175,22 @@ const Categories = () => {
                   />
                   <script xmlns="" />
                 </svg>
-                <span className="home-page-slide-category-name d-flex align-items-center font-weight-semibold fs-13 fs-sm-14 text-center px-2 overflow-hidden">
+                <span className="text-white home-page-slide-category-name d-flex align-items-center font-weight-semibold fs-13 fs-sm-14 text-center px-2 overflow-hidden">
                   Economy
                 </span>
               </a>
             </div>
-            <div
-              className=""
-              role="group"
-              aria-label="3 / 8"
-              //   style="width: 134.375px; margin-right: 5px"
-            >
+            <div>
               <a
                 className="bg-shades-white category-card d-flex flex-column align-items-center rounded-small lg:w-[120px] w-[70px]"
                 href="/search?category=Sports"
+                style={{
+                  backgroundImage: "url('images/sports.jpeg')",
+                  backgroundSize: "cover",
+                }}
               >
                 <svg
-                  className="home-page-pop-rent-cat-img mt-3"
+                  className="home-page-pop-rent-cat-img mt-3 invisible"
                   xmlns="http://www.w3.org/2000/svg"
                   width="61"
                   height="30"
@@ -208,23 +205,22 @@ const Categories = () => {
                   />
                   <script xmlns="" />
                 </svg>
-                <span className="home-page-slide-category-name d-flex align-items-center font-weight-semibold fs-13 fs-sm-14 text-center px-2 overflow-hidden">
+                <span className="text-white home-page-slide-category-name d-flex align-items-center font-weight-semibold fs-13 fs-sm-14 text-center px-2 overflow-hidden">
                   Sports
                 </span>
               </a>
             </div>
-            <div
-              className=""
-              role="group"
-              aria-label="4 / 8"
-              //   style="width: 134.375px; margin-right: 5px"
-            >
+            <div>
               <a
                 className="bg-shades-white category-card d-flex flex-column align-items-center rounded-small lg:w-[120px] w-[70px]"
                 href="/search?category=SUV"
+                style={{
+                  backgroundImage: "url('images/suv.jpeg')",
+                  backgroundSize: "cover",
+                }}
               >
                 <svg
-                  className="home-page-pop-rent-cat-img mt-3"
+                  className="home-page-pop-rent-cat-img mt-3 invisible"
                   xmlns="http://www.w3.org/2000/svg"
                   width="61"
                   height="30"
@@ -246,7 +242,7 @@ const Categories = () => {
                     fill="#ec7421"
                   />
                 </svg>
-                <span className="home-page-slide-category-name d-flex align-items-center font-weight-semibold fs-13 fs-sm-14 text-center px-2 overflow-hidden">
+                <span className="text-white home-page-slide-category-name d-flex align-items-center font-weight-semibold fs-13 fs-sm-14 text-center px-2 overflow-hidden">
                   SUV
                 </span>
               </a>
