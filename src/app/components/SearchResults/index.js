@@ -170,6 +170,9 @@ function Car() {
                             btn btn-details font-weight-bolder position-relative align-items-center d-flex d-lg-none 
                             w-100"
                       style={{ padding: "10px 20px" }}
+                      onClick={() => {
+                        router.push("/car-details/slug-car-title");
+                      }}
                     >
                       <span class="car-detail-btn-text text-nowrap text-uppercase lh-20 letter-spacing-0_2 fs-13 ">
                         Rental details
@@ -253,7 +256,7 @@ function Car() {
                           align-items-center d-none d-lg-flex primary-button-color"
                   >
                     <span class="text-nowrap text-uppercase lh-20 letter-spacing-0_2 fs-14 ">
-                      Rental details dd
+                      Rental details
                     </span>
                   </button>
                 </div>
