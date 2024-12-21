@@ -13722,3 +13722,20 @@ header.header-hidden .popover .arrow {
     font-size: 18px !important;
   }
 }
+
+.category-card {
+  width: 120px;
+}
+
+@media (max-width: 576px) {
+  .category-card {
+    width: 100px;
+  }
+}
+
+@media (max-width: 430px) {
+  .category-card {
+    width: 70px;
+    height: 40px;
+  }
+}
