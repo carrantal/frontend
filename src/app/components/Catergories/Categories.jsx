@@ -122,7 +122,7 @@ const Categories = () => {
           >
             <div>
               <a
-                className="bg-shades-white category-card d-flex flex-column align-items-center rounded-small lg:w-[120px] w-[70px]"
+                className="bg-shades-white category-card d-flex flex-column align-items-center rounded-small lg:w-[120px] w-[100px]"
                 href="/search?category=Luxury"
                 style={{
                   backgroundImage: "url('images/luxury.jpeg')",
@@ -152,7 +152,7 @@ const Categories = () => {
             </div>
             <div>
               <a
-                className="bg-shades-white category-card d-flex flex-column align-items-center rounded-small lg:w-[120px] w-[70px]"
+                className="bg-shades-white category-card d-flex flex-column align-items-center rounded-small lg:w-[120px] w-[100px]"
                 href="/search?category=Economy"
                 style={{
                   backgroundImage: "url('images/economy.jpeg')",
@@ -182,7 +182,7 @@ const Categories = () => {
             </div>
             <div>
               <a
-                className="bg-shades-white category-card d-flex flex-column align-items-center rounded-small lg:w-[120px] w-[70px]"
+                className="bg-shades-white category-card d-flex flex-column align-items-center rounded-small lg:w-[120px] w-[100px]"
                 href="/search?category=Sports"
                 style={{
                   backgroundImage: "url('images/sports.jpeg')",
@@ -212,7 +212,7 @@ const Categories = () => {
             </div>
             <div>
               <a
-                className="bg-shades-white category-card d-flex flex-column align-items-center rounded-small lg:w-[120px] w-[70px]"
+                className="bg-shades-white category-card d-flex flex-column align-items-center rounded-small lg:w-[120px] w-[100px]"
                 href="/search?category=SUV"
                 style={{
                   backgroundImage: "url('images/suv.jpeg')",
