@@ -13739,3 +13739,15 @@ header.header-hidden .popover .arrow {
     height: 40px;
   }
 }
+
+.p-highlight {
+  background: #ec7421;
+}
+
+.p-datepicker-calendar tbody td :hover {
+  background: #ec7421;
+}
+
+.p-datepicker-calendar tbody td span {
+  height: 45px;
+}
