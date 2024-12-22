@@ -2,9 +2,11 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 import CarDetailSlider from "@/app/components/CarDetailSlider";
 import Footer from "@/app/components/Footer/Footer";
 import TopHeader from "@/app/components/TopHeader";
-import React from "react";
+import React, { Suspense } from "react";
 import { FaInfoCircle, FaCheckSquare } from "react-icons/fa";
 import CustomCalender from "@/app/components/CustomCalender";
+import BookingForm from "@/app/components/Forms/BookingForm";
+import BookOnlineMobile from "@/app/components/Forms/BookOnlineMobile";
 
 export default async function Page({ params }) {
   const slug = (await params).slug;
@@ -653,276 +655,20 @@ export default async function Page({ params }) {
                           Contact
                         </span>
                       </button>
-
                       <div class="d-flex justify-content-center border-center-horizontal border-shades-300 or-book-online">
                         <span class="fs-14 color-shades-500 text-uppercase position-relative bg-shades-100 px-2">
                           or book online
                         </span>
                       </div>
                     </div>
-
-                    <div
-                      class="d-none d-lg-block bg-shades-white rounded-small p-3 mx-3 mb-2 show-body-modal mt-3 mt-lg-0"
-                      id="daterange"
-                    >
-                      <div class="d-flex justify-content-between pt-1 row">
-                        <span class="fs-11 color-shades-500 font-weight-bold text-uppercase letter-spacing-1 text-left col-8">
-                          Rental date range
-                        </span>
-                        <span class="fs-11 color-shades-500 font-weight-bold text-uppercase letter-spacing-1 text-right col-4">
-                          Your rental
-                        </span>
-                      </div>
-
-                      <CustomCalender />
-
-                      <div class="rental-min-warning desktop">
-                        <div class="d-flex align-items-center bg-badge-warning rounded-small color-semantic-warning px-2 py-1 mb-3">
-                          <span class="fs-14">Minimum 1 day rental</span>
-                        </div>
-                      </div>
-                      <div class="litepicker-backdrop"></div>
+                    <div className="d-none d-lg-block ">
+                      <BookingForm />
                     </div>
-
-                    {/*                    <div id="personalInfo" class=" mx-3 mb-3 bg-shades-white">
-                      <form
-                        action="/api/booking/drivers_details"
-                        method="post"
-                        class="rc_validate"
-                        data-validate="true"
-                        id="drivers_details_form"
-                      >
-                        <input
-                          type="hidden"
-                          id="email_sent"
-                          value="Email was sent"
-                        />
-                        <input
-                          type="hidden"
-                          id="send_email_error"
-                          value="Error while sending email"
-                        />
-                        <input
-                          type="hidden"
-                          id="send_again"
-                          value="Send again"
-                        />
-                        <input
-                          type="hidden"
-                          id="invalid_number"
-                          value="Invalid number"
-                        />
-                        <input
-                          type="hidden"
-                          id="invalid_country_code"
-                          value="Invalid country code"
-                        />
-                        <input
-                          type="hidden"
-                          id="phone_number_too_short"
-                          value="Phone number is too short"
-                        />
-                        <input
-                          type="hidden"
-                          id="phone_number_too_long"
-                          value="Phone number is too long"
-                        />
-                        <input type="hidden" name="sessions" value="" />
-
-                        <div class=" p-3">
-                          <div class="d-flex justify-content-between">
-                            <span class="fs-11 color-shades-500 font-weight-bold text-uppercase letter-spacing-1">
-                              Personal information
-                            </span>
-                          </div>
-                          <div class="d-flex align-items-center justify-content-between">
-                            <h2 class="h4 mb-3 text-truncate font-weight-normal fs-24 ">
-                              Your booking details
-                            </h2>
-                          </div>
-                          <div class="mb-3">
-                            <div
-                              class="form-field-wrapper p-0 fs-14 d-flex justify-content-start flex-wrap rounded-small default-phone-input"
-                              id="reservation_form_phone"
-                              data-ip="2407:d000:1a:ecd5:545:24dc:cf8:6f96"
-                            >
-                              <label class="fs-9 pl-3 required pt-1 line-height-normal font-weight-bolder  letter-spacing-0_5 text-uppercase w-100 m-0 text-left ">
-                                Phone number
-                              </label>
-
-                              <input
-                                type="hidden"
-                                id="reservation_form_phone-hidden"
-                                class="phone"
-                                name="reservation_form_phone"
-                              />
-                            </div>
-                            <div
-                              id="reservation_form_phone-error"
-                              class="fs-14 font-weight-bolder line-height-25 color-semantic-danger w-100"
-                              data-required="This field is required."
-                              style="display: none"
-                            >
-                              This field is required.
-                            </div>
-                          </div>
-
-                          <div class="single-fields-wrapper">
-                            <div class="form-field-wrapper pr-1 d-flex justify-content-start flex-wrap rounded-small ">
-                              <label
-                                for="special_requests"
-                                class="font-weight-bolder fs-9 letter-spacing-0_5 text-uppercase w-100 mb-1 d-block"
-                              >
-                                Special Requests
-                              </label>
-                              <textarea
-                                class="fs-14 w-100 border-0"
-                                id="special_requests"
-                                name="form[special_request]"
-                                placeholder="Eg. My flight number is XXX, and I will arrive at Terminal 1, DXB..."
-                              ></textarea>
-                            </div>
-                          </div>
-                          <strong
-                            id="form-error"
-                            class="pl-2 fs-14 mt-3 font-weight-bolder color-semantic-danger"
-                            style="display: none"
-                          >
-                            Something went wrong. Try later.
-                          </strong>
-                        </div>
-                      </form>
-                    </div>
-
-                    <div
-                      class="d-none d-lg-block bg-shades-100  show-body-modal"
-                      id="summary"
-                    >
-                      <input type="hidden" id="site-current-lang" value="en" />
-                      <div
-                        class="bg-shades-100 rounded-small mx-3 py-2 px-3"
-                        id="booking_summary"
-                      >
-                        <div class="d-flex justify-content-between mb-1">
-                          <span class="fs-11 color-shades-500 font-weight-bold text-uppercase letter-spacing-1">
-                            Booking summary
-                          </span>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-between fs-14 mb-2">
-                          <span class="text-truncate" id="rental_days_summary">
-                            Rental 1 day
-                          </span>
-                          <span
-                            class="font-weight-normal flex-shrink-0"
-                            id="rental_price_summary"
-                          >
-                            $ 933
-                          </span>
-                        </div>
-
-                        <div class="d-none align-items-center justify-content-between fs-16 border-top border-shades-300 border-top-dotted border-top-medium pt-3 mb-2">
-                          <span class="text-truncate">Subtotal</span>
-                          <span
-                            class="font-weight-normal flex-shrink-0"
-                            id="subtotal"
-                          >
-                            $ 933
-                          </span>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-between fs-16 pb-2">
-                          <span
-                            class="text-truncate fs-14"
-                            id="tax_text_summary"
-                          >
-                            VAT Tax (5%)
-                          </span>
-                          <span
-                            class="font-weight-normal flex-shrink-0 fs-14"
-                            id="total_tax_price"
-                          >
-                            + $ 47
-                          </span>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-between border-top border-shades-300 border-top-dotted border-top-medium pt-2">
-                          <span class="fs-24 font-weight-normal text-truncate">
-                            Total
-                          </span>
-                          <span
-                            class="fs-24 font-weight-normal flex-shrink-0"
-                            id="total_price"
-                          >
-                            $ 980
-                          </span>
-                        </div>
-                      </div>
-                      <div class="fs-14 color-shades-400  mx-3 pb-2 px-3 pb-lg-2">
-                        <small>
-                          This site is protected by reCAPTCHA and the Google{" "}
-                          <a href="https://policies.google.com/privacy">
-                            Privacy Policy
-                          </a>{" "}
-                          and{" "}
-                          <a href="https://policies.google.com/terms">
-                            Terms of service{" "}
-                          </a>{" "}
-                          apply.
-                        </small>
-                      </div>
-                      <form
-                        id="requestBookings"
-                        method="POST"
-                        class="rc_validate"
-                        data-validate="true"
-                        novalidate="novalidate"
-                        data-company-id="1"
-                      >
-                        <input
-                          type="hidden"
-                          name="start_date"
-                          value="21/12/2024"
-                        />
-                        <input type="hidden" name="from_time" value="12:00" />
-                        <input
-                          type="hidden"
-                          name="end_date"
-                          value="22/12/2024"
-                        />
-                        <input type="hidden" name="end_time" value="12:00" />
-
-                        <div
-                          class=" rounded-medium-bottom p-3"
-                          id="reserve_booking"
-                        >
-                          <div class="d-flex align-items-center justify-content-between">
-                            <span class="d-none d-lg-block fs-9 color-semantic-success font-weight-bold text-uppercase letter-spacing-0_5 pl-3">
-                              {" "}
-                              Your journey starts in …
-                            </span>
-                            <span
-                              class="d-none d-lg-block fs-24 color-semantic-success text-uppercase"
-                              id="countdown"
-                            >
-                              58:13
-                            </span>
-                            <button
-                              type="submit"
-                              data-car-type="luxury"
-                              data-id="5356"
-                              class="m-w-100 requestModal font-weight-bold text-uppercase btn btn-large bg-brand-primary color-shades-white btn-primary btn-reserve-main"
-                            >
-                              <i class="loader d-none"></i>
-                              <span class="fs-15 letter-spacing-0_5">
-                                Reserve
-                              </span>
-                            </button>
-                          </div>
-                        </div>
-                      </form>
-                    </div> */}
                   </div>
                 </div>
               </div>
             </div>
+            <BookOnlineMobile />
           </div>
           <div className="mt-6 mb-6"></div>
           <Footer />

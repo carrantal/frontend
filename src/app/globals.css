@@ -1342,6 +1342,7 @@ body {
   background-color: #0d0d0d;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
+  font-weight: 300;
 }
 
 a {
@@ -2639,7 +2640,8 @@ header button {
 .form-control {
   background-repeat: no-repeat;
   background-size: 24px 24px;
-  border-color: #ccd4de;
+  /* background-color: inherit; */
+  color: white;
   border-radius: 5px;
   border-width: 1px;
   color: #000;
@@ -4819,7 +4821,11 @@ body:not(.rtl) .company-bar-company-logo {
 }
 
 .btn-brand-primary {
-  background-color: #1359ba;
+  background-color: #ec7421;
+}
+
+.color-primary {
+  color: #ec7421;
 }
 
 .btn-brand-accent {
@@ -13750,4 +13756,8 @@ header.header-hidden .popover .arrow {
 
 .p-datepicker-calendar tbody td span {
   height: 45px;
+}
+
+.title-car-mobile {
+  border: 1px solid #ec7421;
 }

@@ -67,7 +67,7 @@ export default function MobileTopHeader() {
           >
             <div
               className="text-white d-flex align-items-center px-4"
-              style={{ backgroundColor: "#13428d", height: "60px" }}
+              style={{ backgroundColor: "#ec7421", height: "60px" }}
             >
               {currentMenu !== "main" ? (
                 <button
