@@ -29,10 +29,10 @@ export default function CustomCalender() {
             class="rental-min-warning d-lg-none"
             // style="display: none"
           >
-            <div class="d-flex align-items-center bg-badge-warning rounded-small color-semantic-warning px-2 py-1 mb-3">
+            {/* <div class="d-flex align-items-center bg-badge-warning rounded-small color-semantic-warning px-2 py-1 mb-3">
               <span class="fs-18 icon-alert-circle pr-2"></span>
               <span class="fs-14">Minimum 1 day rental</span>
-            </div>
+            </div> */}
           </div>
           <div class="row custom-input-group mx-0">
             <div class="col-6 form-group border-right-medium border-shades-300 px-0 mb-0">
