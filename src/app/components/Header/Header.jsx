@@ -173,7 +173,7 @@ const Header = () => {
         {/* <Categories /> */}
         <Brands />
 
-        {/* <Luxury /> */}
+        <Luxury />
         <WhyRentus />
         {/* <CarImsges /> */}
         {/* <CarImsges /> */}
