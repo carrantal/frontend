@@ -44,7 +44,7 @@ export default function CarDetailSlider({ images }) {
       <div class="mt-2 mb-2 p-2 bg-shades-white">
         <Swiper
           spaceBetween={10}
-          slidesPerView={3}
+          slidesPerView={1}
           pagination={true}
           thumbs={{ swiper: thumbsSwiper }}
           modules={[FreeMode, Navigation, Thumbs]}
