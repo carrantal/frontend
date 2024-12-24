@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.5.3",
+    "cloudinary": "^2.5.1",
     "jquery": "^3.6.4",
     "next": "15.1.0",
     "popper.js": "^1.16.1",
