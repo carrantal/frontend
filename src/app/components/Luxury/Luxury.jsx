@@ -1,8 +1,9 @@
+"use client";
 import React from "react";
 import carsData from "../../../../src/data.json";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+// import { Navigation } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";

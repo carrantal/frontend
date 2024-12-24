@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import carsData from "../../../../src/data.json";
 
