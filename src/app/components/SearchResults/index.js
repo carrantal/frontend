@@ -1,54 +1,61 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
 import Breadcrumb from "../Breadcrumb";
-
+import axios from "axios";
+import { URL } from "@/app/utils";
 export default function SearchResults() {
   const searchParams = useSearchParams();
-  const breadcrumbTitle = searchParams.get("category");
+  const [CatCars, setCatCars] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const categorySlug = searchParams.get("category");
+  useEffect(() => {
+    // Fetch cars for the selected category
+    async function fetchCars() {
+      try {
+        setLoading(true);
+        const response = await axios.get(
+          `${URL}/api/cars?populate=*&filters[categories][slug][$eq]=${categorySlug}`
+        );
+        setCatCars(response.data.data);
+        console.log("category car", response.data.data);
+        console.log(" car", CatCars);
+        console.log(" slug", categorySlug);
+      } catch (error) {
+        console.error("Error fetching cars:", error);
+      } finally {
+        setLoading(false); // Set loading to false after fetching
+      }
+    }
+
+    if (categorySlug) {
+      fetchCars();
+    }
+  }, [categorySlug]);
 
   return (
     <>
-      <Breadcrumb breadcrumbTitle={breadcrumbTitle} />
-      <div class="bg-shades-white  pt-3 pt-lg-4 ">
-        <div class="container">
-          <div class=" ">
-            <div class="d-block pb-2">
-              <h1 class="text-white d-inline">Rent a car in Dubai</h1>
+      <Breadcrumb breadcrumbTitle={categorySlug} />
+      <div className="bg-shades-white  pt-3 pt-lg-4 ">
+        <div className="container">
+          <div className=" ">
+            <div className="d-block pb-2">
+              <h1 className="text-white d-inline">Rent a car in Dubai</h1>
             </div>
           </div>
         </div>
       </div>
-      <div class=" mt-2 mb-2 ">
-        <div class="container container-car-items p-4">
-          <div class="row m-0-custom">
-            <Car />
-            <Car />
-            <Car />
-            <Car />
-            <Car />
-            <Car />
-          </div>
-          <div class="bg-shades-white pt-2 pb-2">
-            <div class="container">
-              <nav>
-                <ul class="pagination justify-content-center my-0-custom">
-                  <li class="page-item active">
-                    <span class="page-link rounded-small">1</span>
-                  </li>
-                  <li class="page-item">
-                    <span class="page-link rounded-small">2</span>
-                  </li>
-                  <li class="page-item">
-                    <span class="page-link rounded-small">3</span>
-                  </li>
-                  <li class="page-item">
-                    <span class="page-link rounded-small">4</span>
-                  </li>
-                </ul>
-              </nav>
-            </div>
+      <div className=" mt-2 mb-2 ">
+        <div className="container container-car-items p-4">
+          <div className="row m-0-custom">
+            {loading ? ( // Show loading indicator
+              <p className="text-white">Loading cars...</p>
+            ) : CatCars.length > 0 ? (
+              CatCars.map((car) => <Car key={car.id} car={car} />)
+            ) : (
+              <p>No cars found for this category.</p>
+            )}
           </div>
         </div>
       </div>
@@ -56,21 +63,26 @@ export default function SearchResults() {
   );
 }
 
-function Car() {
+function Car({ car }) {
   const router = useRouter();
+  const { title, images, price, brand, categories } = car.attributes;
+  console.log("images", categories);
   return (
     <>
-      <div class="col-12 col-md-6 col-lg-12 car-list-item bg-shades-white mb-2">
-        <div class="border-lg-bottom border-shades-200 ">
-          <div class="row car-list-item-row">
-            <a class="blend-mode-luminosity d-block col-lg-4 col-xl-3 car-image-link">
-              <div class="mb-2-custom mb-lg-0-custom">
-                <div class="swiper car-gallery-swiper car-gallery-swiper600121">
-                  <div class="swiper-wrapper cars-swiper-wrapper-default">
-                    <div class="swiper-slide swiper-slide-car-card img-block-to-hover">
+      <div className="col-12 col-md-6 col-lg-12 car-list-item bg-shades-white mb-2 cursor-pointer">
+        <div className="border-lg-bottom border-shades-200 ">
+          <div className="row car-list-item-row">
+            <a className="blend-mode-luminosity d-block col-lg-4 col-xl-3 car-image-link">
+              <div className="mb-2-custom mb-lg-0-custom">
+                <div className="swiper car-gallery-swiper car-gallery-swiper600121">
+                  <div className="swiper-wrapper cars-swiper-wrapper-default">
+                    <div className="swiper-slide swiper-slide-car-card img-block-to-hover">
                       <img
-                        src="https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=408,height=258,sharpen=0/https://renty.ae/uploads/car/photo/l/dark-grey_ford-mustang-cabrio_2023_6001_main_9729a542c7225e02a2f32c3a3b34dfda.jpg"
-                        class="w-100 car-item-img car-image-link h-100 "
+                        src={
+                          images?.data[0]?.attributes?.url || "/placeholder.jpg"
+                        }
+                        alt={car.attributes.name}
+                        className="w-100 car-item-img car-image-link h-100 "
                         style={{ objectFit: "cover" }}
                         loading="lazy"
                       />
@@ -79,9 +91,9 @@ function Car() {
                 </div>
               </div>
 
-              <div class="d-flex position-absolute availability-plp-pin d-lg-none">
-                <div class="d-flex availability-feature-label-mobile align-items-center">
-                  <i class="mr-1 line-height-normal d-flex align-items-center">
+              <div className="d-flex position-absolute availability-plp-pin d-lg-none">
+                <div className="d-flex availability-feature-label-mobile align-items-center">
+                  <i className="mr-1 line-height-normal d-flex align-items-center">
                     <svg
                       width="12"
                       height="12"
@@ -90,7 +102,7 @@ function Car() {
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        class="fill-success"
+                        className="fill-success"
                         d="M3.5 1C3.5 0.723858 3.72386 0.5 4 0.5C4.27614 0.5 4.5 0.723858 4.5 1V1.5H7.5V1C7.5 0.723858 7.72386 0.5 8 0.5C8.27614 0.5 8.5 0.723858 8.5 1V1.5H9.5C10.3284 1.5 11 2.17157 11 3V10C11 10.8284 10.3284 11.5 9.5 11.5H2.5C1.67157 11.5 1 10.8284 1 10V3C1 2.17157 1.67157 1.5 2.5 1.5H3.5V1Z"
                       ></path>
                       <path
@@ -101,60 +113,60 @@ function Car() {
                       ></path>
                     </svg>
                   </i>
-                  <span class="fs-12 lh-20 font-weight-normal text-nowrap color-shades-white">
-                    Available now
+                  <span className="fs-12 lh-20 font-weight-normal text-nowrap color-shades-white">
+                    {brand?.data?.attributes?.name}
                   </span>
                 </div>
               </div>
             </a>
 
             <div
-              class="d-flex flex-column col-lg-8 col-xl-9 list-main-car-info px-3 pl-lg-0 py-lg-3
+              className="d-flex flex-column col-lg-8 col-xl-9 list-main-car-info px-3 pl-lg-0 py-lg-3
                                   justify-content-center align-items-center list-car-features justify-content-between
                                   flex-column flex-lg-row "
             >
-              <div class="d-flex flex-column flex-grow-1 w-100 plp-card-main-content pr-lg-3 gap-10">
+              <div className="d-flex flex-column flex-grow-1 w-100 plp-card-main-content pr-lg-3 gap-10">
                 <div
-                  class="d-flex flex-column flex-lg-row align-items-lg-center align-items-start
+                  className="d-flex flex-column flex-lg-row align-items-lg-center align-items-start
                                           px-lg-0-custom position-relative car-list-name-container blend-mode-luminosity"
                 >
-                  <div class="d-flex m-w-100 align-items-center overflow-hidden mr-auto">
-                    <a class="px-1-custom text-truncate white_space car-main-link">
-                      <span class="fs-16 fs-lg-18 lh-lg-30 line-height-25 color-shades-black car-title car-main-link font-weight-normal">
-                        Ford Mustang cabrio (Dark Grey), 2023
+                  <div className="d-flex m-w-100 align-items-center overflow-hidden mr-auto">
+                    <a className="px-1-custom text-truncate white_space car-main-link">
+                      <span className="fs-16 fs-lg-18 lh-lg-30 line-height-25 color-shades-black car-title car-main-link font-weight-normal">
+                        {title || "No title available"}
                       </span>
                     </a>
                   </div>
                 </div>
-                <div class="d-lg-none d-flex px-1-custom pt-1-custom pb-2-custom blend-mode-luminosity gap-col-5">
-                  <div class="d-flex d-lg-none flex-column overflow-hidden flex-grow-1">
+                <div className="d-lg-none d-flex px-1-custom pt-1-custom pb-2-custom blend-mode-luminosity gap-col-5">
+                  <div className="d-flex d-lg-none flex-column overflow-hidden flex-grow-1">
                     <span
-                      class="fs-14 line-height-25 font-weight-normal color-shades-700 text-truncate"
+                      className="fs-14 line-height-25 font-weight-normal color-shades-700 text-truncate"
                       title="Free delivery in Dubai"
                     >
                       Free delivery in Dubai
                     </span>{" "}
-                    <span class="fs-14 line-height-25 font-weight-normal color-shades-700 text-truncate">
+                    <span className="fs-14 line-height-25 font-weight-normal color-shades-700 text-truncate">
                       250 km for 1 day
                     </span>
                   </div>
                   <div
-                    class="d-lg-none d-flex flex-column align-items-end"
+                    className="d-lg-none d-flex flex-column align-items-end"
                     style={{ zIndex: 2 }}
                   >
-                    <span class="fs-11 font-weight-bold text-uppercase color-shades-700 letter-spacing-1 lh-15">
+                    <span className="fs-11 font-weight-bold text-uppercase color-shades-700 letter-spacing-1 lh-15">
                       Price per day
                     </span>{" "}
-                    <span class="fs-24 line-height-35 text-white font-weight-normal">
-                      $ 146
+                    <span className="fs-24 line-height-35 text-white font-weight-normal">
+                      {price}
                     </span>
-                    <div class="d-flex position-relative align-items-center">
-                      <div class="d-flex align-items-end price-block-mobile blend-mode-luminosity flex-column text-nowrap">
-                        <div class="d-flex align-items-center">
-                          <span class="fs-14 line-height-25 font-weight-normal color-shades-700 mr-1-custom">
+                    <div className="d-flex position-relative align-items-center">
+                      <div className="d-flex align-items-end price-block-mobile blend-mode-luminosity flex-column text-nowrap">
+                        <div className="d-flex align-items-center">
+                          <span className="fs-14 line-height-25 font-weight-normal color-shades-700 mr-1-custom">
                             3-6 days:
                           </span>
-                          <span class="fs-14 line-height-25 font-weight-normal color-brand-primary">
+                          <span className="fs-14 line-height-25 font-weight-normal color-brand-primary">
                             $ 146
                           </span>
                         </div>
@@ -162,11 +174,11 @@ function Car() {
                     </div>
                   </div>
                 </div>
-                <div class="d-flex align-items-center d-lg-none">
-                  <div class="d-none d-flex m-w-100 car-list-item-buttons">
+                <div className="d-flex align-items-center d-lg-none">
+                  <div className="d-none d-flex m-w-100 car-list-item-buttons">
                     <button
                       type="button"
-                      class="primary-button-color btn-medium 
+                      className="primary-button-color btn-medium 
                             btn btn-details font-weight-bolder position-relative align-items-center d-flex d-lg-none 
                             w-100"
                       style={{ padding: "10px 20px" }}
@@ -174,16 +186,16 @@ function Car() {
                         router.push("/car-details/slug-car-title");
                       }}
                     >
-                      <span class="car-detail-btn-text text-nowrap text-uppercase lh-20 letter-spacing-0_2 fs-13 ">
+                      <span className="car-detail-btn-text text-nowrap text-uppercase lh-20 letter-spacing-0_2 fs-13 ">
                         Rental details
                       </span>
                     </button>
                   </div>
                 </div>
-                <div class="d-none d-lg-flex flex-lg-column overflow-hidden blend-mode-luminosity gap-10">
-                  <div class="d-flex gap-5 car-list-default-features-first-row">
-                    <div class="d-flex default-plp-feature-label-desk align-items-center bg-shades-100">
-                      <i class="line-height-normal d-flex align-items-center">
+                <div className="d-none d-lg-flex flex-lg-column overflow-hidden blend-mode-luminosity gap-10">
+                  <div className="d-flex gap-5 car-list-default-features-first-row">
+                    <div className="d-flex default-plp-feature-label-desk align-items-center bg-shades-100">
+                      {/* <i className="line-height-normal d-flex align-items-center">
                         <svg
                           width="14"
                           height="15"
@@ -192,7 +204,7 @@ function Car() {
                           xmlns="http://www.w3.org/2000/svg"
                         >
                           <path
-                            class="fill-success"
+                            className="fill-success"
                             d="M4.08332 1.22222C4.08332 0.900053 4.34449 0.638885 4.66666 0.638885C4.98882 0.638885 5.24999 0.900053 5.24999 1.22222V1.80555H8.74999V1.22222C8.74999 0.900053 9.01116 0.638885 9.33332 0.638885C9.65549 0.638885 9.91666 0.900053 9.91666 1.22222V1.80555H11.0833C12.0498 1.80555 12.8333 2.58905 12.8333 3.55555V11.7222C12.8333 12.6887 12.0498 13.4722 11.0833 13.4722H2.91666C1.95016 13.4722 1.16666 12.6887 1.16666 11.7222V3.55555C1.16666 2.58905 1.95016 1.80555 2.91666 1.80555H4.08332V1.22222Z"
                           ></path>
                           <path
@@ -202,60 +214,60 @@ function Car() {
                             fill="white"
                           ></path>
                         </svg>
-                      </i>
+                      </i> */}
 
-                      <span class="fs-14 line-height-25 font-weight-normal text-nowrap color-semantic-success">
-                        Available now
+                      <span className="fs-14 line-height-25 font-weight-normal text-nowrap color-semantic-success">
+                        {brand?.data?.attributes?.name}
                       </span>
                     </div>
                   </div>
-                  <div class="d-flex align-items-center car-list-default-features-second-row">
-                    <span class="fs-14 line-height-25 font-weight-normal color-shades-700 car-list-default-features-second-row-item text-nowrap">
+                  <div className="d-flex align-items-center car-list-default-features-second-row">
+                    <span className="fs-14 line-height-25 font-weight-normal color-shades-700 car-list-default-features-second-row-item text-nowrap">
                       Free delivery in Dubai
                     </span>
                   </div>
-                  <div class="d-flex align-items-center car-list-default-features-third-row">
-                    <div class="d-flex align-items-center default-plp-feature-label-desk">
-                      <span class="fs-14 line-height-25 font-weight-normal color-shades-700 text-nowrap">
+                  <div className="d-flex align-items-center car-list-default-features-third-row">
+                    <div className="d-flex align-items-center default-plp-feature-label-desk">
+                      <span className="fs-14 line-height-25 font-weight-normal color-shades-700 text-nowrap">
                         1 day rental available
                       </span>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="d-flex flex-column w-fit-content h-100 justify-content-between">
+              <div className="d-flex flex-column w-fit-content h-100 justify-content-between">
                 <div
-                  class="d-lg-flex d-none flex-column w-100 align-items-end blend-mode-luminosity"
+                  className="d-lg-flex d-none flex-column w-100 align-items-end blend-mode-luminosity"
                   style={{ zIndex: 2 }}
                 >
-                  <span class="fs-11 font-weight-bold text-uppercase color-shades-700 letter-spacing-1 lh-15">
+                  <span className="fs-11 font-weight-bold text-uppercase color-shades-700 letter-spacing-1 lh-15">
                     Price per day
                   </span>{" "}
-                  <span class="fs-24 line-height-35 color-shades-black font-weight-normal">
-                    $ 146
+                  <span className="fs-24 line-height-35 color-shades-black font-weight-normal">
+                    {price} AED
                   </span>{" "}
-                  <div class="d-flex position-relative align-items-center">
-                    <div class="d-flex align-items-end price-block-mobile blend-mode-luminosity flex-column text-nowrap">
-                      <div class="d-flex align-items-center">
-                        <span class="fs-14 line-height-25 font-weight-normal color-shades-700 mr-1-custom">
+                  <div className="d-flex position-relative align-items-center">
+                    <div className="d-flex align-items-end price-block-mobile blend-mode-luminosity flex-column text-nowrap">
+                      <div className="d-flex align-items-center">
+                        {/* <span className="fs-14 line-height-25 font-weight-normal color-shades-700 mr-1-custom">
                           3-6 days:
-                        </span>
-                        <span class="fs-14 line-height-25 font-weight-normal color-brand-primary">
-                          $ 146
+                        </span> */}
+                        <span className="fs-14 line-height-25 font-weight-normal color-brand-primary">
+                          {categories.data[0].attributes.name}
                         </span>
                       </div>
                     </div>
                   </div>
                 </div>{" "}
-                <div class="d-flex justify-content-end gap-col-5">
+                <div className="d-flex justify-content-end gap-col-5">
                   <button
                     onClick={() => {
                       router.push("/car-details/slug-car-title");
                     }}
-                    class=" btn-medium btn btn-details font-weight-bolder position-relative 
+                    className=" btn-medium btn btn-details font-weight-bolder position-relative 
                           align-items-center d-none d-lg-flex primary-button-color"
                   >
-                    <span class="text-nowrap text-uppercase lh-20 letter-spacing-0_2 fs-14 ">
+                    <span className="text-nowrap text-uppercase lh-20 letter-spacing-0_2 fs-14 ">
                       Rental details
                     </span>
                   </button>

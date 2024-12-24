@@ -19,7 +19,7 @@ const Economy = () => {
       .get(`${URL}/api/cars?populate=*`)
       .then((response) => {
         const EconomyCars = response.data.data.filter((car) => {
-          // Check if any category matches "luxury"
+          // Check if any category matches "economy"
           return car.attributes.categories.data.some((category) =>
             category.attributes.name?.toLowerCase().includes("economy")
           );

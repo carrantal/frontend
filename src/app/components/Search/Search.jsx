@@ -23,7 +23,7 @@ const Search = () => {
                 id="car_search_input"
                 placeholder="Search a car by brand or model"
                 type="text"
-                autocomplete="off"
+                autoComplete="off"
               />
               <div
                 className="easy-autocomplete-container"
