@@ -16,9 +16,8 @@ import Footer from "../Footer/Footer";
 import Image from "next/image";
 
 import Gallery from "../Navbar/Gallery";
-import Luxury from "../Luxury/Luxury";
-import Economy from "../Economy/Economy";
 import Tooglebutton from "../ToggleButton/Tooglebutton";
+import CarSlider from "../CarSlider/CarSlider";
 const Header = () => {
   return (
     <>
@@ -173,14 +172,17 @@ const Header = () => {
         {/* <Categories /> */}
         <Brands />
 
-        <Luxury />
-        <WhyRentus />
+        {/* <WhyRentus /> */}
         {/* <CarImsges /> */}
         {/* <CarImsges /> */}
         <OffSale />
-        <Economy />
+        <CarSlider type="luxury" />
+        <CarSlider type="economy" />
+        <CarSlider type="sports" />
+        <CarSlider type="suv" />
+        {/* <Economy /> */}
         <Reviews />
-        <Maps />
+        {/* <Maps /> */}
         <LeadingCompany />
         <Faq />
         <Footer />

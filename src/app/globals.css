@@ -13761,3 +13761,22 @@ header.header-hidden .popover .arrow {
 .title-car-mobile {
   border: 1px solid #ec7421;
 }
+
+.loader {
+  border: 8px solid #f3f3f3; /* Light gray background */
+  border-top: 8px solid #ec7421; /* White color for the spinning part */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1.5s linear infinite; /* Animation to spin the loader */
+}
+
+/* Keyframes to define the spinning animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
