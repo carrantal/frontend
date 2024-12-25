@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Loader from "../Loader/indes";
 import { URL } from "@/app/utils";
 import axios from "axios";
+import Portal from "../Portal";
 
 export default function GalleryVideo() {
   const [loading, setLoading] = useState(true);
@@ -48,6 +49,8 @@ export default function GalleryVideo() {
 }
 
 function VideoComponent({ video, car }) {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="col-lg-3 col-md-4">
       <div
@@ -64,15 +67,27 @@ function VideoComponent({ video, car }) {
             position: "relative",
           }}
         >
-          <img
+          {/* <img
             style={{
               height: "100%",
               width: "100%",
               objectFit: "cover",
             }}
             src={video?.attributes?.previewUrl}
-          />
-          <a href={video?.attributes?.url} target="_blank">
+          /> */}
+          <video
+            style={{
+              height: "100%",
+              width: "100%",
+              objectFit: "cover",
+            }}
+            src={video?.attributes?.url}
+          ></video>
+          <button
+            onClick={() => {
+              setOpen(true);
+            }}
+          >
             <div
               style={{
                 position: "absolute",
@@ -98,8 +113,72 @@ function VideoComponent({ video, car }) {
                 <polygon points="30,20 30,80 70,50" fill="#ec7421" />
               </svg>
             </div>
-          </a>
-          <div
+          </button>
+          {open && (
+            <Portal>
+              <div className="videomodal">
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    height: "100%",
+                  }}
+                >
+                  <div
+                    style={{
+                      height: "600px",
+                      position: "relative",
+                    }}
+                  >
+                    <video
+                      style={{
+                        height: "100%",
+                      }}
+                      controls
+                      src={video?.attributes?.url}
+                    ></video>
+                    <div
+                      className="close-btn"
+                      onClick={() => {
+                        setOpen(false);
+                      }}
+                    >
+                      <span>x</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Portal>
+          )}
+          {/* <a href={video?.attributes?.url} target="_blank">
+            <div
+              style={{
+                position: "absolute",
+                top: "10px",
+                left: "10px",
+                height: "30px",
+                width: "30px",
+                background: "black",
+                borderRadius: "50%",
+              }}
+            >
+              <svg
+                style={{
+                  padding: "3px",
+                  height: "100%",
+                  width: "100%",
+                }}
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 100 100"
+                width="100"
+                height="100"
+              >
+                <polygon points="30,20 30,80 70,50" fill="#ec7421" />
+              </svg>
+            </div>
+          </a> */}
+          {/* <div
             style={{
               width: "100%",
               position: "absolute",
@@ -120,7 +199,7 @@ function VideoComponent({ video, car }) {
                 View Details
               </span>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

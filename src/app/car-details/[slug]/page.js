@@ -20,57 +20,15 @@ export default async function Page(props) {
   const product = response?.data?.data[0];
   const title = product?.attributes?.title;
   const images = product?.attributes?.images?.data || [];
+  const videos = product?.attributes?.videos?.data || [];
   const price = product?.attributes?.price;
-  console.log("producs", price);
   const carImages = images.map((image) => ({
     url: image.attributes.url,
   }));
-  // const carData = {
-  //   images: [
-  //     {
-  //       url: "https://renty.ae/uploads/car/photos/l/black_lamborghini-evo-spyder_2023_24783_4cca81da2c02d65e78c430aa5f7b737e.jpg",
-  //     },
-  //     {
-  //       url: "https://renty.ae/uploads/car/photos/l/black_lamborghini-evo-spyder_2023_24784_1211d8e36d14b79df7c8a2c59f3d63e7.jpg",
-  //     },
-  //     {
-  //       url: "https://renty.ae/uploads/car/photos/l/black_lamborghini-evo-spyder_2023_24785_b467470bdb015af5ee66ad074fa9ed93.jpg",
-  //     },
-  //     {
-  //       url: "https://renty.ae/uploads/car/photos/l/black_lamborghini-evo-spyder_2023_24786_b147d96e4a6c2d2eeaaf5beaf167dedc.jpg",
-  //     },
-  //     {
-  //       url: "https://renty.ae/uploads/car/photos/l/black_lamborghini-evo-spyder_2023_24787_79f5f2c1d6743cd4ffa2a753aa09d574.jpg",
-  //     },
-  //     {
-  //       url: "https://renty.ae/uploads/car/photos/l/black_lamborghini-evo-spyder_2023_24789_5e58c23d66052e354573192009f3bc3c.jpg",
-  //     },
-  //     {
-  //       url: "https://renty.ae/uploads/car/photos/l/black_lamborghini-evo-spyder_2023_24790_4cf92e739849b63430d887f7e6ac5b7f.jpg",
-  //     },
-  //     {
-  //       url: "https://renty.ae/uploads/car/photos/l/black_lamborghini-evo-spyder_2023_24791_1a074c827a3e357d7cb3fed9c0d3ad22.jpg",
-  //     },
-  //     {
-  //       url: "https://renty.ae/uploads/car/photos/l/black_lamborghini-evo-spyder_2023_24792_5d5310da361c4ab239b878832d4873be.jpg",
-  //     },
-  //     {
-  //       url: "https://renty.ae/uploads/car/photo/l/black_lamborghini-evo-spyder_2023_5150_main_d4a4de60d6e19811843526b7dd9a31b3.jpg",
-  //     },
-  //   ],
-  //   specifications: [
-  //     { key: "Year", value: "2023" },
-  //     { key: "Color", value: "Black" },
-  //     { key: "0-100km/h", value: "2.9 Sec" },
-  //     { key: "Transmission", value: "Automatic" },
-  //     { key: "Engine", value: "5.2-Litre V10" },
-  //     { key: "Max speed", value: "325" },
-  //     { key: "Horse power", value: "640" },
-  //     { key: "Seats", value: "2" },
-  //     { key: "Fuel type", value: "Petrol" },
-  //     { key: "Body type", value: "Convertible" },
-  //   ],
-  // };
+  const carVideos = videos.map((video) => ({
+    url: video.attributes.url,
+  }));
+  console.log("carVideos", carVideos);
 
   return (
     <>
@@ -91,7 +49,7 @@ export default async function Page(props) {
                 style={{ columnGap: "60px" }}
               >
                 <div class="col-12 col-lg-6 p-0 gallery flex-lg-grow-1">
-                  <CarDetailSlider images={carImages} />
+                  <CarDetailSlider images={carImages} carVideos={carVideos} />
 
                   <DetailpageComponent />
                 </div>
