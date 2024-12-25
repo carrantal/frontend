@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { URL } from "@/app/utils";
 import axios from "axios";
+import { useRouter } from "next/navigation";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -13,6 +14,7 @@ import Loader from "../Loader/indes";
 const CarSlider = ({ type = "luxury" }) => {
   const [carsData, setCarsData] = useState([]);
   const [loading, setLoading] = useState([]);
+  const router = useRouter();
 
   const getData = async () => {
     try {
@@ -63,33 +65,32 @@ const CarSlider = ({ type = "luxury" }) => {
                   <SwiperSlide key={car.id}>
                     <div
                       className="cars-slider-card d-flex flex-column"
-                      style={{ width: "100%" }}
+                      style={{ width: "100%", cursor: "pointer" }}
+                      onClick={() => {
+                        router.push(`/car-details/${car.attributes.slug}`);
+                      }}
                     >
-                      <a href="/" title={car.attributes.title}>
-                        <div className="cars-slider-header position-relative">
-                          <div className="d-flex overflow-hidden rounded-medium position-relative img-block-to-hover">
-                            <img
-                              src={
-                                car.attributes.images.data[0]?.attributes.url
-                              }
-                              className="cars-slider-image rounded-medium"
-                              title={car.attributes.title}
-                              alt={car.attributes.title}
-                              loading="lazy"
-                            />
-                          </div>
+                      <div className="cars-slider-header position-relative">
+                        <div className="d-flex overflow-hidden rounded-medium position-relative img-block-to-hover">
+                          <img
+                            src={car.attributes.images.data[0]?.attributes.url}
+                            className="cars-slider-image rounded-medium"
+                            title={car.attributes.title}
+                            alt={car.attributes.title}
+                            loading="lazy"
+                          />
                         </div>
-                        <div className="cars-slider-footer d-flex flex-column justify-content-between mt-sm-2 mt-1">
-                          <span className="fs-16 line-height-25 font-weight-normal color-shades-black text-truncate slider-card-title">
-                            {car.attributes.title}
+                      </div>
+                      <div className="cars-slider-footer d-flex flex-column justify-content-between mt-sm-2 mt-1">
+                        <span className="fs-16 line-height-25 font-weight-normal color-shades-black text-truncate slider-card-title">
+                          {car.attributes.title}
+                        </span>
+                        <div className="d-flex align-items-center">
+                          <span className="fs-18 lh-30 color-shades-black mr-1 font-weight-semibold slider-card-main-price">
+                            {car.attributes.price} AED
                           </span>
-                          <div className="d-flex align-items-center">
-                            <span className="fs-18 lh-30 color-shades-black mr-1 font-weight-semibold slider-card-main-price">
-                              {car.attributes.price} AED
-                            </span>
-                          </div>
                         </div>
-                      </a>
+                      </div>
                     </div>
                   </SwiperSlide>
                 ))}
