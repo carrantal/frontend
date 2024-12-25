@@ -48,9 +48,8 @@ export default function GalleryVideo() {
 }
 
 function VideoComponent({ video, car }) {
-  console.log();
   return (
-    <div className="col-md-3">
+    <div className="col-lg-3 col-md-4">
       <div
         style={{
           height: "400px",
@@ -105,11 +104,15 @@ function VideoComponent({ video, car }) {
               width: "100%",
               position: "absolute",
               bottom: 5,
+              padding: 10,
               display: "flex",
               justifyContent: "center",
             }}
           >
             <a
+              style={{
+                width: "100%",
+              }}
               href={`car-details/${car?.attributes?.slug}`}
               className="btn btn-large bg-brand-primary rounded-medium btn-main-search"
             >
