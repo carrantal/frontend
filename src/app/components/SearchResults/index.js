@@ -192,7 +192,7 @@ function Car({ car }) {
                             w-100"
                       style={{ padding: "10px 20px" }}
                       onClick={() => {
-                        router.push("/car-details/slug-car-title");
+                        router.push(`/car-details/${car.attributes.slug}`);
                       }}
                     >
                       <span className="car-detail-btn-text text-nowrap text-uppercase lh-20 letter-spacing-0_2 fs-13 ">
@@ -204,27 +204,6 @@ function Car({ car }) {
                 <div className="d-none d-lg-flex flex-lg-column overflow-hidden blend-mode-luminosity gap-10">
                   <div className="d-flex gap-5 car-list-default-features-first-row">
                     <div className="d-flex default-plp-feature-label-desk align-items-center bg-shades-100">
-                      {/* <i className="line-height-normal d-flex align-items-center">
-                        <svg
-                          width="14"
-                          height="15"
-                          viewBox="0 0 14 15"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            className="fill-success"
-                            d="M4.08332 1.22222C4.08332 0.900053 4.34449 0.638885 4.66666 0.638885C4.98882 0.638885 5.24999 0.900053 5.24999 1.22222V1.80555H8.74999V1.22222C8.74999 0.900053 9.01116 0.638885 9.33332 0.638885C9.65549 0.638885 9.91666 0.900053 9.91666 1.22222V1.80555H11.0833C12.0498 1.80555 12.8333 2.58905 12.8333 3.55555V11.7222C12.8333 12.6887 12.0498 13.4722 11.0833 13.4722H2.91666C1.95016 13.4722 1.16666 12.6887 1.16666 11.7222V3.55555C1.16666 2.58905 1.95016 1.80555 2.91666 1.80555H4.08332V1.22222Z"
-                          ></path>
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M9.91665 5.47616C10.1446 5.70385 10.1447 6.07319 9.91706 6.30111L6.82933 9.56497C6.71995 9.67446 6.57155 9.73599 6.41679 9.73603C6.26203 9.73607 6.1136 9.67461 6.00417 9.56518L4.25417 7.81518C4.02636 7.58737 4.02636 7.21803 4.25417 6.99022C4.48197 6.76242 4.85132 6.76242 5.07913 6.99022L6.41644 8.32754L9.09169 5.47657C9.31938 5.24865 9.68873 5.24846 9.91665 5.47616Z"
-                            fill="white"
-                          ></path>
-                        </svg>
-                      </i> */}
-
                       <span className="fs-14 line-height-25 font-weight-normal text-nowrap color-semantic-success">
                         {brand?.data?.attributes?.name}
                       </span>
@@ -271,7 +250,7 @@ function Car({ car }) {
                 <div className="d-flex justify-content-end gap-col-5">
                   <button
                     onClick={() => {
-                      router.push("/car-details/slug-car-title");
+                      router.push(`/car-details/${car.attributes.slug}`);
                     }}
                     className=" btn-medium btn btn-details font-weight-bolder position-relative 
                           align-items-center d-none d-lg-flex primary-button-color"
