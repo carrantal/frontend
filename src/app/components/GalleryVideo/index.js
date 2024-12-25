@@ -114,6 +114,19 @@ function VideoComponent({ video, car }) {
               </svg>
             </div>
           </button>
+          <a
+            style={{
+              width: "100%",
+              position: "absolute",
+              bottom: "10px",
+            }}
+            href={`car-details/${car?.attributes?.slug}`}
+            className="btn btn-large bg-brand-primary rounded-medium btn-main-search"
+          >
+            <span className="text-uppercase color-shades-white mx-auto">
+              View Details
+            </span>
+          </a>
           {open && (
             <Portal>
               <div className="videomodal">
@@ -188,17 +201,7 @@ function VideoComponent({ video, car }) {
               justifyContent: "center",
             }}
           >
-            <a
-              style={{
-                width: "100%",
-              }}
-              href={`car-details/${car?.attributes?.slug}`}
-              className="btn btn-large bg-brand-primary rounded-medium btn-main-search"
-            >
-              <span className="text-uppercase color-shades-white mx-auto">
-                View Details
-              </span>
-            </a>
+           
           </div> */}
         </div>
       </div>
