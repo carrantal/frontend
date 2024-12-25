@@ -18,7 +18,17 @@ import Image from "next/image";
 import Gallery from "../Navbar/Gallery";
 import Tooglebutton from "../ToggleButton/Tooglebutton";
 import CarSlider from "../CarSlider/CarSlider";
-const Header = () => {
+import { URL } from "@/app/utils";
+import axios from "axios";
+
+const Header = async () => {
+  const response = await axios.get(
+    `${URL}/api/info?populate=*&[faqs][populate]=*`
+  );
+  const data = response?.data?.data;
+  const title = data?.attributes?.title;
+  const subTitle = data?.attributes?.subTitle;
+
   return (
     <>
       <div className="homepage  ">
@@ -31,11 +41,11 @@ const Header = () => {
                   aria-label="Home page"
                   className=" d-flex align-items-center"
                 >
-                  <Image
-                    src="/images/desig.avif"
+                  <img
+                    src={data?.attributes?.logo?.data.attributes.url}
                     width={100}
                     height={100}
-                    alt="Picture of the author"
+                    alt={title}
                   />
                 </a>
               </div>
@@ -138,16 +148,14 @@ const Header = () => {
           <picture>
             <source
               media="(min-width: 769px)"
-              srcSet="
-/images/heropic.avif          "
+              srcSet={data?.attributes?.mainImage?.data?.attributes?.url}
             />
             <source
               media="(min-width: 576px) and (max-width: 768px)"
-              srcSet="/images/heropic.avif
-          "
+              srcSet={data?.attributes?.mainImage?.data?.attributes?.url}
             />
             <img
-              src="/images/heropic.avif"
+              src={data?.attributes?.mainImage?.data?.attributes?.url}
               alt="Responsive Image"
               className="home-page-banner position-absolute w-100 h-100"
               fetchPriority="high"
@@ -156,10 +164,10 @@ const Header = () => {
           <div className="container home-page-top-main-container d-flex flex-column px-4-custom">
             <div className="d-flex home-page-title-section flex-column text-center">
               <h1 className="color-shades-white home-page-main-title font-weight-600">
-                Rent a car in Dubai
+                {title}
               </h1>
               <h2 className="color-shades-white home-page-main-desc font-weight-semibold">
-                Find a car of your dream in 60 seconds
+                {subTitle}
               </h2>
             </div>
 
@@ -184,8 +192,8 @@ const Header = () => {
         <Reviews />
         {/* <Maps /> */}
         <LeadingCompany />
-        <Faq />
-        <Footer />
+        <Faq FaqData={data} />
+        <Footer Footerdata={data} />
       </div>
     </>
   );

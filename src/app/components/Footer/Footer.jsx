@@ -7,7 +7,10 @@ import { FaFacebook } from "react-icons/fa";
 
 import { FaPhoneAlt } from "react-icons/fa";
 
-const Footer = () => {
+const Footer = ({ Footerdata }) => {
+  const phone = Footerdata.attributes.phone;
+  const map = Footerdata?.attributes?.mapImage?.data?.attributes?.url;
+
   const data = {
     phone: "+971-528888746",
     whatsapp: "https://wa.me/971528888746",
@@ -81,35 +84,35 @@ const Footer = () => {
               </span>
               <div className="d-flex flex-column mt-3-custom mt-lg-2-custom line-height-25 gap-10">
                 <a
-                  href={`tel:${data.phone}`}
+                  href={phone}
                   className="fs-12 fs-sm-14 color-shades-black d-flex align-items-center letter-spacing-0_2"
                 >
                   <FaPhoneFlip className="icon-16 icon-phone mr-2 d-flex align-items-center color-shades-900 justify-content-center" />
                   <span className="direction-ltr">{data.phone}</span>
                 </a>{" "}
                 <a
-                  href={`${data.whatsapp}`}
+                  href={Footerdata?.attributes?.whatsapp}
                   className="fs-12 fs-sm-14 color-shades-black d-flex align-items-center letter-spacing-0_2"
                 >
                   <FaWhatsapp className="icon-16 icon-phone mr-2 d-flex align-items-center color-shades-900 justify-content-center" />
                   <span className="direction-ltr">WhatsApp</span>
                 </a>
                 <a
-                  href={`${data.tiktok}`}
+                  href={Footerdata?.attributes?.tiktok}
                   className="fs-12 fs-sm-14 color-shades-black d-flex align-items-center letter-spacing-0_2"
                 >
                   <FaTiktok className="icon-16 icon-phone mr-2 d-flex align-items-center color-shades-900 justify-content-center" />
                   <span className="direction-ltr">Tiktok</span>
                 </a>
                 <a
-                  href={`${data.instagram}`}
+                  href={Footerdata?.attributes?.instagram}
                   className="fs-12 fs-sm-14 color-shades-black d-flex align-items-center letter-spacing-0_2"
                 >
                   <FaInstagram className="icon-16 icon-phone mr-2 d-flex align-items-center color-shades-900 justify-content-center" />
                   <span className="direction-ltr">Instagram</span>
                 </a>
                 <a
-                  href={`${data.facebook}`}
+                  href={Footerdata?.attributes?.facebook}
                   className="fs-12 fs-sm-14 color-shades-black d-flex align-items-center letter-spacing-0_2"
                 >
                   <FaFacebook className="icon-16 icon-phone mr-2 d-flex align-items-center color-shades-900 justify-content-center" />
@@ -124,7 +127,7 @@ const Footer = () => {
               </span>
               <div className="d-flex flex-column mt-3-custom">
                 <span className="fs-14 color-shades-black mb-1 letter-spacing-0_2">
-                  {data.address}
+                  {Footerdata?.attributes?.address}
                 </span>
               </div>
             </div>
@@ -136,7 +139,7 @@ const Footer = () => {
               </span>
               <div className="d-flex flex-column mt-3-custom">
                 <span className="fs-12 fs-sm-14 color-shades-black mb-1 letter-spacing-0_2">
-                  {data.address}
+                  {Footerdata?.attributes?.address}
                 </span>
               </div>
             </div>
@@ -146,7 +149,10 @@ const Footer = () => {
               href={data?.googlemap}
             >
               <div className="">
-                <img src="./images/map.png" loading="lazy" />
+                <img
+                  src={Footerdata?.attributes?.mapImage?.data?.attributes?.url}
+                  loading="lazy"
+                />
               </div>
             </a>
             <div className="footer-company-reviews-block w-100 d-flex justify-content-center  bg-shades-white my-3-custom">

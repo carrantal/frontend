@@ -21,7 +21,7 @@ const Brands = async () => {
                 key={brand.id}
                 className="d-flex flex-column gap-2 py-2 px-2 bg-shades-white align-items-center rounded-medium most-popular-brand-item"
                 title={brand.attributes.name}
-                href={`/brands/${brand.attributes.slug}`}
+                href={`/search?brand=${brand.attributes.slug}`}
               >
                 {brand?.attributes?.logo && brand?.attributes?.logo?.data ? (
                   <img
