@@ -8,6 +8,7 @@ import { FaSearch } from "react-icons/fa";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import { LiaServicestack } from "react-icons/lia";
 import { FaListUl, FaCalendarAlt } from "react-icons/fa";
+import { BiSolidVideos } from "react-icons/bi";
 import { CiSearch } from "react-icons/ci";
 const Tooglebutton = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -137,6 +138,14 @@ const Tooglebutton = () => {
                     </span>
                     <MdKeyboardArrowRight />
                   </button>
+                  <a
+                    href="/gallery"
+                    className="text-dark d-flex justify-content-between align-items-center w-100 py-2 fs-16 font-weight-semibold"
+                  >
+                    <span className="d-flex align-items-center gap-2">
+                      <BiSolidVideos /> Gallery
+                    </span>
+                  </a>
                 </>
               )}
 
