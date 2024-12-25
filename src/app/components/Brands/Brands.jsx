@@ -25,7 +25,7 @@ const Brands = async () => {
               >
                 {brand?.attributes?.logo && brand?.attributes?.logo?.data ? (
                   <img
-                    src={brand.attributes.logo.data.attributes.url}
+                    src={brand?.attributes?.logo?.data?.attributes?.url}
                     alt={brand.attributes.name}
                     className="icon-48 mb-2"
                   />

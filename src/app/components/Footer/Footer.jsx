@@ -8,7 +8,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 
 const Footer = ({ Footerdata }) => {
-  const phone = Footerdata.attributes.phone;
+  const phone = Footerdata?.attributes?.phone;
   const map = Footerdata?.attributes?.mapImage?.data?.attributes?.url;
 
   const data = {
