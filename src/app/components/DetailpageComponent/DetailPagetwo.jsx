@@ -204,7 +204,7 @@ const DetailPagetwo = () => {
             </div>
           </div>
           <div className="d-none d-lg-block ">
-            <BookingForm />
+            <BookingForm price={123} />
           </div>
         </div>
       </div>

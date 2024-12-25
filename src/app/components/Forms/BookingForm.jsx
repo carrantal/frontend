@@ -1,84 +1,132 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Input from "./Input";
 import CustomCalender from "../CustomCalender";
+import { useForm } from "react-hook-form";
+import Select from "./Select";
+import FilesInput from "./FilesInput";
+import Billing from "./Billing";
+import axios from "axios";
+import { URL } from "@/app/utils";
+import Loader from "../Loader/indes";
 
-export default function BookingForm() {
+export default function BookingForm({ price }) {
+  const [loading, setLoading] = useState(false);
+  const { register, handleSubmit, setValue, watch, reset } = useForm({
+    defaultValues: {
+      data: {
+        first_name: "",
+        last_name: "",
+        phone: "",
+        email: "",
+        start_date: "",
+        end_date: "",
+        time: "",
+        nationality: "local",
+        id_card: "",
+        license: "",
+        flight_details: "",
+        passport: "",
+        numberOfDays: null,
+      },
+    },
+  });
+  const onSubmit = async (data) => {
+    const _data = { ...data.data };
+    setLoading(true);
+    if (_data.nationality === "local") {
+      delete _data.flight_details;
+      delete _data.passport;
+    }
+
+    try {
+      await axios.post(`${URL}/api/bookings`, {
+        data: _data,
+      });
+      reset();
+      alert("Booked successfully.");
+    } catch (error) {
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <>
-      <div class="bg-shades-white rounded-small p-3 mx-3 mb-2 show-body-modal mt-3 mt-lg-0">
-        <div class="d-flex justify-content-between pt-1 row">
-          <span class="fs-11 color-shades-500 font-weight-bold text-uppercase letter-spacing-1 text-left col-8">
+      <div className="bg-shades-white rounded-small p-3 mx-3 mb-2 show-body-modal mt-3 mt-lg-0">
+        <div className="d-flex justify-content-between pt-1 row">
+          <span className="fs-11 color-shades-500 font-weight-bold text-uppercase letter-spacing-1 text-left col-8">
             Rental date range
           </span>
-          <span class="fs-11 color-shades-500 font-weight-bold text-uppercase letter-spacing-1 text-right col-4">
+          <span className="fs-11 color-shades-500 font-weight-bold text-uppercase letter-spacing-1 text-right col-4">
             Your rental
           </span>
         </div>
 
-        <CustomCalender />
+        <CustomCalender watch={watch} register={register} setValue={setValue} />
 
-        <div class="rental-min-warning desktop">
-          <div class="d-flex align-items-center bg-badge-warning rounded-small color-semantic-warning px-2 py-1 mb-3">
-            <span class="fs-14">Minimum 1 day rental</span>
+        <div className="rental-min-warning desktop">
+          <div className="d-flex align-items-center bg-badge-warning rounded-small color-semantic-warning px-2 py-1 mb-3">
+            <span className="fs-14">Minimum 1 day rental</span>
           </div>
         </div>
-        <div class="litepicker-backdrop"></div>
+        <div className="litepicker-backdrop"></div>
       </div>
-      <div id="personalInfo" class=" mx-3 mb-3 bg-shades-white">
-        <div class=" p-3">
-          <div class="d-flex justify-content-between">
-            <span class="fs-11 color-shades-500 font-weight-bold text-uppercase letter-spacing-1">
+      <div id="personalInfo" className=" mx-3 mb-3 bg-shades-white">
+        <div className=" p-3">
+          <div className="d-flex justify-content-between">
+            <span className="fs-11 color-shades-500 font-weight-bold text-uppercase letter-spacing-1">
               Personal information
             </span>
           </div>
-          <div class="d-flex align-items-center justify-content-between">
-            <h2 class="text-white h4 mb-3 text-truncate font-weight-normal fs-24 ">
+          <div className="d-flex align-items-center justify-content-between">
+            <h2 className="text-white h4 mb-3 text-truncate font-weight-normal fs-24 ">
               Your booking details
             </h2>
           </div>
-          <div class="mb-3">
-            <form>
-              <Input label="First Name" placeholder="Enter First Name" />
-              <Input label="Last Name" placeholder="Enter Last Name" />
-              <Input label="Address" placeholder="Enter Address" />
-              <Input label="Phone Number" placeholder="Enter Phone Number" />
-              <div class="bg-shades-100  show-body-modal">
-                <div class="bg-shades-100 rounded-small mx-3 py-2 ">
-                  <div class="d-flex justify-content-between mb-1">
-                    <span class="text-white fs-11 color-shades-500 font-weight-bold text-uppercase letter-spacing-1">
-                      Booking summary
-                    </span>
-                  </div>
-                  <div class="d-flex align-items-center justify-content-between fs-14 mb-2">
-                    <span
-                      class="text-white text-truncate"
-                      id="rental_days_summary"
-                    >
-                      Rental 1 day
-                    </span>
-                    <span class="text-white  font-weight-normal flex-shrink-0">
-                      $ 210
-                    </span>
-                  </div>
+          <div className="mb-3">
+            <form onSubmit={handleSubmit(onSubmit)}>
+              <Input
+                label="First Name"
+                placeholder="Enter First Name"
+                register={{ ...register("data.first_name") }}
+              />
+              <Input
+                label="Last Name"
+                placeholder="Enter Last Name"
+                register={{ ...register("data.last_name") }}
+              />
+              {/* <Input
+                label="Address"
+                placeholder="Enter Address"
+                register={{ ...register("data.address") }}
+              /> */}
+              <Input
+                label="Phone Number"
+                placeholder="Enter Phone Number"
+                register={{ ...register("data.phone") }}
+              />
+              <Input
+                label="Email"
+                placeholder="Enter Email"
+                register={{ ...register("data.email") }}
+              />
 
-                  <div class="d-flex align-items-center justify-content-between fs-16 pb-2">
-                    <span class="text-white text-truncate fs-14">
-                      VAT Tax (5%)
-                    </span>
-                    <span class="text-white  font-weight-normal flex-shrink-0 fs-14">
-                      + $ 11
-                    </span>
-                  </div>
-                  <div class="d-flex align-items-center justify-content-between border-top border-shades-300 border-top-dotted border-top-medium pt-2">
-                    <span class="color-primary fs-24 font-weight-normal text-truncate">
-                      Total
-                    </span>
-                    <span class="color-primary fs-24 font-weight-normal flex-shrink-0">
-                      $ 221
-                    </span>
-                  </div>
-                </div>
-                <div class="fs-14 color-shades-400  mx-3 pb-2 pb-lg-2">
+              <Select
+                label="Select Nationality"
+                placeholder="Enter Nationality"
+                register={{ ...register("data.nationality") }}
+              />
+
+              <FilesInput
+                watch={watch}
+                setValue={setValue}
+                disaleSubmit={setLoading}
+              />
+
+              <div className="bg-shades-100  show-body-modal">
+                <Billing price={price} watch={watch} />
+                <div className="fs-14 color-shades-400  mx-3 pb-2 pb-lg-2">
                   <small>
                     I accept the
                     <a href="https://policies.google.com/terms">
@@ -87,27 +135,22 @@ export default function BookingForm() {
                     apply.
                   </small>
                 </div>
-                <form
-                  id="requestBookings"
-                  method="POST"
-                  class="rc_validate"
-                  data-validate="true"
-                  novalidate="novalidate"
-                  data-company-id="1"
-                >
-                  <div class=" rounded-medium-bottom p-3">
-                    <div class="d-flex align-items-center justify-content-between">
+
+                <div className=" rounded-medium-bottom p-3">
+                  <div className="d-flex align-items-center justify-content-between">
+                    {loading && <Loader />}
+                    {!loading && (
                       <button
                         type="submit"
-                        class="m-w-100 requestModal font-weight-bold text-uppercase btn btn-large bg-brand-primary color-shades-white"
+                        className="m-w-100 requestModal font-weight-bold text-uppercase btn btn-large bg-brand-primary color-shades-white"
                       >
-                        <span class="fs-15 letter-spacing-0_5">
+                        <span className="fs-15 letter-spacing-0_5">
                           Book Online
                         </span>
                       </button>
-                    </div>
+                    )}
                   </div>
-                </form>
+                </div>
               </div>
             </form>
           </div>

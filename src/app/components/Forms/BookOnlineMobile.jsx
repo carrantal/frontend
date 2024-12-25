@@ -76,7 +76,7 @@ export default function BookOnlineMobile() {
               </span>
             </div>
 
-            <BookingForm />
+            <BookingForm price={123} />
           </div>
         </div>
       )}
