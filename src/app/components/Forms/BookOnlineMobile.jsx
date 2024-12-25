@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import BookingForm from "./BookingForm";
 
-export default function BookOnlineMobile() {
+export default function BookOnlineMobile({ price }) {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
@@ -76,7 +76,7 @@ export default function BookOnlineMobile() {
               </span>
             </div>
 
-            <BookingForm price={123} />
+            <BookingForm price={price} />
           </div>
         </div>
       )}

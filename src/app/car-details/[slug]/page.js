@@ -300,13 +300,13 @@ export default async function Page(props) {
                       </div>
                     </div>
                     <div className="d-none d-lg-block ">
-                      <BookingForm />
+                      <BookingForm price={price} />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <BookOnlineMobile />
+            <BookOnlineMobile price={price} />
           </div>
           <div className="mt-6 mb-6"></div>
           <Footer />
