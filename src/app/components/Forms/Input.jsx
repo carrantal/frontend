@@ -5,6 +5,7 @@ export default function Input({
   type = "text",
   placeholder = "placeholder",
   error = "",
+  register,
 }) {
   const id = label.toLowerCase().replace(" ", "_");
   return (
@@ -13,6 +14,7 @@ export default function Input({
         {label}
       </label>
       <input
+        {...register}
         type={type}
         class="fs-14 form-control-sm form-control"
         id={id}
