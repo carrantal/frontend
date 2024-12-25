@@ -9,7 +9,6 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 const Footer = ({ Footerdata }) => {
   const phone = Footerdata?.attributes?.phone;
-  const map = Footerdata?.attributes?.mapImage?.data?.attributes?.url;
 
   const data = {
     phone: "+971-528888746",

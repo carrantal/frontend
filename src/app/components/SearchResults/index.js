@@ -5,38 +5,47 @@ import { useRouter } from "next/navigation";
 import Breadcrumb from "../Breadcrumb";
 import axios from "axios";
 import { URL } from "@/app/utils";
+import Loader from "../Loader/indes";
+
 export default function SearchResults() {
   const searchParams = useSearchParams();
   const [CatCars, setCatCars] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState([]);
   const categorySlug = searchParams.get("category");
+  const brandSlug = searchParams.get("brand");
   useEffect(() => {
-    // Fetch cars for the selected category
     async function fetchCars() {
       try {
         setLoading(true);
+
+        let filterQuery = "";
+        if (categorySlug) {
+          filterQuery = `filters[categories][slug][$eq]=${categorySlug}`;
+        } else if (brandSlug) {
+          filterQuery = `filters[brand][slug][$eq]=${brandSlug}`;
+        }
+
         const response = await axios.get(
-          `${URL}/api/cars?populate=*&filters[categories][slug][$eq]=${categorySlug}`
+          `${URL}/api/cars?populate=*&${filterQuery}`
         );
+
         setCatCars(response.data.data);
-        console.log("category car", response.data.data);
-        console.log(" car", CatCars);
-        console.log(" slug", categorySlug);
       } catch (error) {
         console.error("Error fetching cars:", error);
       } finally {
-        setLoading(false); // Set loading to false after fetching
+        setLoading(false);
       }
     }
 
-    if (categorySlug) {
+    if (categorySlug || brandSlug) {
       fetchCars();
     }
-  }, [categorySlug]);
-
+  }, [categorySlug, brandSlug]);
   return (
     <>
-      <Breadcrumb breadcrumbTitle={categorySlug} />
+      <Breadcrumb
+        breadcrumbTitle={categorySlug || brandSlug || "Search Results"}
+      />
       <div className="bg-shades-white  pt-3 pt-lg-4 ">
         <div className="container">
           <div className=" ">
@@ -49,12 +58,12 @@ export default function SearchResults() {
       <div className=" mt-2 mb-2 ">
         <div className="container container-car-items p-4">
           <div className="row m-0-custom">
-            {loading ? ( // Show loading indicator
-              <p className="text-white">Loading cars...</p>
+            {loading ? (
+              <Loader />
             ) : CatCars.length > 0 ? (
               CatCars.map((car) => <Car key={car.id} car={car} />)
             ) : (
-              <p>No cars found for this category.</p>
+              <p className="text-white">No cars found for this category.</p>
             )}
           </div>
         </div>
