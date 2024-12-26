@@ -1,92 +1,46 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-import { FaAngleLeft } from "react-icons/fa";
-import { FaAngleRight } from "react-icons/fa";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import axios from "axios";
+import { URL } from "@/app/utils";
+import Link from "next/link";
+
 const OffSale = () => {
-  const carOffers = [
-    {
-      id: 1,
-      title: "Rolls Royce Cullinan (White), 2019",
-      price: "$80",
-      priceDescription: "per hour",
-      availability: "Available tomorrow",
-      imageSrc:
-        "https://renty.ae/uploads/car/photo/l/grey_mercedes-sl-amg_2022_5384_main_21fd1e6ebcca208c1cc71fa52d0a0e42.jpg",
-      imageSrcSet:
-        "https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/white_rolls-royce-cullinan_2019_3835_main_8d32bc33a3e35240595cb9db317296ab.jpg 2x",
-      altText: "Rolls Royce Cullinan (White), 2019 for rent in Dubai",
-      href: "/",
-    },
-    {
-      id: 2,
-      title: "Rolls Royce Cullinan (White), 2019",
-      price: "$80",
-      priceDescription: "per hour",
-      availability: "Available tomorrow",
-      imageSrc:
-        "https://renty.ae/uploads/car/photo/l/grey_mercedes-sl-amg_2022_5384_main_21fd1e6ebcca208c1cc71fa52d0a0e42.jpg",
-      imageSrcSet:
-        "https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/white_rolls-royce-cullinan_2019_3835_main_8d32bc33a3e35240595cb9db317296ab.jpg 2x",
-      altText: "Rolls Royce Cullinan (White), 2019 for rent in Dubai",
-      href: "/",
-    },
-    {
-      id: 2,
-      title: "Rolls Royce Cullinan (White), 2019",
-      price: "$80",
-      priceDescription: "per hour",
-      availability: "Available tomorrow",
-      imageSrc:
-        "https://renty.ae/uploads/car/photo/l/grey_mercedes-sl-amg_2022_5384_main_21fd1e6ebcca208c1cc71fa52d0a0e42.jpg",
-      imageSrcSet:
-        "https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/white_rolls-royce-cullinan_2019_3835_main_8d32bc33a3e35240595cb9db317296ab.jpg 2x",
-      altText: "Rolls Royce Cullinan (White), 2019 for rent in Dubai",
-      href: "/",
-    },
-    {
-      id: 2,
-      title: "Rolls Royce Cullinan (White), 2019",
-      price: "$80",
-      priceDescription: "per hour",
-      availability: "Available tomorrow",
-      imageSrc:
-        "https://renty.ae/uploads/car/photo/l/grey_mercedes-sl-amg_2022_5384_main_21fd1e6ebcca208c1cc71fa52d0a0e42.jpg",
-      imageSrcSet:
-        "https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/white_rolls-royce-cullinan_2019_3835_main_8d32bc33a3e35240595cb9db317296ab.jpg 2x",
-      altText: "Rolls Royce Cullinan (White), 2019 for rent in Dubai",
-      href: "/",
-    },
-    {
-      id: 2,
-      title: "Rolls Royce Cullinan (White), 2019",
-      price: "$80",
-      priceDescription: "per hour",
-      availability: "Available tomorrow",
-      imageSrc:
-        "https://renty.ae/uploads/car/photo/l/grey_mercedes-sl-amg_2022_5384_main_21fd1e6ebcca208c1cc71fa52d0a0e42.jpg",
-      imageSrcSet:
-        "https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=816,height=516,sharpen=0.8/https://renty.ae/uploads/car/photo/l/white_rolls-royce-cullinan_2019_3835_main_8d32bc33a3e35240595cb9db317296ab.jpg 2x",
-      altText: "Rolls Royce Cullinan (White), 2019 for rent in Dubai",
-      href: "/",
-    },
-  ];
+  const [carOffers, setCarOffers] = useState([]);
+
+  useEffect(() => {
+    const fetchCarOffers = async () => {
+      try {
+        const response = await axios.get(`${URL}/api/cars?populate=*`);
+        const offerresponse = response?.data?.data;
+
+        const filteredOffers = offerresponse.filter(
+          (car) => car.attributes.discountedPrice !== null
+        );
+
+        filteredOffers.forEach((car) => {
+          console.log("Images for car:", car.attributes.title);
+          console.log("image", car.attributes.images.data[0].attributes.url);
+        });
+
+        setCarOffers(filteredOffers);
+      } catch (error) {
+        console.error("Error fetching car offers:", error);
+      }
+    };
+
+    fetchCarOffers();
+  }, []);
 
   return (
     <div>
       <div className="container home-page-container-p-t hourly-offers-section mt-5">
-        <div
-          className="hourly-offers-container bg-shades-100 overflow-hidden"
-          // style={{
-          //   backgroundImage:
-          //     "url(https://renty.ae/cdn-cgi/image/format=auto,fit=contain,width=351,height=486,sharpen=0,quality=85/https://renty.ae/assets-nd/images/special-offers-bg.png)",
-          // }}
-        >
+        <div className="hourly-offers-container bg-shades-100 overflow-hidden">
           <div className="d-flex justify-content-between align-items-center">
             <div className="d-flex flex-column">
               <span className="text-[#ec7421] hourly-offers-container-title">
@@ -127,7 +81,7 @@ const OffSale = () => {
                 {carOffers.map((car) => (
                   <SwiperSlide
                     key={car.id}
-                    className="swiper-slide hourly-offer-card d-flex flex-column rounded-medium bg-shades-white"
+                    className="swiper-slide hourly-offer-card d-flex flex-column rounded-medium bg-shades-white cursor-pointer"
                     role="group"
                     aria-label="1 / 8"
                     style={{ width: "268.846px", marginRight: "10px" }}
@@ -135,35 +89,38 @@ const OffSale = () => {
                     <div className="position-absolute offer-pin rounded-small d-flex align-items-center hourly-offer-pin">
                       <div className="d-flex availability-feature-label-mobile align-items-center"></div>
                     </div>
-                    <a href={car.href} title={`Hiring ${car.title} in Dubai`}>
+                    <Link
+                      href={`/car-details/${car.attributes.slug}`}
+                      title={`Hiring ${car.attributes.title} in Dubai`}
+                    >
                       <div className="cars-slider-header position-relative">
                         <div className="d-flex overflow-hidden rounded-medium position-relative img-block-to-hover">
                           <img
-                            src={car.imageSrc}
-                            srcSet={car.imageSrcSet}
-                            className="hourly-offer-slider-image rounded-medium w-100"
-                            title={`Hiring ${car.title} in Dubai`}
-                            alt={car.altText}
+                            src={car.attributes.images.data[0].attributes.url}
+                            srcSet={car.attributes.imageSrcSet}
+                            className="hourly-offer-slider-image rounded-medium w-100 "
+                            title={`Hiring ${car.attributes.title} in Dubai`}
+                            alt={car.attributes.altText}
                             loading="lazy"
                           />
                         </div>
                       </div>
                       <div className="hourly-offer-slider-footer d-flex flex-column justify-content-between mt-sm-2 mt-1 mb-sm-2">
                         <span className="fs-16 line-height-25 font-weight-normal color-shades-black text-truncate slider-card-title">
-                          {car.title}
+                          {car.attributes.title}
                         </span>
                         <div className="d-flex">
                           <div className="price-per-hour-block d-flex align-items-center">
                             <span className="color-shades-black font-weight-semibold hourly-card-main-price">
-                              {car.price}
+                              AED {car.attributes.discountedPrice}
                             </span>
                             <span className="fs-12 lh-20 font-weight-normal letter-spacing-0_2 color-shades-600">
-                              {car.priceDescription}
+                              Discounted Price
                             </span>
                           </div>
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </SwiperSlide>
                 ))}
               </Swiper>
