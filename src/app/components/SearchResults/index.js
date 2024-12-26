@@ -41,6 +41,7 @@ export default function SearchResults() {
       fetchCars();
     }
   }, [categorySlug, brandSlug]);
+
   return (
     <>
       <Breadcrumb
@@ -75,7 +76,6 @@ export default function SearchResults() {
 function Car({ car }) {
   const router = useRouter();
   const { title, images, price, brand, categories } = car.attributes;
-  console.log("images", categories);
   return (
     <>
       <div className="col-12 col-md-6 col-lg-12 car-list-item bg-shades-white mb-2 cursor-pointer">

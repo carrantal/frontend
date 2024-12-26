@@ -29,7 +29,10 @@ export default async function Page(props) {
     url: video.attributes.url,
   }));
   console.log("carVideos", carVideos);
-
+  const Footerresponse = await axios.get(
+    `${URL}/api/info?populate=*&[faqs][populate]=*`
+  );
+  const Footerdata = Footerresponse?.data?.data;
   return (
     <>
       <div class="bg-black">
@@ -267,7 +270,7 @@ export default async function Page(props) {
             <BookOnlineMobile price={price} />
           </div>
           <div className="mt-6 mb-6"></div>
-          <Footer />
+          <Footer Footerdata={Footerdata} />
         </div>
       </div>
     </>
