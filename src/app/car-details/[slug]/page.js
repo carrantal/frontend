@@ -65,7 +65,7 @@ export default async function Page(props) {
                     price={price}
                   />
                 </div>
-                <div class="bg-shades-white d-lg-none d-flex flex-column gap-15 p-2 mt-2">
+                {/* <div class="bg-shades-white d-lg-none d-flex flex-column gap-15 p-2 mt-2">
                   <div class="p-lg-3 d-flex flex-row justify-content-between">
                     <div class="d-flex flex-column">
                       <span class="fs-18 fs-lg-24 line-height-35 font-weight-50 font-weight-semibold color-shades-black">
@@ -161,7 +161,6 @@ export default async function Page(props) {
                   </div>
                   <div class="mt-1 mb-5 d-flex flex-column gap-5">
                     <div class="d-flex align-items-center line-height-25 policyDesc">
-                      {/* <span class="color-semantic-success icon-thumbs-up mr-2"></span> */}
                       <FaInfoCircle class="color-semantic-success icon-thumbs-up mr-2" />
                       <span class="fs-14 font-weight-normal color-shades-black">
                         <span>No deposit needed</span>
@@ -171,28 +170,25 @@ export default async function Page(props) {
                       class="d-flex align-items-center fs-14 line-height-25 font-weight-normal color-shades-700 text-truncate"
                       title="Minimum 6 hours rental"
                     >
-                      {/* <i class="icon-info fs-18 d-lg-none d-flex color-shades-orange mr-2"></i> */}
                       <FaInfoCircle class="color-semantic-success icon-thumbs-up mr-2" />
                       <span class="color-shades-black">
                         Minimum 6 hours rental
                       </span>
                     </span>
                     <div class="d-flex align-items-center line-height-25">
-                      {/* <span class="color-shades-500 icon-info mr-2"></span> */}
                       <FaInfoCircle class="color-semantic-success icon-thumbs-up mr-2" />
                       <span class="fs-14 font-weight-normal color-shades-black">
                         Mileage limit 90-150 km
                       </span>
                     </div>
                     <div class="d-flex align-items-center line-height-25">
-                      {/* <span class="color-shades-500 icon-info mr-2"></span> */}
                       <FaInfoCircle class="color-semantic-success icon-thumbs-up mr-2" />
                       <span class="fs-14 font-weight-normal color-shades-black">
                         No delivery
                       </span>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <div class="col-12 col-lg-5 p-0 d-none d-lg-block">
                   <div class="title-car-mobile   ">
                     <div class="d-none d-lg-block py-3 px-3 show-body show-body-modal">
@@ -275,8 +271,8 @@ export default async function Page(props) {
                   </div>
                 </div>
               </div>
+              <BookOnlineMobile price={price} />
             </div>
-            <BookOnlineMobile price={price} />
           </div>
           <div className="mt-6 mb-6"></div>
           <Footer Footerdata={Footerdata} />

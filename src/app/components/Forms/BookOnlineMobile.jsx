@@ -16,7 +16,7 @@ export default function BookOnlineMobile({ price }) {
                 </span>
               </div>
               <span class="fs-16 font-weight-normal priceVal color-shades-black">
-                $ 210
+                {price} AED
               </span>
             </div>
             <div class="d-flex flex-row mobile-contact-btns gap-col-5">
