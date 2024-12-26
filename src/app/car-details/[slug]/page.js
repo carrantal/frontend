@@ -13,7 +13,6 @@ import BookingForm from "@/app/components/Forms/BookingForm";
 
 export default async function Page(props) {
   const { slug } = props.params;
-  console.log("prodid from params", slug);
   const response = await axios.get(
     `${URL}/api/cars?populate=*&filters[slug]=${slug}`
   );
@@ -22,13 +21,17 @@ export default async function Page(props) {
   const images = product?.attributes?.images?.data || [];
   const videos = product?.attributes?.videos?.data || [];
   const price = product?.attributes?.price;
+  const features = product?.attributes.features;
+  const desc = product?.attributes?.description;
+  const specs = product?.attributes?.specs;
+  const deliveryTerms = product?.attributes?.deliveryTerms;
   const carImages = images.map((image) => ({
     url: image.attributes.url,
   }));
   const carVideos = videos.map((video) => ({
     url: video.attributes.url,
   }));
-  console.log("carVideos", carVideos);
+
   const Footerresponse = await axios.get(
     `${URL}/api/info?populate=*&[faqs][populate]=*`
   );
@@ -54,7 +57,13 @@ export default async function Page(props) {
                 <div class="col-12 col-lg-6 p-0 gallery flex-lg-grow-1">
                   <CarDetailSlider images={carImages} carVideos={carVideos} />
 
-                  <DetailpageComponent />
+                  <DetailpageComponent
+                    features={features}
+                    desc={desc}
+                    specs={specs}
+                    deliveryTerms={deliveryTerms}
+                    price={price}
+                  />
                 </div>
                 <div class="bg-shades-white d-lg-none d-flex flex-column gap-15 p-2 mt-2">
                   <div class="p-lg-3 d-flex flex-row justify-content-between">
@@ -223,7 +232,7 @@ export default async function Page(props) {
                         <div class="d-flex align-items-center rounded-small min-height-35 policyDesc">
                           <FaInfoCircle class="color-semantic-success icon-info ml-2" />
                           <span class="fs-14 line-height-25 ml-2 color-shades-black">
-                            Mileage limit - 250 km for 1 day
+                            Mileage for 1 day
                           </span>
                         </div>
                         <div class="d-flex align-items-center rounded-small min-height-35 policyDesc">
@@ -235,7 +244,7 @@ export default async function Page(props) {
                         <div class="d-flex align-items-center rounded-small min-height-35 policyDesc">
                           <FaInfoCircle class="color-semantic-success icon-info ml-2" />
                           <span class="fs-14 line-height-25 ml-2 color-shades-black">
-                            Cash, Crypto, Credit/debit cards accepted
+                            Cash, Credit/debit cards accepted
                           </span>
                         </div>
                       </div>
@@ -281,12 +290,9 @@ export async function generateStaticParams() {
   const response = await axios.get(`${URL}/api/cars`);
   const products = response.data.data;
 
-  // console.log("products", products);
-
   return products
     .map((product) => {
       if (!product.attributes.slug) {
-        console.error("Product missing slug:", product);
         return null; // Or handle this gracefully
       }
       return {

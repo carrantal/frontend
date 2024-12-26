@@ -189,7 +189,11 @@ const Header = async () => {
         <CarSlider type="sports" />
         <CarSlider type="suv" />
         {/* <Economy /> */}
-        <Reviews />
+        <div className="bg-shades-white home-page-section-body overflow-hidden pt-4 pb-4 mt-2 mb-2">
+          <div className="container slider-container home-page-container-p-t">
+            <Reviews />
+          </div>
+        </div>
         {/* <Maps /> */}
         <LeadingCompany />
         <Faq FaqData={data} />
