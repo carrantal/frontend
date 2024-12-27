@@ -25,6 +25,7 @@ export default async function Page(props) {
   const images = product?.attributes?.images?.data || [];
   const videos = product?.attributes?.videos?.data || [];
   const price = product?.attributes?.price;
+  const discountedPrice = product?.attributes?.discountedPrice;
   const features = product?.attributes.features;
   const desc = product?.attributes?.description;
   const specs = product?.attributes?.specs;
@@ -89,8 +90,18 @@ export default async function Page(props) {
                         </div>
                         <div class="pl-3">
                           <span class="fs-30 text-white font-weight-semibold priceVal">
-                            {price} AED
+                            {discountedPrice ? discountedPrice : price} AED
                           </span>
+                          {discountedPrice && (
+                            <span
+                              class="ml-2 fs-20 color-shades-500 font-weight-semibold"
+                              style={{
+                                textDecoration: "line-through",
+                              }}
+                            >
+                              {price} AED
+                            </span>
+                          )}
                         </div>
                       </div>
 
@@ -143,13 +154,18 @@ export default async function Page(props) {
                       </div>
                     </div>
                     <div className="d-none d-lg-block ">
-                      <BookingForm price={price} />
+                      <BookingForm
+                        price={discountedPrice ? discountedPrice : price}
+                      />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <BookOnlineMobile price={price} whatsapp={whatsapp} />
+            <BookOnlineMobile
+              price={discountedPrice ? discountedPrice : price}
+              whatsapp={whatsapp}
+            />
           </div>
           <div className="mt-6 mb-6"></div>
         </div>

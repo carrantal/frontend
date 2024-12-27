@@ -115,10 +115,15 @@ const OffSale = ({ carOffers }) => {
                             <div className="d-flex">
                               <div className="price-per-hour-block d-flex align-items-center">
                                 <span className="color-shades-black font-weight-semibold hourly-card-main-price">
-                                  AED {car.attributes.discountedPrice}
+                                  {car.attributes.discountedPrice} AED
                                 </span>
-                                <span className="fs-12 lh-20 font-weight-normal letter-spacing-0_2 color-shades-600">
-                                  Discounted Price
+                                <span
+                                  className="fs-12 lh-20 font-weight-normal letter-spacing-0_2 color-shades-600"
+                                  style={{
+                                    textDecoration: "line-through",
+                                  }}
+                                >
+                                  {car.attributes.price} AED
                                 </span>
                               </div>
                             </div>
