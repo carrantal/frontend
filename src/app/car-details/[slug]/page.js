@@ -148,8 +148,8 @@ export default async function Page(props) {
                   </div>
                 </div>
               </div>
-              <BookOnlineMobile price={price} whatsapp={whatsapp} />
             </div>
+            <BookOnlineMobile price={price} whatsapp={whatsapp} />
           </div>
           <div className="mt-6 mb-6"></div>
         </div>
