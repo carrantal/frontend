@@ -9,6 +9,7 @@ import Billing from "./Billing";
 import axios from "axios";
 import { URL } from "@/app/utils";
 import Loader from "../Loader/indes";
+import Link from "next/link";
 
 export default function BookingForm({ price }) {
   const [loading, setLoading] = useState(false);
@@ -129,9 +130,9 @@ export default function BookingForm({ price }) {
                 <div className="fs-14 color-shades-400  mx-3 pb-2 pb-lg-2">
                   <small>
                     I accept the
-                    <a href="https://policies.google.com/terms">
+                    <Link href="/terms-and-conditions" target="_blank">
                       Terms of service{" "}
-                    </a>{" "}
+                    </Link>{" "}
                     apply.
                   </small>
                 </div>
