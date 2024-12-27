@@ -274,12 +274,6 @@ const Footer = async ({ Footerdata }) => {
                         </clipPath>
                       </defs>
                     </svg>
-                    {/* <img
-                      loading="lazy"
-                      src="https://renty.ae/assets-nd/icons/company-reviews/google-reviews.svg"
-                      title="Company reviews"
-                      alt="Company reviews"
-                    /> */}
                   </div>
                 </div>
                 <div className="company-review-statistics-block px-xs-1-custom d-flex align-items-center direction-ltr">

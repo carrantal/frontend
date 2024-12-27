@@ -5,7 +5,7 @@ import axios from "axios";
 import { URL } from "@/app/utils";
 import Image from "next/image";
 
-export default async function HeaderV2({ isHomePage }) {
+export default async function HeaderV2() {
   const response = await axios.get(
     `${URL}/api/info?populate=*&[faqs][populate]=*`
   );

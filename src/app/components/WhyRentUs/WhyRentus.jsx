@@ -25,7 +25,6 @@ const WhyRentus = () => {
                 <div className="company-review-icon">
                   <img
                     loading="lazy"
-                    src="https://renty.ae/assets-nd/icons/company-reviews/google-reviews.svg"
                     title="Company reviews"
                     alt="Company reviews"
                   />

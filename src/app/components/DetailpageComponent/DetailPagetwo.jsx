@@ -71,13 +71,8 @@ const DetailPagetwo = () => {
             </div>
             <div class="mt-2">
               <button
-                data-source="whatsapp-special-offer"
-                title="Contact Renty.ae car rental Whatsapp"
-                data-company-id="1"
-                data-car-type="luxury"
                 class="w-100 d-flex mobile-main-cta-btn whatsapp_btn whatsapp_btn_js d-none btn btn-large btn-semantic-success d-none d-lg-flex"
                 type="button"
-                data-id="5150"
               >
                 <span class=""></span>
                 <svg
@@ -183,16 +178,7 @@ const DetailPagetwo = () => {
               </div>
             </div>
 
-            <button
-              type="button"
-              data-company-id="1"
-              data-id="5356"
-              data-whatsapp="1"
-              data-telegram="1"
-              data-car-type="luxury"
-              title="Contact Renty.ae car rental"
-              class="w-100 mb-3 btn-medium contact_btn btn btn-semantic-success d-none d-lg-flex"
-            >
+            <button class="w-100 mb-3 btn-medium contact_btn btn btn-semantic-success d-none d-lg-flex">
               <span class="fs-14 lh-20 font-weight-bold text-uppercase text-nowrap letter-spacing-0_2 company_phone_5356">
                 Contact
               </span>

@@ -7792,24 +7792,7 @@ header.header-hidden .popover .arrow {
 .home-page-slide-car-type {
   width: 120px;
 }
-.icon-brand-ferrari {
-  background-image: url(https://renty.ae/assets-nd/icons/site/brand_svg/ferrari.svg);
-}
-.icon-brand-lamborghini {
-  background-image: url(https://renty.ae/assets-nd/icons/site/brand_svg/lamborghini.svg);
-}
-.icon-brand-mercedes {
-  background-image: url(https://renty.ae/assets-nd/icons/site/brand_svg/mercedes.svg);
-}
-.icon-brand-range-rover {
-  background-image: url(https://renty.ae/assets-nd/icons/site/brand_svg/range-rover.svg);
-}
-.icon-brand-rolls-royce {
-  background-image: url(https://renty.ae/assets-nd/icons/site/brand_svg/rolls-royce.svg);
-}
-.icon-brand-rolls-Cadillac {
-  background-image: url(https://static.wixstatic.com/media/a1488d_a69a67a4561e4c41a0535301b205384c~mv2.png/v1/fill/w_870,h_250,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/png-clipart-cadillac-logo-car-logo-cadillac-icons-logos-emojis-car-logos_edited.png);
-}
+
 @font-face {
   font-display: block;
   font-family: "icomoon";

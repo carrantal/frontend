@@ -7,11 +7,7 @@ const LeadingCompany = () => {
         <h2 class="home-about-company-section-title font-weight-bold color-shades-black">
           Nayl Rentals: The Leading Car rental company In Dubai
         </h2>
-        <img
-          src="https://renty.ae/assets/images/company-car.svg"
-          class="d-none d-lg-flex"
-          loading="lazy"
-        />
+        <img src="./images/car.svg" class="d-none d-lg-flex" loading="lazy" />
       </div>
       <div class="row mx-0">
         <div class="col-lg col-12 mr-lg-3 home-about-company-section-card flex-column mb-lg-0 mb-4">

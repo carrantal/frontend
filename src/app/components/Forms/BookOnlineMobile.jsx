@@ -1,8 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import BookingForm from "./BookingForm";
+import Link from "next/link";
 
-export default function BookOnlineMobile({ price }) {
+export default function BookOnlineMobile({ price, whatsapp }) {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
@@ -20,14 +21,15 @@ export default function BookOnlineMobile({ price }) {
               </span>
             </div>
             <div class="d-flex flex-row mobile-contact-btns gap-col-5">
-              <button
-                type="button"
+              <Link
+                href={whatsapp}
+                target="_blank"
                 class=" btn-medium contact_btn btn btn-semantic-success d-flex d-lg-none w-100"
               >
                 <span class="fs-14 lh-20 font-weight-bold text-uppercase text-nowrap letter-spacing-0_2 company_phone_5307">
                   Contact
                 </span>
-              </button>
+              </Link>
               <button
                 onClick={() => setMenuOpen(!menuOpen)}
                 type="button"

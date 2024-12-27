@@ -23,7 +23,6 @@ const Profile = () => {
             aria-expanded={isDropdownVisible}
           >
             <img
-              src="https://renty.ae/assets-nd/images/placeholder/not-logged-in.png"
               alt="not-logged-in-profile-icon"
               height="24"
               width="24"
