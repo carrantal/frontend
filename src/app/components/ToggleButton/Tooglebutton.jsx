@@ -4,6 +4,8 @@ import React, { useState } from "react";
 
 import { IoIosMenu } from "react-icons/io";
 import { FaSearch, FaListUl } from "react-icons/fa";
+import { IoIosDocument } from "react-icons/io";
+import { IoDocumentText } from "react-icons/io5";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import { LiaServicestack } from "react-icons/lia";
 import { BiSolidVideos } from "react-icons/bi";
@@ -141,6 +143,28 @@ const Tooglebutton = ({ response }) => {
                       <BiSolidVideos /> Gallery
                     </span>
                   </Link>
+                  <Link
+                    onClick={() => {
+                      setMenuOpen(false);
+                    }}
+                    href="/terms-and-conditions"
+                    className="text-dark d-flex justify-content-between align-items-center w-100 py-2 fs-16 font-weight-semibold"
+                  >
+                    <span className="d-flex align-items-center gap-2">
+                      <IoIosDocument /> Terms and condition
+                    </span>
+                  </Link>
+                  <Link
+                    onClick={() => {
+                      setMenuOpen(false);
+                    }}
+                    href="/refund-policy"
+                    className="text-dark d-flex justify-content-between align-items-center w-100 py-2 fs-16 font-weight-semibold"
+                  >
+                    <span className="d-flex align-items-center gap-2">
+                      <IoDocumentText /> Refund Policy
+                    </span>
+                  </Link>
                 </>
               )}
 
@@ -179,11 +203,26 @@ const Tooglebutton = ({ response }) => {
               {/* Services Submenu */}
               {currentMenu === "services" && (
                 <div className="submenu  py-3 rounded">
-                  <a className="dropdown-item fs-14" href="/">
-                    <FaSearch className="d-inline " />
-                    <span className="ms-4"> Airport Transfer</span>
-                  </a>
-                  {/* Add more service links here */}
+                  <Link
+                    onClick={() => {
+                      setMenuOpen(false);
+                    }}
+                    href={"/chauffer-services"}
+                    className="dropdown-item rounded-small fs-14 color-shades-black px-2"
+                  >
+                    <span className="ms-4 text-black"> Chauffer Services</span>
+                  </Link>
+                  <Link
+                    onClick={() => {
+                      setMenuOpen(false);
+                    }}
+                    href={"/airport-services"}
+                    className="dropdown-item rounded-small fs-14 color-shades-black px-2"
+                  >
+                    <span className="ms-4 text-black">
+                      Arrive in style - Luxury Cars ready at the airport
+                    </span>
+                  </Link>
                 </div>
               )}
             </div>

@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./globals.css";
 import Layout from "./components/Layout";
+import { Toaster } from "react-hot-toast";
 
 export const metadata = {
   title: "NaylRental",
@@ -22,6 +23,7 @@ export default async function RootLayout({ children }) {
       </head>
       <body>
         <div className="bg-black">
+          <Toaster position="bottom-center" />
           <Layout>
             {children}
             <div id="videomodal"></div>

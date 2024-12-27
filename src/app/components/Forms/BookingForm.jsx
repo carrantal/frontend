@@ -10,6 +10,7 @@ import axios from "axios";
 import { URL } from "@/app/utils";
 import Loader from "../Loader/indes";
 import Link from "next/link";
+import { toast } from "react-hot-toast";
 
 export default function BookingForm({ price }) {
   const [loading, setLoading] = useState(false);
@@ -45,7 +46,7 @@ export default function BookingForm({ price }) {
         data: _data,
       });
       reset();
-      alert("Booked successfully.");
+      toast.success("Booked successfully.");
     } catch (error) {
     } finally {
       setLoading(false);
