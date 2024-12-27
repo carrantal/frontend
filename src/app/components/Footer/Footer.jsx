@@ -38,14 +38,10 @@ const Footer = async ({ Footerdata }) => {
         title: "Terms & Conditions",
         link: "/terms-and-conditions",
       },
-      // {
-      //   title: "Booking Policy",
-      //   link: "#",
-      // },
-      // {
-      //   title: "Cancellation Policy",
-      //   link: "#",
-      // },
+      {
+        title: "Refund Policy",
+        link: "/refund-policy",
+      },
     ],
     googlemap:
       "https://www.google.com/maps/place/Nayl+Luxury+Rentals/@25.1732612,55.299778,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5f69943cf09df9:0x9241bd366c73e188!8m2!3d25.1732612!4d55.299778!16s%2Fg%2F11wq3gv6gw?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D",

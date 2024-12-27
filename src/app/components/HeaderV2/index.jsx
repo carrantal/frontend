@@ -46,13 +46,7 @@ export default async function HeaderV2() {
                   </span>
                 </button>
 
-                <div
-                  className="p-0 drop-item rounded-lg mt-2  "
-                  aria-labelledby="rent-car-dropdown-btn"
-                  data-toggle="dropdown"
-                  role="menu"
-                  aria-expanded="true"
-                >
+                <div className="p-0 drop-item rounded-lg mt-2  ">
                   <div
                     className="d-grid bg-black"
                     style={{ gridTemplateColumns: "1fr 1fr 1fr" }}
@@ -132,19 +126,28 @@ export default async function HeaderV2() {
                     Services
                   </span>
                 </button>
-
-                <div
-                  role="menu"
-                  aria-labelledby="services-dropdown-btn"
-                  className=" p-0 drop-item rounded-lg"
-                  aria-expanded="true"
-                >
-                  <a className="dropdown-item cursor-pointer fs-12" href="/">
-                    Chauffer Services
-                  </a>
-                  <a className="dropdown-item cursor-pointer fs-12" href="/">
-                    Arrive in style - Luxury Cars ready at the airport
-                  </a>
+                <div className="p-0 drop-item rounded-lg mt-2  ">
+                  <div
+                    className="d-grid bg-black"
+                    style={{ gridTemplateColumns: "1fr 1fr 1fr" }}
+                  >
+                    <div className="p-3 flex-grow-1 border-shades-200 border-right">
+                      <div className="d-flex flex-column mt-2">
+                        <Link
+                          href={"/chauffer-services"}
+                          className="dropdown-item rounded-small fs-14 color-shades-black px-2"
+                        >
+                          Chauffer Services
+                        </Link>
+                        <Link
+                          href={"/airport-services"}
+                          className="dropdown-item rounded-small fs-14 color-shades-black px-2"
+                        >
+                          Arrive in style - Luxury Cars ready at the airport
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <Link href="/gallery">
