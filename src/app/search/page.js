@@ -1,10 +1,5 @@
 import React, { Suspense } from "react";
-import Header from "../components/Header/Header";
-import TopHeader from "../components/TopHeader";
 import SearchResults from "../components/SearchResults";
-import Footer from "../components/Footer/Footer";
-import axios from "axios";
-import { URL } from "../utils";
 
 export const metadata = {
   title: "Search - NaylRental",
