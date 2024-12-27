@@ -4,6 +4,7 @@ import Loader from "../Loader/indes";
 import { URL } from "@/app/utils";
 import axios from "axios";
 import Portal from "../Portal";
+import Link from "next/link";
 
 export default function GalleryVideo() {
   const [loading, setLoading] = useState(true);
@@ -114,7 +115,7 @@ function VideoComponent({ video, car }) {
               </svg>
             </div>
           </button>
-          <a
+          <Link
             style={{
               width: "100%",
               position: "absolute",
@@ -126,7 +127,7 @@ function VideoComponent({ video, car }) {
             <span className="text-uppercase color-shades-white mx-auto">
               View Details
             </span>
-          </a>
+          </Link>
           {open && (
             <Portal>
               <div className="videomodal">
@@ -164,45 +165,6 @@ function VideoComponent({ video, car }) {
               </div>
             </Portal>
           )}
-          {/* <a href={video?.attributes?.url} target="_blank">
-            <div
-              style={{
-                position: "absolute",
-                top: "10px",
-                left: "10px",
-                height: "30px",
-                width: "30px",
-                background: "black",
-                borderRadius: "50%",
-              }}
-            >
-              <svg
-                style={{
-                  padding: "3px",
-                  height: "100%",
-                  width: "100%",
-                }}
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 100 100"
-                width="100"
-                height="100"
-              >
-                <polygon points="30,20 30,80 70,50" fill="#ec7421" />
-              </svg>
-            </div>
-          </a> */}
-          {/* <div
-            style={{
-              width: "100%",
-              position: "absolute",
-              bottom: 5,
-              padding: 10,
-              display: "flex",
-              justifyContent: "center",
-            }}
-          >
-           
-          </div> */}
         </div>
       </div>
     </div>
