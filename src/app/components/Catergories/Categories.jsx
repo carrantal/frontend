@@ -1,9 +1,7 @@
 import React from "react";
-import { URL } from "@/app/utils";
-import axios from "axios";
+import Link from "next/link";
 
-const Categories = async () => {
-  const response = await axios.get(`${URL}/api/categories?populate=*`);
+const Categories = async ({ response }) => {
   return (
     <>
       <div className="position-absolute container home-page-popular-car-type-container slider-container ">
@@ -15,7 +13,7 @@ const Categories = async () => {
           >
             {response?.data?.data?.map((cat) => (
               <div>
-                <a
+                <Link
                   className="bg-shades-white category-card d-flex flex-column align-items-center rounded-small  "
                   href={`/search?category=${cat.attributes.slug}`}
                   style={{
@@ -42,7 +40,7 @@ const Categories = async () => {
                   <span className="text-white home-page-slide-category-name d-flex align-items-center font-weight-semibold fs-13 fs-sm-14 text-center px-2 overflow-hidden">
                     {cat.attributes.name}
                   </span>
-                </a>
+                </Link>
               </div>
             ))}
           </div>

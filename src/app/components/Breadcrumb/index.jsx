@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Breadcrumb({ breadcrumbTitle }) {
@@ -8,11 +9,10 @@ export default function Breadcrumb({ breadcrumbTitle }) {
           <div className="d-flex py-2-custom">
             <ol className="breadcrumb py-1-custom pl-0 bg-transparent">
               <li className="breadcrumb-item" aria-current="page">
-                <a className="text-white" href="/">
+                <Link className="text-white" href="/">
                   Rent a car
-                </a>
+                </Link>
               </li>
-              {/* <i className="d-flex align-items-center px-1-custom color-shades-500 fs-12 not-rtl icon-chevron-right"></i> */}
               <li className="breadcrumb-item active color-brand-primary">
                 <span>{breadcrumbTitle}</span>
               </li>

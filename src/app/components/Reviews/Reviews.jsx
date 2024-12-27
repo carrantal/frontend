@@ -1,13 +1,14 @@
 import axios from "axios";
 import Link from "next/link";
 import React from "react";
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+
+const key = "AIzaSyDVbT4f5Shv6NmOdknBu77VH4CE78LO5Mg";
 
 const Reviews = async () => {
-  const response = await axios.get(
-    "https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJ-Z3wPJRpXz4RiOFzbDa9QZI&fields=reviews&key=AIzaSyDVbT4f5Shv6NmOdknBu77VH4CE78LO5Mg"
+  const reviewsResponse = await axios.get(
+    `https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJ-Z3wPJRpXz4RiOFzbDa9QZI&fields=reviews&key=${key}`
   );
-  const reviews = response?.data?.result?.reviews;
+  const reviews = reviewsResponse?.data?.result?.reviews;
 
   return (
     <div className="pt-4 pb-4 px-3 bg-shades-white my-3">

@@ -275,7 +275,6 @@ export default async function Page(props) {
             </div>
           </div>
           <div className="mt-6 mb-6"></div>
-          <Footer Footerdata={Footerdata} />
         </div>
       </div>
     </>

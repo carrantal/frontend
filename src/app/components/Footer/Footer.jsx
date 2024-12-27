@@ -4,32 +4,48 @@ import { FaTiktok } from "react-icons/fa";
 import { FaWhatsapp, FaPhoneFlip } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
+import axios from "axios";
+import Link from "next/link";
+import Image from "next/image";
 
-import { FaPhoneAlt } from "react-icons/fa";
+const key = "AIzaSyDVbT4f5Shv6NmOdknBu77VH4CE78LO5Mg";
 
-const Footer = ({ Footerdata }) => {
+const Footer = async ({ Footerdata }) => {
+  const getStars = (stars = 0) => {
+    const _ = [];
+    for (let i = 0; i < stars; i++) {
+      _.push(
+        <span className="fs-20 fs-sm-24 google-star" style={{ color: "gold" }}>
+          ★
+        </span>
+      );
+    }
+    return _;
+  };
+
   const phone = Footerdata?.attributes?.phone;
 
+  const reviewsResponse = await axios.get(
+    `https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJ-Z3wPJRpXz4RiOFzbDa9QZI&fields=rating,user_ratings_total&key=${key}`
+  );
+  const rating = reviewsResponse?.data?.result?.rating || null;
+  const user_ratings_total =
+    reviewsResponse?.data?.result?.user_ratings_total || null;
+
   const data = {
-    phone: "+971-528888746",
-    whatsapp: "https://wa.me/971528888746",
-    instagram: "https://www.instagram.com/naylrentalsdxb?igsh=bnAxOXp5Z3JraGN4",
-    tiktok: "https://www.tiktok.com/@naylrentalsdxb?_t=8rLvJBDLAK9&_r=1",
-    facebook: "https://www.facebook.com/share/15aY27odAJ/?mibextid=LQQJ4d",
-    address: "Azizi Riviera 4 , Retail 8 ,Meydan , Dubai, UAE",
     policies: [
       {
         title: "Terms & Conditions",
-        link: "#",
+        link: "/terms-and-conditions",
       },
-      {
-        title: "Booking Policy",
-        link: "#",
-      },
-      {
-        title: "Cancellation Policy",
-        link: "#",
-      },
+      // {
+      //   title: "Booking Policy",
+      //   link: "#",
+      // },
+      // {
+      //   title: "Cancellation Policy",
+      //   link: "#",
+      // },
     ],
     googlemap:
       "https://www.google.com/maps/place/Nayl+Luxury+Rentals/@25.1732612,55.299778,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5f69943cf09df9:0x9241bd366c73e188!8m2!3d25.1732612!4d55.299778!16s%2Fg%2F11wq3gv6gw?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D",
@@ -47,14 +63,14 @@ const Footer = ({ Footerdata }) => {
               <div className="footer-locations mt-3-custom mt-lg-2-custom line-height-25">
                 <div className="d-none flex-column d-lg-flex">
                   {data.policies.map((each, index) => (
-                    <a
+                    <Link
                       key={index}
                       className="fs-12 fs-sm-14 color-shades-black mb-1"
                       title={each.title}
                       href={each.link}
                     >
                       {each.title}
-                    </a>
+                    </Link>
                   ))}
                 </div>
                 <div class="d-flex flex-column d-lg-none">
@@ -87,7 +103,9 @@ const Footer = ({ Footerdata }) => {
                   className="fs-12 fs-sm-14 color-shades-black d-flex align-items-center letter-spacing-0_2"
                 >
                   <FaPhoneFlip className="icon-16 icon-phone mr-2 d-flex align-items-center color-shades-900 justify-content-center" />
-                  <span className="direction-ltr">{data.phone}</span>
+                  <span className="direction-ltr">
+                    {phone.replace("tel:", "")}
+                  </span>
                 </a>{" "}
                 <a
                   href={Footerdata?.attributes?.whatsapp}
@@ -149,13 +167,18 @@ const Footer = ({ Footerdata }) => {
             >
               <div className="">
                 <img
-                  src={Footerdata?.attributes?.mapImage?.data?.attributes?.url}
+                  width={40}
+                  height={40}
+                  src={
+                    Footerdata?.attributes?.mapImage?.data?.attributes?.formats
+                      ?.thumbnail?.url
+                  }
                   loading="lazy"
                 />
               </div>
             </a>
             <div className="footer-company-reviews-block w-100 d-flex justify-content-center  bg-shades-white my-3-custom">
-              <a
+              <Link
                 className="company-review-section p-4-custom px-xs-2-custom px-sm-2-custom d-flex flex-column h-100 justify-content-center align-items-center mobile"
                 href={data?.googlemap}
                 target="_blank"
@@ -261,57 +284,22 @@ const Footer = ({ Footerdata }) => {
                 </div>
                 <div className="company-review-statistics-block px-xs-1-custom d-flex align-items-center direction-ltr">
                   <div className="font-weight-normal company-review-score color-shades-black">
-                    4.9
+                    {rating}
                   </div>
                   <div className="company-review-stars-block px-sm-1-custom pb-1-custom pb-xs-0-custom pb-sm-0-custom">
                     <div className="google-stars-block d-flex align-items-center">
-                      <span
-                        className="fs-20 fs-sm-24 google-star"
-                        style={{ color: "gold" }}
-                      >
-                        ★
-                      </span>
-                      <span
-                        className="fs-20 fs-sm-24 google-star"
-                        style={{ color: "gold" }}
-                      >
-                        ★
-                      </span>
-                      <span
-                        className="fs-20 fs-sm-24 google-star"
-                        style={{ color: "gold" }}
-                      >
-                        ★
-                      </span>
-                      <span
-                        className="fs-20 fs-sm-24 google-star"
-                        style={{ color: "gold" }}
-                      >
-                        ★
-                      </span>
-                      <span
-                        className="fs-20 fs-sm-24 google-star"
-                        style={{ color: "gold" }}
-                      >
-                        ☆
-                      </span>
-                      {/* <span className="fs-20 fs-sm-24 google-star icon-star-filled filled-100"></span>
-                      <span className="fs-20 fs-sm-24 google-star icon-star-filled filled-100"></span>
-                      <span className="fs-20 fs-sm-24 google-star icon-star-filled filled-100"></span>
-                      <span className="fs-20 fs-sm-24 google-star icon-star-filled filled-100"></span>
-                      <span className="fs-20 fs-sm-24 google-star icon-star-filled filled-90"></span> */}
+                      {getStars(rating)}
                     </div>
                   </div>
                   <div className="company-review-amount color-shades-500">
-                    1798
+                    {user_ratings_total}
                   </div>
                 </div>
-              </a>{" "}
+              </Link>
             </div>
           </div>
         </div>
         <div className="d-flex align-items-center justify-center py-4-custom pt-xs-2-custom flex-column flex-sm-row">
-          {/* <div className="d-flex flex-wrap justify-content-center justify-content-lg-start pb-4-custom pb-sm-0-custom pb-md-0-custom pb-lg-0-custom"></div> */}
           <span className="fs-12 letter-spacing-0_2 color-shades-500">
             © 2024 Nayal Car. All rights reserved.
           </span>
@@ -322,83 +310,3 @@ const Footer = ({ Footerdata }) => {
 };
 
 export default Footer;
-
-// <footer className="border-shades-200 p-4 mt-4">
-//   <div className="row ">
-//     {/* Inquiries & Support */}
-//     <div className="col-lg-6 col-12 d-flex flex-column lg:pl-[190px] mb-4">
-//       <div>
-//         <span className="font-weight-bold letter-spacing-1 text-uppercase color-shades-600 fs-11">
-//           Inquiries &amp; Support
-//         </span>
-//         <div className="d-flex flex-column mt-3-custom line-height-25 gap-10">
-//           <a
-//             href="tel:+971528888746"
-//             className="fs-12 fs-sm-14 color-shades-black d-flex align-items-center letter-spacing-0_2"
-//           >
-//             <div className="mr-2 d-flex align-items-center justify-content-center">
-//               <MdOutlineLocalPhone />
-//             </div>
-//             <span className="direction-ltr">+971-528888746</span>
-//           </a>
-//           <a
-//             href="https://api.whatsapp.com/send/?phone=971528888746"
-//             title="Contact Renty.ae car rental Whatsapp"
-//             className="fs-12 fs-sm-14 color-shades-black d-flex align-items-center letter-spacing-0_2"
-//             target="blank"
-//           >
-//             <img
-//               width="16"
-//               height="16"
-//               className="mr-2-custom"
-//               loading="lazy"
-//               src="https://renty.ae/assets-nd/icons/site/social-whatsapp-icon.svg"
-//               alt="Contact by Whatsapp"
-//             />
-//             <span className="direction-ltr ml-1">WhatsApp</span>
-//           </a>
-//           <a
-//             href="https://www.facebook.com/profile.php?id=61569025370790"
-//             title="Contact Renty.ae car rental Telegram"
-//             className="fs-12 fs-sm-14 color-shades-black d-flex align-items-center letter-spacing-0_2"
-//             target="blank"
-//           >
-//             <FaFacebookF className="text-[#1359ba]" />
-
-//             <span className="direction-ltr ml-1">Facebook</span>
-//           </a>
-//           <a
-//             href="https://www.tiktok.com/@naylrentalsdxb?_t=8rLvJBDLAK9&_r=1"
-//             title="Contact Renty.ae car rental Telegram"
-//             className="fs-12 fs-sm-14 color-shades-black d-flex align-items-center letter-spacing-0_2"
-//             target="blank"
-//           >
-//             <FaTiktok className="text-[#1359ba]" />
-
-//             <span className="direction-ltr ml-1">TikTok</span>
-//           </a>
-//         </div>
-//       </div>
-//     </div>
-
-//     {/* Address */}
-//     <div className="col-lg-6 col-12 d-flex flex-column  mb-4">
-//       <div className="d-none d-md-block"></div>
-//       <div className="d-block d-md-none mb-3"></div>
-//       <span className="fs-11 font-weight-bold letter-spacing-1 text-uppercase color-shades-600">
-//         Address
-//       </span>
-//       <div className="d-flex flex-column mt-3-custom">
-//         <span className="fs-14 color-shades-black mb-1 letter-spacing-0_2">
-//           Azizi Riviera 4 Retail 8 Meydan Dubai,
-//           <br /> United Arab Emirates,
-//         </span>
-//       </div>
-//     </div>
-//   </div>
-//   <div className="bg-shades-white d-flex align-items-center justify-center py-4-custom pt-xs-2-custom flex-column flex-sm-row">
-//     <span className="fs-12 letter-spacing-0_2 color-shades-500">
-//       © 2024 All rights reserved.
-//     </span>
-//   </div>
-// </footer>

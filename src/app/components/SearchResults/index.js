@@ -13,6 +13,9 @@ export default function SearchResults() {
   const [loading, setLoading] = useState([]);
   const categorySlug = searchParams.get("category");
   const brandSlug = searchParams.get("brand");
+  const query = searchParams.get("q");
+  const offer = searchParams.get("offer");
+
   useEffect(() => {
     async function fetchCars() {
       try {
@@ -23,6 +26,10 @@ export default function SearchResults() {
           filterQuery = `filters[categories][slug][$eq]=${categorySlug}`;
         } else if (brandSlug) {
           filterQuery = `filters[brand][slug][$eq]=${brandSlug}`;
+        } else if (query) {
+          filterQuery = `filters[title][$contains]=${query}`;
+        } else if (offer) {
+          filterQuery = `filters[discountedPrice][$gt]=0`;
         }
 
         const response = await axios.get(
@@ -37,15 +44,21 @@ export default function SearchResults() {
       }
     }
 
-    if (categorySlug || brandSlug) {
+    if (categorySlug || brandSlug || query || offer) {
       fetchCars();
     }
-  }, [categorySlug, brandSlug]);
+  }, [categorySlug, brandSlug, query]);
 
   return (
     <>
       <Breadcrumb
-        breadcrumbTitle={categorySlug || brandSlug || "Search Results"}
+        breadcrumbTitle={
+          categorySlug ||
+          brandSlug ||
+          query ||
+          "Special Offer" ||
+          "Search Results"
+        }
       />
       <div className="bg-shades-white  pt-3 pt-lg-4 ">
         <div className="container">
@@ -64,7 +77,7 @@ export default function SearchResults() {
             ) : CatCars.length > 0 ? (
               CatCars.map((car) => <Car key={car.id} car={car} />)
             ) : (
-              <p className="text-white">No cars found for this category.</p>
+              <p className="text-white">No cars found for this.</p>
             )}
           </div>
         </div>

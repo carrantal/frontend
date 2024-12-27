@@ -6,13 +6,9 @@ import axios from "axios";
 import { URL } from "../utils";
 
 export default async function Gallery() {
-  const response = await axios.get(
-    `${URL}/api/info?populate=*&[faqs][populate]=*`
-  );
-  const data = response?.data?.data;
   return (
     <div class="bg-black">
-      <div class="homepage  ">
+      <div class="homepage ">
         <TopHeader />
         <div className="bg-shades-white  pt-3 pt-lg-4 ">
           <div className="container">
@@ -30,7 +26,6 @@ export default async function Gallery() {
             </div>
           </div>
         </div>
-        <Footer Footerdata={data} />
       </div>
     </div>
   );

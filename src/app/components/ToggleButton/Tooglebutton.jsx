@@ -1,16 +1,17 @@
 "use client";
 
 import React, { useState } from "react";
-import CarImsges from "../CarImsges";
 
 import { IoIosMenu } from "react-icons/io";
-import { FaSearch } from "react-icons/fa";
+import { FaSearch, FaListUl } from "react-icons/fa";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import { LiaServicestack } from "react-icons/lia";
-import { FaListUl, FaCalendarAlt } from "react-icons/fa";
 import { BiSolidVideos } from "react-icons/bi";
 import { CiSearch } from "react-icons/ci";
-const Tooglebutton = () => {
+import Link from "next/link";
+import Image from "next/image";
+
+const Tooglebutton = ({ response }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [currentMenu, setCurrentMenu] = useState("main");
   const [searchModalOpen, setSearchModalOpen] = useState(false);
@@ -35,7 +36,7 @@ const Tooglebutton = () => {
         </button>
 
         {/* Search Button */}
-        <button
+        {/* <button
           className="btn btn-medium bg-transparent mobile-search-btn text-reset position-absolute"
           aria-label="Search"
           id="mobileModalSearchButton"
@@ -45,21 +46,12 @@ const Tooglebutton = () => {
           <span className="fs-24 color-shades-white">
             <CiSearch />
           </span>
-        </button>
+        </button> */}
         {/* Logo */}
         <div className="d-flex mx-auto">
-          <a
-            href="/"
-            aria-label="Home page"
-            className=" mx-auto bg-transparent"
-          >
-            <img
-              src="/images/desig.avif"
-              width={50}
-              height={22}
-              alt="Renty Logo"
-            />
-          </a>
+          <Link href="/" className=" mx-auto bg-transparent">
+            <Image src="/images/desig.avif" width={50} height={22} alt="Logo" />
+          </Link>
         </div>
 
         {/* Full-Screen Menu */}
@@ -120,7 +112,7 @@ const Tooglebutton = () => {
                     </span>
                     <MdKeyboardArrowRight />
                   </button>
-                  <button
+                  {/* <button
                     className="text-dark d-flex justify-content-between align-items-center w-100 py-2 fs-16 font-weight-semibold"
                     onClick={() => setCurrentMenu("rentalPeriods")}
                   >
@@ -128,7 +120,7 @@ const Tooglebutton = () => {
                       <FaCalendarAlt /> Rental by Period
                     </span>
                     <MdKeyboardArrowRight />
-                  </button>
+                  </button> */}
                   <button
                     className="text-dark d-flex justify-content-between align-items-center w-100 py-2 fs-16 font-weight-semibold"
                     onClick={() => setCurrentMenu("services")}
@@ -138,48 +130,34 @@ const Tooglebutton = () => {
                     </span>
                     <MdKeyboardArrowRight />
                   </button>
-                  <a
+                  <Link
+                    onClick={() => {
+                      setMenuOpen(false);
+                    }}
                     href="/gallery"
                     className="text-dark d-flex justify-content-between align-items-center w-100 py-2 fs-16 font-weight-semibold"
                   >
                     <span className="d-flex align-items-center gap-2">
                       <BiSolidVideos /> Gallery
                     </span>
-                  </a>
+                  </Link>
                 </>
               )}
 
               {/* Categories Submenu */}
               {currentMenu === "categories" && (
                 <div className="submenu  py-3 rounded">
-                  <a className="dropdown-item fs-14 mb-3" href="/">
-                    <FaSearch className="d-inline " />
-                    <span className="ms-4">Popular car rental</span>
-                  </a>
-                  <a className="dropdown-item fs-14 mb-3" href="/">
-                    <FaSearch className="d-inline" />{" "}
-                    <span className="ms-4">Electric (EV)</span>
-                  </a>
-                  <a className="dropdown-item fs-14 mb-3" href="/">
-                    <FaSearch className="d-inline" />{" "}
-                    <span className="ms-4">Luxury</span>
-                  </a>
-                  <a className="dropdown-item fs-14 mb-3" href="/">
-                    <FaSearch className="d-inline" />{" "}
-                    <span className="ms-4">Classic</span>
-                  </a>
-                  <a className="dropdown-item fs-14 mb-3" href="/">
-                    <FaSearch className="d-inline" />{" "}
-                    <span className="ms-4">Business</span>
-                  </a>
-                  <a className="dropdown-item fs-14 mb-3" href="/">
-                    <FaSearch className="d-inline" />{" "}
-                    <span className="ms-4">Sports</span>
-                  </a>
-                  <a className="dropdown-item fs-14 mb-3" href="/">
-                    <FaSearch className="d-inline" />{" "}
-                    <span className="ms-4">Economy</span>
-                  </a>
+                  {response?.map((cat) => (
+                    <Link
+                      onClick={() => {
+                        setMenuOpen(false);
+                      }}
+                      className="dropdown-item fs-14 mb-3"
+                      href={`/search?category=${cat.attributes.slug}`}
+                    >
+                      <span className="ms-4"> {cat.attributes.name}</span>
+                    </Link>
+                  ))}
                 </div>
               )}
 

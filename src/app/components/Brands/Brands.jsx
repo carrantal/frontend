@@ -2,9 +2,7 @@ import React from "react";
 import { URL } from "@/app/utils";
 import axios from "axios";
 
-const Brands = async () => {
-  const response = await axios.get(`${URL}/api/brands?populate=*`);
-
+const Brands = async ({ response }) => {
   return (
     <div className="home-page-sub-main-section-container bg-shades-100 pb-4 pt-4">
       <div className="d-flex pt-lg-2-custom pt-3-custom pb-lg-4-custom">
