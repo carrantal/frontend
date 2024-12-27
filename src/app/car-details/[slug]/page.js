@@ -45,12 +45,12 @@ export default async function Page(props) {
       <div class="bg-black">
         <div class="homepage  ">
           <TopHeader />
-          <Breadcrumb breadcrumbTitle={"Car Title"} />
+          <Breadcrumb breadcrumbTitle={title} />
           <div class=" pt-lg-4 single-car special-offer">
             <div className="container">
               <div class="pb-3 pt-3 mt-0 pt-lg-0 d-flex align-items-center mt-lg-0">
                 <h1 class="fs-m-18 fs-30 font-weight-normal text-white">
-                  Rent {title}, 2023 - hourly in Dubai
+                  Rent {title}, in Dubai
                 </h1>
               </div>
               <div className="my-3"></div>
