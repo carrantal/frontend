@@ -19,7 +19,7 @@ const Brands = async () => {
             </span>
             <Link
               href={"/brands"}
-              class="cursor-pointer fs-13 lh-20 letter-spacing-0_2 font-weight-bold text-uppercase color-brand-primary"
+              class="d-none d-md-flex cursor-pointer fs-13 lh-20 letter-spacing-0_2 font-weight-bold text-uppercase color-brand-primary"
             >
               View All Brands
             </Link>
@@ -49,6 +49,15 @@ const Brands = async () => {
               </a>
             ))}
           </div>
+
+          <Link
+            className="view-all-brands-mobile d-none flex-column gap-2 py-2 px-2 text-uppercase color-brand-primary align-items-center"
+            href={"/brands"}
+          >
+            <span className="cursor-pointer fs-13 lh-20 letter-spacing-0_2 font-weight-bold text-uppercase color-brand-primary">
+              View ALL Brands
+            </span>
+          </Link>
         </div>
       </div>
     </div>

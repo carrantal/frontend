@@ -36,7 +36,7 @@ const Search = () => {
               router.push(`/search?q=${query}`);
             }}
             disabled={query.length === 0}
-            className="btn btn-large  rounded-small btn-main-search d-none d-lg-flex home-btn-search bg-brand-primary"
+            className="btn btn-large  rounded-small btn-main-search  home-btn-search bg-brand-primary"
           >
             <span className="text-uppercase  mx-auto fs-14 lh-20 letter-spacing-0_5 font-weight-600 text-white">
               Search

@@ -13799,3 +13799,9 @@ header.header-hidden .popover .arrow {
   top: 5px;
   right: 5px;
 }
+
+@media (max-width: 767px) {
+  .view-all-brands-mobile {
+    display: flex !important;
+  }
+}
