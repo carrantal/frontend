@@ -29,6 +29,7 @@ export default async function RootLayout({ children }) {
             {children}
             <div id="videomodal"></div>
           </Layout>
+          <Analytics />
         </div>
       </body>
     </html>
