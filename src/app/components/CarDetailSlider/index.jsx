@@ -9,9 +9,11 @@ import "swiper/css/pagination";
 import "swiper/css/thumbs";
 import Portal from "../Portal";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function CarDetailSlider({ images, carVideos }) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const router = useRouter();
   console.log({ carVideos });
   return (
     <>
@@ -26,13 +28,19 @@ export default function CarDetailSlider({ images, carVideos }) {
         }}
       >
         {images.map((each, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide
+            key={index}
+            onClick={() => {
+              window.open(each.url);
+            }}
+          >
             <Image
               src={each.url}
               width={690}
               height={350}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
             />
+
             {/* <img src={each.url} /> */}
           </SwiperSlide>
         ))}
