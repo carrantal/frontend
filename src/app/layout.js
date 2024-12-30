@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Analytics } from "@vercel/analytics/react";
 
 import "./globals.css";
 import Layout from "./components/Layout";
