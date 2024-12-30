@@ -12,6 +12,7 @@ import { IoCarSportSharp } from "react-icons/io5";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import { MdLocalAirport } from "react-icons/md";
 import { IoIosPerson } from "react-icons/io";
+import { MdPayment } from "react-icons/md";
 
 import { BiSolidVideos } from "react-icons/bi";
 import Link from "next/link";
@@ -167,7 +168,7 @@ const Tooglebutton = ({ response }) => {
                         color: "white",
                       }}
                     >
-                      <IoDocumentText color="#ec7421" /> Refund Policy
+                      <MdPayment color="#ec7421" /> Refund Policy
                     </span>
                   </Link>
                 </>
