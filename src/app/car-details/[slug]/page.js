@@ -132,7 +132,7 @@ export default async function Page(props) {
                         <div class="d-flex align-items-center rounded-small min-height-35 policyDesc">
                           <FaInfoCircle class="color-semantic-success icon-info ml-2" />
                           <span class="fs-14 line-height-25 ml-2 color-shades-black">
-                            Cash, Credit/debit cards accepted
+                            Cash, Crypto, Credit/debit cards accepted
                           </span>
                         </div>
                       </div>

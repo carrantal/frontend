@@ -8,6 +8,7 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/thumbs";
 import Portal from "../Portal";
+import Image from "next/image";
 
 export default function CarDetailSlider({ images, carVideos }) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -20,10 +21,19 @@ export default function CarDetailSlider({ images, carVideos }) {
         thumbs={{ swiper: thumbsSwiper }}
         modules={[FreeMode, Pagination, Thumbs]}
         className="mySwiper2"
+        style={{
+          height: "350px",
+        }}
       >
         {images.map((each, index) => (
           <SwiperSlide key={index}>
-            <img src={each.url} />
+            <Image
+              src={each.url}
+              width={690}
+              height={350}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
+            />
+            {/* <img src={each.url} /> */}
           </SwiperSlide>
         ))}
       </Swiper>
@@ -35,10 +45,19 @@ export default function CarDetailSlider({ images, carVideos }) {
         watchSlidesProgress={true}
         modules={[FreeMode, Pagination, Thumbs]}
         className="mySwiper mt-2"
+        style={{
+          height: "90px",
+        }}
       >
         {images.map((each, index) => (
           <SwiperSlide key={index}>
-            <img src={each.url} />
+            <Image
+              src={each.url}
+              width={130}
+              height={90}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+            {/* <img src={each.url} /> */}
           </SwiperSlide>
         ))}
       </Swiper>
