@@ -12,7 +12,7 @@ export default async function ChaufferServices() {
         <div className="container">
           <div className=" ">
             <div className="d-block pb-2">
-              <h1 className="text-white d-inline">Chauffer Services</h1>
+              <h1 className="text-white d-inline">Chauffeur Services</h1>
             </div>
           </div>
         </div>

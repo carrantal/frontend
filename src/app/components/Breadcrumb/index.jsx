@@ -13,7 +13,7 @@ export default function Breadcrumb({ breadcrumbTitle }) {
                   Rent a car
                 </Link>
               </li>
-              <li className="breadcrumb-item active color-brand-primary">
+              <li className="breadcrumb-item active color-brand-primary text-capitalize">
                 <span>{breadcrumbTitle}</span>
               </li>
             </ol>

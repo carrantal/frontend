@@ -137,7 +137,7 @@ export default async function HeaderV2() {
                           href={"/chauffer-services"}
                           className="dropdown-item rounded-small fs-14 color-shades-black px-2"
                         >
-                          Chauffer Services
+                          Chauffeur Services
                         </Link>
                         <Link
                           href={"/airport-services"}

@@ -22,7 +22,6 @@ const Home = async ({ newdata }) => {
   const subTitle = data?.attributes?.subTitle;
 
   const catResponse = await axios.get(`${URL}/api/categories?populate=*`);
-  const brandsResponse = await axios.get(`${URL}/api/brands?populate=*`);
   const specialOfferResponse = await axios.get(
     `${URL}/api/cars?filters[discountedPrice][$gt]=0&populate=*`
   );
@@ -76,7 +75,7 @@ const Home = async ({ newdata }) => {
         <Categories response={catResponse} />
       </div>
       <div className="mt-4"></div>
-      <Brands response={brandsResponse} />
+      <Brands />
       <OffSale carOffers={carOffers} />
       <CarSlider
         type="Luxury"

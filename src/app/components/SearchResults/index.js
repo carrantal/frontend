@@ -168,8 +168,8 @@ function Car({ car }) {
                     >
                       Free delivery in Dubai
                     </span>{" "}
-                    <span className="fs-14 line-height-25 font-weight-normal color-shades-700 text-truncate">
-                      250 km for 1 day
+                    <span className="fs-14 line-height-25 font-weight-normal color-brand-primary text-truncate">
+                      {brand?.data?.attributes?.name}
                     </span>
                   </div>
                   <div
@@ -180,16 +180,17 @@ function Car({ car }) {
                       Price per day
                     </span>{" "}
                     <span className="fs-24 line-height-35 text-white font-weight-normal">
-                      {price}
+                      {price} AED
                     </span>
                     <div className="d-flex position-relative align-items-center">
                       <div className="d-flex align-items-end price-block-mobile blend-mode-luminosity flex-column text-nowrap">
                         <div className="d-flex align-items-center">
-                          <span className="fs-14 line-height-25 font-weight-normal color-shades-700 mr-1-custom">
-                            3-6 days:
+                          <span className="fs-14 line-height-25 font-weight-normal color-brand-primary mr-1-custom">
+                            {/* 3-6 days: */}
                           </span>
                           <span className="fs-14 line-height-25 font-weight-normal color-brand-primary">
-                            $ 146
+                            {/* $ 146 */}
+                            {categories.data[0].attributes.name}
                           </span>
                         </div>
                       </div>

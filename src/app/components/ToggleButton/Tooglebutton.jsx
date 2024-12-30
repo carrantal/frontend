@@ -210,7 +210,7 @@ const Tooglebutton = ({ response }) => {
                     href={"/chauffer-services"}
                     className="dropdown-item rounded-small fs-14 color-shades-black px-2"
                   >
-                    <span className="ms-4 text-black"> Chauffer Services</span>
+                    <span className="ms-4 text-black"> Chauffeur Services</span>
                   </Link>
                   <Link
                     onClick={() => {
