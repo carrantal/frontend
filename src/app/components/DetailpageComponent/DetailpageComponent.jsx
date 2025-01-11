@@ -9,8 +9,7 @@ const DetailpageComponent = ({
   deliveryTerms,
   price,
 }) => {
-  const column1 = features.slice(0, 3);
-  const column2 = features.slice(3, 6);
+  const column1 = features;
   return (
     <>
       <div class="pt-4 pb-4 px-3 bg-shades-white my-3">
@@ -71,10 +70,10 @@ const DetailpageComponent = ({
         </div>
         <div className="row gap-row-5">
           {/* First column */}
-          <div className="col-12 col-lg-6 line-height-25">
-            {column1.map(
-              (feature) =>
-                feature?.title && ( // Exclude null titles
+          {(features || []).map(
+            (feature) =>
+              feature?.title && ( // Exclude null titles
+                <div className="col-12 col-lg-6 line-height-25">
                   <div
                     key={feature.id}
                     className="w-100 d-flex align-items-center"
@@ -84,12 +83,12 @@ const DetailpageComponent = ({
                       {feature.title}
                     </span>
                   </div>
-                )
-            )}
-          </div>
+                </div>
+              )
+          )}
 
           {/* Second column */}
-          <div className="col-12 col-lg-6 line-height-25">
+          {/* <div className="col-12 col-lg-6 line-height-25">
             {column2.map(
               (feature) =>
                 feature?.title && (
@@ -104,7 +103,7 @@ const DetailpageComponent = ({
                   </div>
                 )
             )}
-          </div>
+          </div> */}
         </div>
       </div>
 
