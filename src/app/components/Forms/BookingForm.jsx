@@ -30,6 +30,7 @@ export default function BookingForm({ price }) {
         flight_details: "",
         passport: "",
         numberOfDays: null,
+        price: 0,
       },
     },
   });
@@ -42,11 +43,13 @@ export default function BookingForm({ price }) {
     }
 
     try {
-      await axios.post(`${URL}/api/bookings`, {
+      const { data } = await axios.post(`${URL}/api/bookings`, {
         data: _data,
       });
+      const paymenyUrl = data?.data?.attributes?.data?._links?.payment.href;
       reset();
       toast.success("Booked successfully.");
+      window.location.href = paymenyUrl;
     } catch (error) {
     } finally {
       setLoading(false);
@@ -127,7 +130,7 @@ export default function BookingForm({ price }) {
               />
 
               <div className="bg-shades-100  show-body-modal">
-                <Billing price={price} watch={watch} />
+                <Billing price={price} watch={watch} setValue={setValue} />
                 <div className="fs-14 color-shades-400  mx-3 pb-2 pb-lg-2">
                   <small>
                     I accept the

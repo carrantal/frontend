@@ -1,10 +1,11 @@
 import React from "react";
 
-export default function Billing({ price, watch }) {
+export default function Billing({ price, watch, setValue }) {
   const noOfDays = watch("data.numberOfDays") || 1;
   const cost = noOfDays * price;
   const VATTax = cost * 0.05;
   const Total = cost + VATTax;
+  setValue("data.price", Total || 0);
 
   return (
     <div className="bg-shades-100 rounded-small mx-3 py-2 ">
