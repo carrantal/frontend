@@ -47,9 +47,13 @@ export default function BookingForm({ price }) {
         data: _data,
       });
       const paymenyUrl = data?.data?.attributes?.data?._links?.payment.href;
-      reset();
-      toast.success("Booked successfully.");
-      window.location.href = paymenyUrl;
+      if (paymenyUrl) {
+        reset();
+        toast.success("Booked successfully.");
+        window.location.href = paymenyUrl;
+      } else {
+        toast.error("Booking failed.");
+      }
     } catch (error) {
     } finally {
       setLoading(false);
@@ -114,7 +118,11 @@ export default function BookingForm({ price }) {
               <Input
                 label="Email"
                 placeholder="Enter Email"
-                register={{ ...register("data.email") }}
+                type="email"
+                register={{
+                  ...register("data.email"),
+                  required: true,
+                }}
               />
 
               <Select
