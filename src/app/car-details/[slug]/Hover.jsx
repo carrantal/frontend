@@ -18,22 +18,22 @@ export default function Hover() {
       <FaInfoCircle class="color-semantic-success icon-info ml-2" />
       <span class="fs-14 line-height-25 ml-2 color-shades-black">
         Mileage for 1 day?
+        {show && (
+          <span
+            className="fs-14 line-height-25 ml-2 color-shades-black"
+            style={{
+              color: "white",
+              position: "absolute",
+              padding: "3px",
+              bottom: 0,
+              background: "black",
+              border: "1px solid #ec7421",
+            }}
+          >
+            250km for 1 day only
+          </span>
+        )}
       </span>
-      {show && (
-        <span
-          className="fs-14 line-height-25 ml-2 color-shades-black"
-          style={{
-            color: "white",
-            position: "absolute",
-            padding: "3px",
-            bottom: 0,
-            background: "black",
-            border: "1px solid #ec7421",
-          }}
-        >
-          250km for 1 day only
-        </span>
-      )}
     </div>
   );
 }
