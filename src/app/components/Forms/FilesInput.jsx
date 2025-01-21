@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Loader from "../Loader/indes";
 import { URL } from "@/app/utils";
 import axios from "axios";
+import { FaInfoCircle } from "react-icons/fa";
 
 export default function FilesInput({ watch, setValue, disaleSubmit }) {
   const nationality = watch("data.nationality");
@@ -33,6 +34,7 @@ export default function FilesInput({ watch, setValue, disaleSubmit }) {
             setValue={setValue}
             label={"Flight Details"}
             disaleSubmit={disaleSubmit}
+            hoverText="Upload picture of flight ticket , so that we can track accordingly"
           />
         </>
       )}
@@ -40,9 +42,10 @@ export default function FilesInput({ watch, setValue, disaleSubmit }) {
   );
 }
 
-function FileUpload({ label, setValue, idKey, disaleSubmit }) {
+function FileUpload({ label, setValue, idKey, disaleSubmit, hoverText }) {
   const [file, setFile] = useState("");
   const [uploading, setUploading] = useState(false);
+  const [show, setShow] = useState(false);
 
   const uploadFileToStrapi = async (file) => {
     const formData = new FormData();
@@ -68,7 +71,41 @@ function FileUpload({ label, setValue, idKey, disaleSubmit }) {
 
   return (
     <div class="form-group">
-      <label className="fs-9 text-white">{label}</label>
+      <label
+        className="fs-9 text-white d-flex gap-5 align-items-center"
+        onMouseEnter={() => {
+          setShow(true);
+        }}
+        onMouseLeave={() => {
+          setShow(false);
+        }}
+      >
+        {label}
+        {hoverText && (
+          <>
+            <FaInfoCircle />
+            {show && (
+              <span
+                className="fs-14 line-height-25 ml-2 color-shades-black"
+                style={{
+                  color: "white",
+                  position: "absolute",
+                  bottom: 0,
+                  paddingLeft: "5px",
+                  paddingRight: "5px",
+                  background: "black",
+                  border: "1px solid #ec7421",
+                  zIndex: 999,
+                }}
+              >
+                Upload picture of flight ticket , so that we can track
+                accordingly
+              </span>
+            )}
+          </>
+        )}
+        {/* <span className="cursor-pointer">{hoverText &&  }</span> */}
+      </label>
       <div class="input-group mb-3">
         {uploading && <Loader small={true} />}
         {!uploading && (

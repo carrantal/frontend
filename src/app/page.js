@@ -23,21 +23,21 @@ const Home = async ({ newdata }) => {
 
   const catResponse = await axios.get(`${URL}/api/categories?populate=*`);
   const specialOfferResponse = await axios.get(
-    `${URL}/api/cars?filters[discountedPrice][$gt]=0&populate=*`
+    `${URL}/api/cars?filters[discountedPrice][$gt]=0&populate=*&sort[0]=order:asc`
   );
   const carOffers = specialOfferResponse?.data?.data || [];
 
   const luxuryCarData = await axios.get(
-    `${URL}/api/cars?populate=*&filters[categories][slug]=luxury`
+    `${URL}/api/cars?populate=*&filters[categories][slug]=luxury&sort[0]=order:asc`
   );
   const economyCarData = await axios.get(
-    `${URL}/api/cars?populate=*&filters[categories][slug]=economy`
+    `${URL}/api/cars?populate=*&filters[categories][slug]=economy&sort[0]=order:asc`
   );
   const sportsCarData = await axios.get(
-    `${URL}/api/cars?populate=*&filters[categories][slug]=sports`
+    `${URL}/api/cars?populate=*&filters[categories][slug]=sports&sort[0]=order:asc`
   );
   const suvCarData = await axios.get(
-    `${URL}/api/cars?populate=*&filters[categories][slug]=suv`
+    `${URL}/api/cars?populate=*&filters[categories][slug]=suv&sort[0]=order:asc`
   );
 
   return (

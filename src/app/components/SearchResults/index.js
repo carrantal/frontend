@@ -164,9 +164,9 @@ function Car({ car }) {
                   <div className="d-flex d-lg-none flex-column overflow-hidden flex-grow-1">
                     <span
                       className="fs-14 line-height-25 font-weight-normal color-shades-700 text-truncate"
-                      title="Free delivery in Dubai"
+                      title="250km for 1 day only"
                     >
-                      Free delivery in Dubai
+                      Free delivery in Dubai?
                     </span>{" "}
                     <span className="fs-14 line-height-25 font-weight-normal color-brand-primary text-truncate">
                       {brand?.data?.attributes?.name}

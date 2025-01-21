@@ -11,6 +11,7 @@ import { URL } from "@/app/utils";
 import { FaInfoCircle, FaCheckSquare } from "react-icons/fa";
 import BookingForm from "@/app/components/Forms/BookingForm";
 import Link from "next/link";
+import Hover from "./Hover";
 
 export default async function Page(props) {
   const { data } = await axios.get(`${URL}/api/info?fields=whatsapp`);
@@ -117,16 +118,11 @@ export default async function Page(props) {
                             No deposit needed
                           </span>
                         </div>
+                        <Hover />
                         <div class="d-flex align-items-center rounded-small min-height-35 policyDesc">
                           <FaInfoCircle class="color-semantic-success icon-info ml-2" />
                           <span class="fs-14 line-height-25 ml-2 color-shades-black">
-                            Mileage for 1 day
-                          </span>
-                        </div>
-                        <div class="d-flex align-items-center rounded-small min-height-35 policyDesc">
-                          <FaInfoCircle class="color-semantic-success icon-info ml-2" />
-                          <span class="fs-14 line-height-25 ml-2 color-shades-black">
-                            Free delivery in Dubai
+                            Free deliver in Dubai
                           </span>
                         </div>
                         <div class="d-flex align-items-center rounded-small min-height-35 policyDesc">
