@@ -11,12 +11,14 @@ export default function FilesInput({ watch, setValue, disaleSubmit }) {
     <>
       <FileUpload
         idKey="data.id_card"
+        imgUrlKey="data.id_card_image_url"
         setValue={setValue}
         label={"ID Card"}
         disaleSubmit={disaleSubmit}
       />
       <FileUpload
         idKey="data.license"
+        imgUrlKey="data.license_image_url"
         setValue={setValue}
         label={"License"}
         disaleSubmit={disaleSubmit}
@@ -25,12 +27,14 @@ export default function FilesInput({ watch, setValue, disaleSubmit }) {
         <>
           <FileUpload
             idKey="data.passport"
+            imgUrlKey="data.flight_details_image_url"
             setValue={setValue}
             label={"Passport"}
             disaleSubmit={disaleSubmit}
           />
           <FileUpload
             idKey="data.flight_details"
+            imgUrlKey="data.passport_image_url"
             setValue={setValue}
             label={"Flight Details"}
             disaleSubmit={disaleSubmit}
@@ -42,7 +46,14 @@ export default function FilesInput({ watch, setValue, disaleSubmit }) {
   );
 }
 
-function FileUpload({ label, setValue, idKey, disaleSubmit, hoverText }) {
+function FileUpload({
+  label,
+  setValue,
+  idKey,
+  disaleSubmit,
+  hoverText,
+  imgUrlKey,
+}) {
   const [file, setFile] = useState("");
   const [uploading, setUploading] = useState(false);
   const [show, setShow] = useState(false);
@@ -62,6 +73,7 @@ function FileUpload({ label, setValue, idKey, disaleSubmit, hoverText }) {
       const uploadedFile = response.data[0];
       setFile(uploadedFile);
       setValue(idKey, uploadedFile.id);
+      setValue(imgUrlKey, uploadedFile.url);
     } catch (error) {
     } finally {
       setUploading(false);

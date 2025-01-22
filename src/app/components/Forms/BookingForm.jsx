@@ -29,6 +29,10 @@ export default function BookingForm({ price }) {
         license: "",
         flight_details: "",
         passport: "",
+        id_card_image_url: "",
+        license_image_url: "",
+        flight_details_image_url: "",
+        passport_image_url: "",
         numberOfDays: null,
         price: 0,
       },
@@ -39,11 +43,13 @@ export default function BookingForm({ price }) {
     setLoading(true);
     if (_data.nationality === "local") {
       delete _data.flight_details;
+      delete _data.flight_details_image_url;
       delete _data.passport;
+      delete _data.passport_image_url;
     }
 
     try {
-      const { data } = await axios.post(`${URL}/api/bookings`, {
+      const { data } = await axios.post(`${URL}/apdddi/bookings`, {
         data: _data,
       });
       const paymenyUrl = data?.data?.attributes?.data?._links?.payment.href;
