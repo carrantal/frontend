@@ -49,7 +49,7 @@ export default function BookingForm({ price }) {
     }
 
     try {
-      const { data } = await axios.post(`${URL}/apdddi/bookings`, {
+      const { data } = await axios.post(`${URL}/api/bookings`, {
         data: _data,
       });
       const paymenyUrl = data?.data?.attributes?.data?._links?.payment.href;
