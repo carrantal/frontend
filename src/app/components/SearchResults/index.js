@@ -23,13 +23,13 @@ export default function SearchResults() {
 
         let filterQuery = "";
         if (categorySlug) {
-          filterQuery = `filters[categories][slug][$eq]=${categorySlug}`;
+          filterQuery = `filters[categories][slug][$eq]=${categorySlug}&sort[0]=order:asc`;
         } else if (brandSlug) {
-          filterQuery = `filters[brand][slug][$eq]=${brandSlug}`;
+          filterQuery = `filters[brand][slug][$eq]=${brandSlug}&sort[0]=order:asc`;
         } else if (query) {
-          filterQuery = `filters[title][$contains]=${query}`;
+          filterQuery = `filters[title][$contains]=${query}&sort[0]=order:asc`;
         } else if (offer) {
-          filterQuery = `filters[discountedPrice][$gt]=0`;
+          filterQuery = `filters[discountedPrice][$gt]=0&sort[0]=order:asc`;
         }
 
         const response = await axios.get(
