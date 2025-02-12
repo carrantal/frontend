@@ -88,7 +88,10 @@ export default function SearchResults() {
 
 function Car({ car }) {
   const router = useRouter();
-  const { title, images, price, brand, categories } = car.attributes;
+  const { title, images, brand, categories } = car.attributes;
+  const price = car.attributes?.discountedPrice
+    ? car.attributes?.discountedPrice
+    : car.attributes?.price;
   return (
     <>
       <div className="col-12 col-md-6 col-lg-12 car-list-item bg-shades-white mb-2 cursor-pointer">
