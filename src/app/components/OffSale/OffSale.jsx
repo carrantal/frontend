@@ -45,7 +45,7 @@ const OffSale = ({ carOffers }) => {
               <div className="d-flex justify-content-between align-items-center">
                 <div className="d-flex flex-column">
                   <span className="text-[#ec7421] hourly-offers-container-title">
-                    Special Offer
+                    Special Offer For Valentines Day
                   </span>
                   <span className="text-[#ec7421] hourly-offers-container-sub-title">
                     Rent hourly and save with limited time offers
