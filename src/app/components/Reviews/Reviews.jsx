@@ -25,7 +25,7 @@ const Reviews = async () => {
           </Link>
         </div>
       </div>
-      {reviews.slice(0, 3).map((review) => {
+      {reviews?.slice(0, 3).map((review) => {
         // Convert Unix time to readable date and time
         const reviewDate = new Date(review?.time * 1000).toLocaleDateString();
         const reviewTime = new Date(review?.time * 1000).toLocaleTimeString();
