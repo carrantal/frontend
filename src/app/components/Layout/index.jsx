@@ -12,8 +12,8 @@ export default async function Layout({ children, isHomePage }) {
   return (
     <>
       <HeaderV2 isHomePage={isHomePage} />
-      {children}
-      <Footer Footerdata={data} />
+      {children} 
+     <Footer Footerdata={data} />
     </>
   );
 }

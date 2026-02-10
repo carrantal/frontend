@@ -11,7 +11,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import Loader from "../Loader/indes";
 
-const CarSlider = ({ luxuryCarData, type }) => {
+const CarSlider = ({ luxuryCarData, type, id }) => {
   // const [carsData, setCarsData] = useState([]);
   // const [loading, setLoading] = useState([]);
   const router = useRouter();
@@ -35,7 +35,10 @@ const CarSlider = ({ luxuryCarData, type }) => {
 
   return (
     <>
-      <div className="bg-shades-white home-page-section-body overflow-hidden pt-4 pb-4 mt-2 mb-2">
+      <div
+        id={id}
+        className="bg-shades-white home-page-section-body overflow-hidden pt-4 pb-4 mt-2 mb-2"
+      >
         <div className="container slider-container home-page-container-p-t">
           <div className="d-flex justify-content-between align-items-center">
             <span

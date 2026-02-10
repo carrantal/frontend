@@ -12,6 +12,7 @@ import axios from "axios";
 
 import Search from "./components/Search/Search";
 import Categories from "./components/Catergories/Categories";
+import ValentinesOfferNayl from "./components/ValentinesOfferNayl/page";
 
 const Home = async ({ newdata }) => {
   const response = await axios.get(
@@ -71,13 +72,18 @@ const Home = async ({ newdata }) => {
 
           <Search />
         </div>
+       
 
         <Categories response={catResponse} />
       </div>
+      <div className="py-5">
+          <ValentinesOfferNayl />
+      </div>
       <div className="mt-4"></div>
       <Brands />
-      <OffSale carOffers={carOffers} />
+      <OffSale carOffers={carOffers} id = "offers" />
       <CarSlider
+        id = "luxury-cars"
         type="Luxury"
         luxuryCarData={luxuryCarData?.data?.data || []}
       />

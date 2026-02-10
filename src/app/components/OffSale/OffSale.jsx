@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import Link from "next/link";
 
-const OffSale = ({ carOffers }) => {
+const OffSale = ({ carOffers, id }) => {
   // offerresponse = response?.data?.data;
   // const [carOffers, setCarOffers] = useState([]);
 
@@ -39,13 +39,13 @@ const OffSale = ({ carOffers }) => {
   return (
     <>
       {carOffers.length !== 0 && (
-        <div>
+        <div id={id}>
           <div className="container home-page-container-p-t hourly-offers-section mt-5">
             <div className="hourly-offers-container bg-shades-100 overflow-hidden">
               <div className="d-flex justify-content-between align-items-center">
                 <div className="d-flex flex-column">
                   <span className="text-[#ec7421] hourly-offers-container-title">
-                    Special Summers Offer
+                    Special Valentines Day Offer
                   </span>
                   <span className="text-[#ec7421] hourly-offers-container-sub-title">
                     Rent hourly and save with limited time offers

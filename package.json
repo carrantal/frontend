@@ -13,6 +13,7 @@
     "axios": "^1.7.9",
     "bootstrap": "^4.5.3",
     "cloudinary": "^2.5.1",
+    "framer-motion": "^12.34.0",
     "jquery": "^3.6.4",
     "next": "15.1.0",
     "next-extra": "^0.6.1",
