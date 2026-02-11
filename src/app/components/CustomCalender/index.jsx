@@ -9,50 +9,50 @@ export default function CustomCalender({ register, setValue, watch }) {
 
   return (
     <>
-      <div class="d-flex align-items-start justify-content-between mb-3-custom mt-2-custom row">
-        <h2 class="h4 font-weight-normal fs-24 col-8 text-left text-white">
+      <div className="d-flex align-items-start justify-content-between mb-3-custom mt-2-custom row">
+        <h2 className="h4 font-weight-normal fs-24 col-8 text-left text-white">
           Choose rental dates
         </h2>
-        <span class="flex-shrink-0 col-4 text-right text-white">
+        <span className="flex-shrink-0 col-4 text-right text-white">
           {calculateDifference && `${calculateDifference} day`}
         </span>
       </div>
-      <div class="row mx-0">
-        <div class="col-12 col-lg-8 p-0 mb-3 mb-lg-0 pr-0 pr-lg-2">
-          <div class="rental-min-warning d-lg-none"></div>
-          <div class="row custom-input-group mx-0">
-            <div class="col-6 form-group border-right-medium border-shades-300 px-0 mb-0">
-              <label class="custom-label text-truncate">Pick-Up Date</label>
+      <div className="row mx-0">
+        <div className="col-12 col-lg-8 p-0 mb-3 mb-lg-0 pr-0 pr-lg-2">
+          <div className="rental-min-warning d-lg-none"></div>
+          <div className="row custom-input-group mx-0">
+            <div className="col-6 form-group border-right-medium border-shades-300 px-0 mb-0">
+              <label className="custom-label text-truncate">Pick-Up Date</label>
               <input
-                class="form-control"
+                className="form-control"
                 id="datepicker_start"
-                readonly=""
+                readOnly={true}
                 type="text"
                 value={date?.[0] ? new Date(date[0]).toLocaleDateString() : "-"}
               />
             </div>
-            <div class="col-6 form-group px-0 mb-0">
-              <label class="custom-label text-truncate" for="datepicker_end">
+            <div className="col-6 form-group px-0 mb-0">
+              <label className="custom-label text-truncate" htmlFor="datepicker_end">
                 Drop-Off Date
               </label>
               <input
-                class="form-control"
+                className="form-control"
                 id="datepicker_end"
-                readonly=""
+                readOnly={true}
                 type="text"
                 value={date?.[1] ? new Date(date[1]).toLocaleDateString() : "-"}
               />
             </div>
           </div>
         </div>
-        <div class="col-12 col-lg-4 pl-0 pl-lg-2 pr-0">
-          <div class="row custom-input-group mx-0">
-            <div class="col-12  form-group border-right-medium border-shades-300 px-0 mb-0 select-start-time-container">
-              <label class="custom-label text-truncate" for="select-start-time">
+        <div className="col-12 col-lg-4 pl-0 pl-lg-2 pr-0">
+          <div className="row custom-input-group mx-0">
+            <div className="col-12  form-group border-right-medium border-shades-300 px-0 mb-0 select-start-time-container">
+              <label className="custom-label text-truncate" htmlFor="select-start-time">
                 Start Time
               </label>
               <select
-                class="form-control fs-12"
+                className="form-control fs-12"
                 {...register("data.time", { required: "true" })}
               >
                 <option>00:00</option>
@@ -84,7 +84,7 @@ export default function CustomCalender({ register, setValue, watch }) {
           </div>
         </div>
       </div>
-      <div class="row mx-0 p-2 fs-14 mb-3-custom mt-2-custom">
+      <div className="row mx-0 p-2 fs-14 mb-3-custom mt-2-custom">
         <Calendar
           value={date}
           onChange={(e) => {

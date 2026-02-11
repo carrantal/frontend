@@ -69,7 +69,7 @@ export default function CarDetailSlider({ images, carVideos }) {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div class="mt-2 mb-2 p-2 bg-shades-white">
+      <div className="mt-2 mb-2 p-2 bg-shades-white">
         <Swiper
           spaceBetween={10}
           slidesPerView={1}

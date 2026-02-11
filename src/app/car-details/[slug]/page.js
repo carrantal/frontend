@@ -13,11 +13,13 @@ import BookingForm from "@/app/components/Forms/BookingForm";
 import Link from "next/link";
 import Hover from "./Hover";
 
-export default async function Page(props) {
+// export default async function Page(props) {
+export default async function Page({ params }) {
   const { data } = await axios.get(`${URL}/api/info?fields=whatsapp`);
   const whatsapp = data?.data?.attributes?.whatsapp;
 
-  const { slug } = props.params;
+  // const { slug } = params;
+  const slug = (await params).slug;
   const response = await axios.get(
     `${URL}/api/cars?populate=*&filters[slug]=${slug}`
   );
@@ -44,23 +46,23 @@ export default async function Page(props) {
   const Footerdata = Footerresponse?.data?.data;
   return (
     <>
-      <div class="bg-black">
-        <div class="homepage  ">
+      <div className="bg-black">
+        <div className="homepage  ">
           <TopHeader />
           <Breadcrumb breadcrumbTitle={title} />
-          <div class=" pt-lg-4 single-car special-offer">
+          <div className=" pt-lg-4 single-car special-offer">
             <div className="container">
-              <div class="pb-3 pt-3 mt-0 pt-lg-0 d-flex align-items-center mt-lg-0">
-                <h1 class="fs-m-18 fs-30 font-weight-normal text-white">
+              <div className="pb-3 pt-3 mt-0 pt-lg-0 d-flex align-items-center mt-lg-0">
+                <h1 className="fs-m-18 fs-30 font-weight-normal text-white">
                   Rent {title}, in Dubai
                 </h1>
               </div>
               <div className="my-3"></div>
               <div
-                class="d-flex position-relative justify-content-between overflow-lg-hidden"
+                className="d-flex position-relative justify-content-between overflow-lg-hidden"
                 style={{ columnGap: "60px" }}
               >
-                <div class="col-12 col-lg-6 p-0 gallery flex-lg-grow-1">
+                <div className="col-12 col-lg-6 p-0 gallery flex-lg-grow-1">
                   <CarDetailSlider images={carImages} carVideos={carVideos} />
 
                   <DetailpageComponent
@@ -72,30 +74,30 @@ export default async function Page(props) {
                   />
                 </div>
 
-                <div class="col-12 col-lg-5 p-0 d-none d-lg-block">
-                  <div class="title-car-mobile   ">
-                    <div class="d-none d-lg-block py-3 px-3 show-body show-body-modal">
-                      <div class="d-flex align-items-start justify-content-between mb-3 flex-column">
-                        <div class="d-flex flex-row pl-3 w-100">
-                          <div class="d-flex align-items-start priceText text-nowrap flex-grow-1">
-                            <span class="fs-12 color-shades-500 text-uppercase mr-2 text-white">
+                <div className="col-12 col-lg-5 p-0 d-none d-lg-block">
+                  <div className="title-car-mobile   ">
+                    <div className="d-none d-lg-block py-3 px-3 show-body show-body-modal">
+                      <div className="d-flex align-items-start justify-content-between mb-3 flex-column">
+                        <div className="d-flex flex-row pl-3 w-100">
+                          <div className="d-flex align-items-start priceText text-nowrap flex-grow-1">
+                            <span className="fs-12 color-shades-500 text-uppercase mr-2 text-white">
                               Price for a
                             </span>
-                            <span class="fs-12 color-shades-white text-uppercase px-1 bg-brand-primary rounded-small">
+                            <span className="fs-12 color-shades-white text-uppercase px-1 bg-brand-primary rounded-small">
                               1 day
                             </span>
                           </div>
-                          <span class="text-white color-shades-500 fs-14 pl-2 d-block text-right line-height-normal">
+                          <span className="text-white color-shades-500 fs-14 pl-2 d-block text-right line-height-normal">
                             Feel free to chat or call us directly
                           </span>
                         </div>
-                        <div class="pl-3">
-                          <span class="fs-30 text-white font-weight-semibold priceVal">
+                        <div className="pl-3">
+                          <span className="fs-30 text-white font-weight-semibold priceVal">
                             {discountedPrice ? discountedPrice : price} AED
                           </span>
                           {discountedPrice && (
                             <span
-                              class="ml-2 fs-20 color-shades-500 font-weight-semibold"
+                              className="ml-2 fs-20 color-shades-500 font-weight-semibold"
                               style={{
                                 textDecoration: "line-through",
                               }}
@@ -106,28 +108,28 @@ export default async function Page(props) {
                         </div>
                       </div>
 
-                      <div class="mb-3">
-                        <div class="d-flex align-items-center rounded-small py-1 availability-label min-height-35 color-semantic-success">
-                          <span class="fs-14 line-height-25 ml-2">
+                      <div className="mb-3">
+                        <div className="d-flex align-items-center rounded-small py-1 availability-label min-height-35 color-semantic-success">
+                          <span className="fs-14 line-height-25 ml-2">
                             Available now
                           </span>
                         </div>
-                        <div class="d-flex align-items-center rounded-small min-height-35 policyDesc">
-                          <FaInfoCircle class="color-semantic-success icon-info ml-2" />
-                          <span class="fs-14 line-height-25 ml-2 color-shades-black">
+                        <div className="d-flex align-items-center rounded-small min-height-35 policyDesc">
+                          <FaInfoCircle className="color-semantic-success icon-info ml-2" />
+                          <span className="fs-14 line-height-25 ml-2 color-shades-black">
                             No deposit needed
                           </span>
                         </div>
                         <Hover />
-                        <div class="d-flex align-items-center rounded-small min-height-35 policyDesc">
-                          <FaInfoCircle class="color-semantic-success icon-info ml-2" />
-                          <span class="fs-14 line-height-25 ml-2 color-shades-black">
+                        <div className="d-flex align-items-center rounded-small min-height-35 policyDesc">
+                          <FaInfoCircle className="color-semantic-success icon-info ml-2" />
+                          <span className="fs-14 line-height-25 ml-2 color-shades-black">
                             Free deliver in Dubai
                           </span>
                         </div>
-                        <div class="d-flex align-items-center rounded-small min-height-35 policyDesc">
-                          <FaInfoCircle class="color-semantic-success icon-info ml-2" />
-                          <span class="fs-14 line-height-25 ml-2 color-shades-black">
+                        <div className="d-flex align-items-center rounded-small min-height-35 policyDesc">
+                          <FaInfoCircle className="color-semantic-success icon-info ml-2" />
+                          <span className="fs-14 line-height-25 ml-2 color-shades-black">
                             Cash, Crypto, Credit/debit cards accepted
                           </span>
                         </div>
@@ -137,14 +139,14 @@ export default async function Page(props) {
                         href={whatsapp}
                         target="_blank"
                         type="button"
-                        class="w-100 mb-3 btn-medium contact_btn btn btn-semantic-success d-none d-lg-flex"
+                        className="w-100 mb-3 btn-medium contact_btn btn btn-semantic-success d-none d-lg-flex"
                       >
-                        <span class="fs-14 lh-20 font-weight-bold text-uppercase text-nowrap letter-spacing-0_2 company_phone_5356">
+                        <span className="fs-14 lh-20 font-weight-bold text-uppercase text-nowrap letter-spacing-0_2 company_phone_5356">
                           Contact
                         </span>
                       </Link>
-                      <div class="d-flex justify-content-center border-center-horizontal border-shades-300 or-book-online">
-                        <span class="fs-14 color-shades-500 text-uppercase position-relative bg-shades-100 px-2">
+                      <div className="d-flex justify-content-center border-center-horizontal border-shades-300 or-book-online">
+                        <span className="fs-14 color-shades-500 text-uppercase position-relative bg-shades-100 px-2">
                           or book online
                         </span>
                       </div>

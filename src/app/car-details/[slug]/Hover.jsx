@@ -7,7 +7,7 @@ export default function Hover() {
   const [show, setShow] = useState(false);
   return (
     <div
-      class="d-flex relative align-items-center rounded-small min-height-35 policyDesc"
+      className="d-flex relative align-items-center rounded-small min-height-35 policyDesc"
       onMouseEnter={() => {
         setShow(true);
       }}
@@ -15,8 +15,8 @@ export default function Hover() {
         setShow(false);
       }}
     >
-      <FaInfoCircle class="color-semantic-success icon-info ml-2" />
-      <span class="fs-14 line-height-25 ml-2 color-shades-black">
+      <FaInfoCircle className="color-semantic-success icon-info ml-2" />
+      <span className="fs-14 line-height-25 ml-2 color-shades-black">
         Mileage for 1 day?
         {show && (
           <span
