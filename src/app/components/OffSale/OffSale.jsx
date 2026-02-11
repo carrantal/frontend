@@ -48,7 +48,7 @@ const OffSale = ({ carOffers, id }) => {
                     Special Valentine&apos;s Day Offer
                   </span>
                   <span className="text-[#ec7421] hourly-offers-container-sub-title">
-                    Rent hourly and save with limited time offers
+                    Rent hourly and save with limited time offer
                   </span>
                 </div>
                 <Link
