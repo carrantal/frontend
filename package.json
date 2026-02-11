@@ -16,7 +16,6 @@
     "framer-motion": "^12.34.0",
     "jquery": "^3.6.4",
     "next": "^16.1.6",
-    "next-extra": "^0.6.1",
     "popper.js": "^1.16.1",
     "primereact": "^10.8.5",
     "react": "^19.2.4",
@@ -29,7 +28,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "eslint": "^9",
-    "eslint-config-next": "15.1.0",
+    "eslint-config-next": "^16.1.6",
     "postcss": "^8",
     "tailwindcss": "^3.4.1"
   }
