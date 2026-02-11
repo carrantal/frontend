@@ -7,8 +7,8 @@ import { URL } from "../utils";
 
 export default async function Gallery() {
   return (
-    <div class="bg-black">
-      <div class="homepage ">
+    <div className="bg-black">
+      <div className="homepage ">
         <TopHeader />
         <div className="bg-shades-white  pt-3 pt-lg-4 ">
           <div className="container">

@@ -2,11 +2,11 @@ import React from "react";
 
 const Maps = () => {
   return (
-    <div class="bg-shades-white home-page-section-body overflow-hidden pt-4 pb-4">
-      <div class="container h-[500px]">
-        <div class="d-flex align-items-center mb-sm-4 mb-3">
+    <div className="bg-shades-white home-page-section-body overflow-hidden pt-4 pb-4">
+      <div className="container h-[500px]">
+        <div className="d-flex align-items-center mb-sm-4 mb-3">
           <h2
-            class="
+            className="
           fs-24 fs-lg-30 lh-lg-40 lh-35 font-weight-semibold color-shades-black"
           >
             {" "}

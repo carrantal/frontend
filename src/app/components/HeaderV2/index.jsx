@@ -59,9 +59,10 @@ export default async function HeaderV2() {
                         {catResponse?.data?.data?.map((cat) => (
                           <Link
                             className="dropdown-item rounded-small fs-14 color-shades-black px-2"
-                            href={`/search?category=${cat.attributes.slug}`}
+                            href={`/search?category=${cat?.attributes?.slug}`}
+                            key={cat?.id}
                           >
-                            {cat.attributes.name}
+                            {cat?.attributes?.name}
                           </Link>
                         ))}
                       </div>

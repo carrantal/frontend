@@ -2,23 +2,23 @@ import React from "react";
 
 const LeadingCompany = () => {
   return (
-    <div class="container home-page-container-p-t flex-column mt-4">
-      <div class="d-flex align-items-center justify-content-between mb-4">
-        <h2 class="home-about-company-section-title font-weight-bold color-shades-black">
+    <div className="container home-page-container-p-t flex-column mt-4">
+      <div className="d-flex align-items-center justify-content-between mb-4">
+        <h2 className="home-about-company-section-title font-weight-bold color-shades-black">
           Nayl Rentals: The Leading Car rental company In Dubai
         </h2>
-        <img src="./images/car.svg" class="d-none d-lg-flex" loading="lazy" />
+        <img src="./images/car.svg" className="d-none d-lg-flex" loading="lazy" />
       </div>
-      <div class="row mx-0">
-        <div class="col-lg col-12 mr-lg-3 home-about-company-section-card flex-column mb-lg-0 mb-4">
-          <div class="d-flex flex-lg-column flex-row mb-lg-4 mb-3 align-items-lg-start align-items-center">
+      <div className="row mx-0">
+        <div className="col-lg col-12 mr-lg-3 home-about-company-section-card flex-column mb-lg-0 mb-4">
+          <div className="d-flex flex-lg-column flex-row mb-lg-4 mb-3 align-items-lg-start align-items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="48"
               height="48"
               viewBox="0 0 48 48"
               fill="none"
-              class="home-about-company-section-card-icon mb-lg-4 mr-lg-0 mr-3"
+              className="home-about-company-section-card-icon mb-lg-4 mr-lg-0 mr-3"
             >
               <path
                 d="M23.9993 19.5C29.3753 19.5 33.7493 15.126 33.7493 9.75C33.7493 4.374 29.3753 0 23.9993 0C18.6225 0 14.2493 4.374 14.2493 9.75C14.2493 15.126 18.6225 19.5 23.9993 19.5ZM19.5158 10.5C19.5518 11.634 19.6673 12.705 19.8555 13.6823C19.086 14.0445 18.3615 14.5058 17.7008 15.0668C16.6373 13.809 15.9443 12.2325 15.7875 10.5H19.5158ZM23.9993 1.5C24.7613 1.5 25.5705 2.52825 26.1563 4.20825C25.458 4.3995 24.7328 4.5 23.9993 4.5C23.265 4.5 22.5405 4.3995 21.8423 4.20825C22.428 2.52825 23.2373 1.5 23.9993 1.5ZM20.4308 3.681C20.0288 3.48675 19.644 3.25575 19.275 2.99625C19.869 2.58 20.52 2.244 21.213 1.99425C20.9198 2.4825 20.6573 3.04725 20.4308 3.681ZM26.7848 1.99425C27.4778 2.244 28.1295 2.58 28.7228 2.99625C28.3538 3.25575 27.969 3.48675 27.567 3.681C27.3413 3.04725 27.0788 2.4825 26.7848 1.99425ZM23.9993 6C24.873 6 25.7355 5.88 26.5665 5.652C26.79 6.64425 26.9393 7.7745 26.9835 9H21.015C21.0593 7.7745 21.2085 6.64425 21.432 5.652C22.263 5.88 23.1255 6 23.9993 6ZM32.211 10.5C32.0543 12.2325 31.3605 13.809 30.297 15.0668C29.637 14.5058 28.9125 14.0452 28.1423 13.6823C28.3305 12.7043 28.446 11.6333 28.482 10.5H32.211ZM21.6225 14.5972C22.3838 14.3685 23.1825 14.25 23.9993 14.25C24.816 14.25 25.614 14.3685 26.3753 14.5972C25.7843 16.6868 24.8618 18 23.9993 18C23.1368 18 22.2143 16.6868 21.6225 14.5972ZM21.213 17.5057C20.3168 17.1825 19.4888 16.7167 18.7665 16.1227C19.218 15.7507 19.7048 15.4342 20.217 15.1688C20.4855 16.071 20.8223 16.8562 21.213 17.5057ZM27.7815 15.1695C28.2938 15.435 28.7798 15.7507 29.232 16.1235C28.5098 16.7175 27.6818 17.1832 26.7855 17.5065C27.1755 16.8562 27.513 16.071 27.7815 15.1695ZM26.9835 10.5C26.9498 11.4412 26.8538 12.3263 26.709 13.1355C25.8383 12.885 24.9293 12.75 23.9993 12.75C23.0685 12.75 22.1595 12.885 21.2895 13.1355C21.1455 12.3263 21.0488 11.4412 21.015 10.5H26.9835ZM32.211 9H28.4828C28.4378 7.593 28.269 6.28575 27.9945 5.12925C28.6665 4.8255 29.3048 4.44675 29.898 3.99375C31.1858 5.313 32.0355 7.05975 32.211 9ZM18.1005 3.99375C18.6938 4.446 19.332 4.82475 20.004 5.12925C19.7295 6.28575 19.5608 7.593 19.5158 9H15.7875C15.963 7.05975 16.8128 5.313 18.1005 3.99375Z"
@@ -41,11 +41,11 @@ const LeadingCompany = () => {
                 fill="#ec7421"
               />
             </svg>
-            <span class="home-about-company-section-card-title color-shades-900 font-weight-semibold">
+            <span className="home-about-company-section-card-title color-shades-900 font-weight-semibold">
               Car Rental Platform
             </span>
           </div>
-          <span class="home-about-company-section-card-text font-weight-normal color-shades-black">
+          <span className="home-about-company-section-card-text font-weight-normal color-shades-black">
             Nayl Rentals is a leading online car rental service specializing in
             luxury cars, but also, economy motors, business vehicles, and vans.
             We serve both casual tourists and business professionals looking to
@@ -55,15 +55,15 @@ const LeadingCompany = () => {
             and Ras Al Khaimah.
           </span>
         </div>
-        <div class="col-lg col-12 mr-lg-3 home-about-company-section-card flex-column mb-lg-0 mb-4">
-          <div class="d-flex flex-lg-column flex-row mb-lg-4 mb-3 align-items-lg-start align-items-center">
+        <div className="col-lg col-12 mr-lg-3 home-about-company-section-card flex-column mb-lg-0 mb-4">
+          <div className="d-flex flex-lg-column flex-row mb-lg-4 mb-3 align-items-lg-start align-items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="69"
               height="48"
               viewBox="0 0 69 48"
               fill="none"
-              class="home-about-company-section-card-icon mb-lg-4 mr-lg-0 mr-3"
+              className="home-about-company-section-card-icon mb-lg-4 mr-lg-0 mr-3"
             >
               <g clip-path="url(#clip0_5536_34499)">
                 <g clip-path="url(#clip1_5536_34499)">
@@ -104,11 +104,11 @@ const LeadingCompany = () => {
                 </clipPath>
               </defs>
             </svg>
-            <span class="home-about-company-section-card-title color-shades-900 font-weight-semibold">
+            <span className="home-about-company-section-card-title color-shades-900 font-weight-semibold">
               Fantastic Choice
             </span>
           </div>
-          <span class="home-about-company-section-card-text font-weight-normal color-shades-black">
+          <span className="home-about-company-section-card-text font-weight-normal color-shades-black">
             Nayl Rental's one-stop-shop gives customers fantastic choice and
             best-in-industry value. All the cars listed on Nayl Rentals are
             fully-vetted and high-quality. We have strict quality control
@@ -121,10 +121,10 @@ const LeadingCompany = () => {
             which is updated daily.
           </span>
         </div>
-        <div class="col-lg col-12 home-about-company-section-card flex-column">
-          <div class="d-flex flex-lg-column flex-row mb-lg-4 mb-3 align-items-lg-start align-items-center">
+        <div className="col-lg col-12 home-about-company-section-card flex-column">
+          <div className="d-flex flex-lg-column flex-row mb-lg-4 mb-3 align-items-lg-start align-items-center">
             <svg
-              class="home-about-company-section-card-icon mb-lg-4 mr-lg-0 mr-3"
+              className="home-about-company-section-card-icon mb-lg-4 mr-lg-0 mr-3"
               xmlns="http://www.w3.org/2000/svg"
               width="48"
               height="48"
@@ -172,11 +172,11 @@ const LeadingCompany = () => {
                 fill="#ec7421"
               />
             </svg>
-            <span class="home-about-company-section-card-title color-shades-900 font-weight-semibold">
+            <span className="home-about-company-section-card-title color-shades-900 font-weight-semibold">
               Luxury or Economy
             </span>
           </div>
-          <span class="home-about-company-section-card-text font-weight-normal color-shades-black">
+          <span className="home-about-company-section-card-text font-weight-normal color-shades-black">
             There are many reasons to rent car in Dubai. Business professionals
             often rent a car such as a classy motor to impress clients and give
             the impression of wealth and success. Many tourists hire cars to

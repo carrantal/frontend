@@ -82,7 +82,7 @@ function FileUpload({
   };
 
   return (
-    <div class="form-group">
+    <div className="form-group">
       <label
         className="fs-9 text-white d-flex gap-5 align-items-center"
         onMouseEnter={() => {
@@ -118,13 +118,13 @@ function FileUpload({
         )}
         {/* <span className="cursor-pointer">{hoverText &&  }</span> */}
       </label>
-      <div class="input-group mb-3">
+      <div className="input-group mb-3">
         {uploading && <Loader small={true} />}
         {!uploading && (
-          <div class="custom-file">
+          <div className="custom-file">
             <input
               type="file"
-              class="custom-file-input"
+              className="custom-file-input"
               onChange={(e) => {
                 const file = e.target.files[0];
                 if (file) {
@@ -132,7 +132,7 @@ function FileUpload({
                 }
               }}
             />
-            <label class="fs-14 custom-file-label">
+            <label className="fs-14 custom-file-label">
               {file ? <p>{file?.name.slice(0, 10)}...</p> : <>Upload {label}</>}
             </label>
           </div>

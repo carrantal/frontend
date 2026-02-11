@@ -7,8 +7,8 @@ export default async function Brands() {
   const response = await axios.get(`${URL}/api/brands?populate=*`);
 
   return (
-    <div class="bg-black">
-      <div class="homepage ">
+    <div className="bg-black">
+      <div className="homepage ">
         <div className="bg-shades-white  pt-3 pt-lg-4 ">
           <div className="container">
             <div className=" ">
