@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-family: "Playfair Display", serif;
+}
+
 .dropdown-backdrop {
   background-color: #13428d;
   background-size: cover;
@@ -1341,7 +1345,7 @@ nav[aria-label="breadcrumb"] .breadcrumb .breadcrumb-item.active {
 
 body {
   background-color: #0d0d0d;
-  font-family: "Roboto", sans-serif;
+  font-family: "Playfair Display", serif;
   font-size: 18px;
   font-weight: 300;
 }

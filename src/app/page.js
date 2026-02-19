@@ -13,6 +13,7 @@ import axios from "axios";
 import Search from "./components/Search/Search";
 import Categories from "./components/Catergories/Categories";
 import ValentinesOfferNayl from "./components/ValentinesOfferNayl/page";
+import RamadanOffer from "./components/RamadanOffer";
 
 const Home = async ({ newdata }) => {
   const response = await axios.get(
@@ -77,7 +78,8 @@ const Home = async ({ newdata }) => {
         <Categories response={catResponse} />
       </div>
       <div className="py-5">
-          <ValentinesOfferNayl />
+          {/* <ValentinesOfferNayl /> */}
+          <RamadanOffer />
       </div>
       <div className="mt-4"></div>
       <Brands />

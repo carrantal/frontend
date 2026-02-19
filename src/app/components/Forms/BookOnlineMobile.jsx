@@ -70,7 +70,7 @@ export default function BookOnlineMobile({ price, whatsapp }) {
 
           <div
             className="menu-content flex-grow-1 d-flex flex-column justify-content-left p-4"
-            style={{ fontFamily: "Roboto, sans-serif", overflow: "scroll" }}
+            style={{ overflow: "scroll" }}
           >
             <div className="d-flex mb-4 justify-content-center border-center-horizontal border-shades-300 or-book-online">
               <span className="fs-14 color-shades-500 text-uppercase position-relative bg-shades-100 px-2">
