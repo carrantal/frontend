@@ -77,10 +77,10 @@ const Home = async ({ newdata }) => {
 
         <Categories response={catResponse} />
       </div>
-      <div className="py-5">
+      {/* <div className="py-5"> */}
           {/* <ValentinesOfferNayl /> */}
-          <RamadanOffer />
-      </div>
+          {/* <RamadanOffer /> */}
+      {/* </div> */}
       <div className="mt-4"></div>
       <Brands />
       <OffSale carOffers={carOffers} id = "offers" />
